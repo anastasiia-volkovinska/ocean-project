@@ -1,0 +1,155 @@
+.header
+  position: relative
+  height: $header-height
+  background-image: url("img/header/header-bg.png")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15)
+
+
+  &__lowerLayer
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    // height: calc($header-height - 3em)
+    z-index: 2
+
+  &__higherLayer
+    @extend .header__lowerLayer
+    z-index: 1
+
+  &__container
+    max-width: 1000px
+    margin: 0 auto
+
+
+
+
+  &__logo
+    display: inline-block
+    padding: 1em
+    padding-bottom: 0
+
+  &__nav
+    display: inline-block
+    position: relative
+    top: -0.5em
+
+    &List
+      display: inline-block
+      list-style: none
+    &Item
+      display: inline-block
+      padding: 0.5em 1em
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
+      color: #fff
+      font-family: $font
+      font-size: 1em
+      font-weight: normal
+      cursor: pointer
+      &.active,
+      &:hover
+        background-color: $dark-bg
+        border-top-left-radius: 3px
+        border-top-right-radius: 3px
+        box-shadow: 1.5px 2.6px 5px rgba(0, 0, 0, 0.2)
+
+
+
+
+  &__infoLine
+    position: relative
+    top: 1em
+    height: 3em
+    // background-color: #3eb8ff
+    // box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15)
+
+%loginBox__item
+  box-sizing: content-box
+  height: 2em
+  margin-right: 0.5em
+  background-color: $dark-bg
+  border-radius: 3px
+  border: none
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35),
+              inset 0 1px 2px rgba(0, 91, 175, 0.6)
+  vertical-align: middle
+
+.loginBox
+  text-align: right
+
+  &__form
+    margin-bottom: 0.5em
+
+  &__country
+    @extend %loginBox__item
+    display: inline-block
+    width: 3em
+    background-image: url("img/header/ua.png")
+    background-repeat: no-repeat
+    background-position: center
+
+  &__username
+    @extend %loginBox__item
+    width: 10em
+    text-indent: 0.5em
+    color: #fff
+    &::placeholder
+      color: #fff
+
+  &__password
+    @extend .loginBox__username
+
+  &__submit
+    @extend %loginBox__item
+    padding: 0 1em
+    background-color: white
+    background-image: linear-gradient(to top, rgba(215, 215, 215, 0.24) 0%, rgba(255, 255, 255, 0.24) 100%)
+    border-radius: 3px
+    color: $dark-bg
+    cursor: pointer
+
+  &__forgot
+    font-size: 0.8em
+    vertical-align: top
+    margin-right: 1.6em
+    color: #9cd2f3
+    &:hover
+      text-decoration: underline
+
+  &__register
+    box-sizing: border-box
+    width: 15.3em
+    height: 2em
+    margin-right: 0.4em
+    background-color: white
+    border: 2px solid #1f82bc
+    border-top-color: #fff
+    border-radius: 5px
+    box-shadow: 1.5px 2.3px 4px rgba(0, 91, 175, 0.6)
+    font-weight: bolder
+    color: #44a437
+    text-transform: uppercase
+    cursor: pointer
+
+
+
+.slider
+  &__item
+    background-color: #3BA4E6
+    text-align: center
+
+    & img
+      width: 100%
+      max-width: 80em
+      vertical-align: top
+
+
+.jackpot
+  height: 3em
+  background-image: url("img/header/header-bg.png")
+  background-repeat: no-repeat
+  background-size: cover
+  box-shadow: 0 -3px 4px rgba(0, 0, 0, 0.15)
