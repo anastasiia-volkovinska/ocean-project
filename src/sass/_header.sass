@@ -135,7 +135,6 @@
     cursor: pointer
 
 
-
 .slider
   &__item
     background-color: #3BA4E6
@@ -148,8 +147,84 @@
 
 
 .jackpot
-  height: 3em
+  position: relative
+  z-index: 3
   background-image: url("img/header/header-bg.png")
   background-repeat: no-repeat
   background-size: cover
-  box-shadow: 0 -3px 4px rgba(0, 0, 0, 0.15)
+  box-shadow: 0 -3px 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.2)
+  height: 4em
+  &__container
+    display: flex
+    max-width: 1000px
+    margin: 0 auto
+    padding: 0.5em
+    height: 4em
+
+  &__item
+    display: flex
+    flex-basis: 5em
+    flex-grow: 5
+    margin-left: 0.5em
+    background-color: $dark-bg
+    border-radius: 3px
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35),
+                inset 0 1px 2px rgba(0, 91, 175, 0.6)
+    &:first-child
+      flex-basis: 1em
+      font-size: 1.2em
+      line-height: 2.5
+      background-color: transparent
+      box-shadow: none
+      color: #fff
+
+  &__text
+    margin-left: 0.3em
+    font-size: 0.8em
+    +respond-to(wide-screens)
+      font-size: 0.9em
+      margin-left: 0.5em
+    line-height: 1.4rem
+    color: #fff
+    & span
+      display: block
+      font-size: 0.8em
+      color: #00fffb
+
+
+.banners
+  display: flex
+  justify-content: center
+  background-image: url("img/header/logo-white.png"), url("img/header/banners-bg-new.png")
+  background-repeat: no-repeat, no-repeat
+  background-position: right bottom, center
+  background-size: 10%, cover
+  &__item
+    margin: 2.5em 1em 3em 1em
+
+.footer
+  height: 15em
+  background-image: url("img/header/footer-bg.png")
+  background-repeat: no-repeat
+  background-size: cover
+  &__divider
+    position: relative
+    z-index: 3
+    height: 0.3em
+    background-image: url("img/header/header-bg.png")
+    background-repeat: no-repeat
+    background-size: cover
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.5)
+  &__container
+    max-width: 1000px
+    margin: 0 auto
+
+  &__nav
+    height: 2.5em
+    background-color: transparentize($dark-bg, 0.5)
+    &Item
+      display: inline-block
+      line-height: 2.5
+      color: #fff
+      margin-left: 1em
+      cursor: pointer
