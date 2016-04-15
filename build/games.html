@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Ocean Casino - Games</title>
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,cyrillic'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+	<link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+	<header class="header">
+	  <div class="header__lowerLayer">
+	    <div class="header__infoLine">
+
+	      <div class="header__container">
+
+	        <section class="loginBox">
+	          <form action="#" class="loginBox__form">
+	            <div class="loginBox__country"></div>
+	            <input type="text" class="loginBox__username" placeholder="Username:" required>
+	            <input type="password" class="loginBox__password" placeholder="Password:" required>
+	            <input type="submit" class="loginBox__submit" value="Login">
+	          </form>
+	          <a href="#" class="loginBox__forgot">Forgot Password?</a>
+	          <button class="loginBox__register">Register now!</button>
+	        </section>
+
+	      </div>
+
+	      <div class="header__container">
+	        <div class="profileInfo">
+	          <button class="profileInfo__logOut">Logout</button>
+	          <div class="profileInfo__country"></div>
+	          <button class="profileInfo__deposit">DEPOSIT</button>
+	          <div class="profileInfo__item">
+	            <p class="profileInfo__itemText">Active&nbsp;codes: </p>
+	            <div class="profileInfo__itemInfo">123.243,00</div>
+	          </div>
+	          <div class="profileInfo__item">
+	            <p class="profileInfo__itemText">Balance: </p>
+	            <div class="profileInfo__itemInfo" data-type="balance">123.243,00</div>
+	          </div>
+	          <div class="profileInfo__item">
+	            <p class="profileInfo__itemText">Welcome, </p>
+	            <div class="profileInfo__itemInfo">Jamomoto149</div>
+	          </div>
+	        </div>
+	      </div>
+
+	    </div>
+	  </div>
+	  <div class="header__higherLayer">
+
+	    <div class="header__container">
+
+	      <div class="header__logo">
+	        <img src="img/header/logo.png" alt="Logo Ocean Casino">
+	      </div>
+
+	      <nav class="header__nav">
+	        <ul class="header__navList">
+	          <li class="header__navItem"><a href="/">Home</a></li>
+	          <li class="header__navItem closed" data-type="profile"><a href="profile.html">My account</a></li>
+	          <li class="header__navItem active"><a href="games.html">Games</a></li>
+	          <li class="header__navItem">Promotions</li>
+	          <li class="header__navItem">VIP</li>
+	          <li class="header__navItem">Banking</li>
+	          <li class="header__navItem">About Us</li>
+	        </ul>
+	      </nav>
+
+	      <button class="header__support">Support 24/7</button>
+
+	    </div>
+
+	  </div>
+	</header>
+<section class="favourite">
+  <div class="favourite__container">
+    <div class="favourite__title">Your latest <br> played games:</div>
+    <div class="favourite__item" data-star="yes">
+      <img class="favourite__itemIMG" src="img/games/favourite-1.png" alt="Favourite">
+      <p class="favourite__itemText">The&nbsp;Queen<span>Another&nbsp;Game</span></p>
+    </div>
+    <div class="favourite__item" data-star="yes">
+      <img class="favourite__itemIMG" src="img/games/favourite-2.png" alt="Favourite">
+      <p class="favourite__itemText">Steam&nbsp;Tower<span>Netent</span></p>
+    </div>
+    <div class="favourite__item" data-star="no">
+      <img class="favourite__itemIMG" src="img/games/favourite-3.png" alt="Favourite">
+      <p class="favourite__itemText">Dark&nbsp;Knight<span>QuickFire</span></p>
+    </div>
+    <div class="favourite__item" data-star="yes">
+      <img class="favourite__itemIMG" src="img/games/favourite-4.png" alt="Favourite">
+      <p class="favourite__itemText">Calipso<span>Another&nbsp;Game</span></p>
+    </div>
+  </div>
+</section>
+<section class="allGames">
+	<div class="allGames__container">
+		<form action="#" class="allGames__form">
+			<select name="games" class="allGames__select">
+				<option value="1">All Games</option>
+				<option value="2">VideoSlots</option>
+				<option value="3">VideoPoker</option>
+			</select>
+			<input type="search" class="allGames__search" name="search" placeholder="Search game:">
+		</form>
+		<p class="allGames__title">Select creator: </p>
+		<img src="img/games/all-games.png" alt="Creators" class="allGames__img">
+	</div>
+</section>
+<section class="games">
+	<div class="games__container">
+		<div class="games__path">Home page > Casino games</div>
+		<div class="games__row">
+			<div class="games__header">New Games <em><a href="#">View All</a></em></div>
+			<div class="games__item" data-type="hot">
+				<img src="img/games/game-1.png" alt="" class="games__img">
+				<p class="games__descr">The Queen<em>Video Slot</em></p>
+				<div class="games__hover">
+					<button class="games__win">play to win</button>
+					<button class="games__fun">play for fun</button>
+				</div>
+			</div>
+			<div class="games__item">
+				<img src="img/games/game-2.png" alt="" class="games__img">
+				<p class="games__descr" data-type="star">The Queen<em>Video Slot</em></p>
+				<div class="games__hover">
+					<button class="games__win">play to win</button>
+					<button class="games__fun">play for fun</button>
+				</div>
+			</div>
+			<div class="games__item">
+				<img src="img/games/game-3.png" alt="" class="games__img">
+				<p class="games__descr" data-type="star">Steam Tower<em>Video Slot</em></p>
+				<div class="games__hover">
+					<button class="games__win">play to win</button>
+					<button class="games__fun">play for fun</button>
+				</div>
+			</div>
+			<div class="games__item" data-type="new">
+				<img src="img/games/game-4.png" alt="" class="games__img">
+				<p class="games__descr" data-type="star">The Dark Knight<em>Video Slot</em></p>
+				<div class="games__hover">
+					<button class="games__win">play to win</button>
+					<button class="games__fun">play for fun</button>
+				</div>
+			</div>
+			<div class="games__item">
+				<img src="img/games/game-5.png" alt="" class="games__img">
+				<p class="games__descr" data-type="star">Gold Sea<em>Video Slot</em></p>
+				<div class="games__hover">
+					<button class="games__win">play to win</button>
+					<button class="games__fun">play for fun</button>
+				</div>
+			</div>
+		</div>
+		<div class="games__row">
+			<div class="games__header">Popular Games<em><a href="#">View All</a></em></div>
+			<div class="games__item">
+				<img src="img/games/game-6.png" alt="" class="games__img">
+				<p class="games__descr">Ghost Pirates<em>Video Slot</em></p>
+				<div class="games__hover">
+					<button class="games__win">play to win</button>
+					<button class="games__fun">play for fun</button>
+				</div>
+			</div>
+			<div class="games__item" data-type="new">
+				<img src="img/games/game-7.png" alt="" class="games__img">
+				<p class="games__descr" data-type="star">Gold Sea<em>Video Slot</em></p>
+				<div class="games__hover">
+					<button class="games__win">play to win</button>
+					<button class="games__fun">play for fun</button>
+				</div>
+			</div>
+			<div class="games__item">
+				<img src="img/games/game-8.png" alt="" class="games__img">
+				<p class="games__descr">Calipso<em>Video Slot</em></p>
+				<div class="games__hover">
+					<button class="games__win">play to win</button>
+					<button class="games__fun">play for fun</button>
+				</div>
+			</div>
+			<div class="games__item">
+				<img src="img/games/game-9.png" alt="" class="games__img">
+				<p class="games__descr" data-type="star">Steam Tower<em>Video Slot</em></p>
+				<div class="games__hover">
+					<button class="games__win">play to win</button>
+					<button class="games__fun">play for fun</button>
+				</div>
+			</div>
+			<div class="games__item" data-type="hot">
+				<img src="img/games/game-10.png" alt="" class="games__img">
+				<p class="games__descr" data-type="star">The Dark Knight<em>Video Slot</em></p>
+				<div class="games__hover">
+					<button class="games__win">play to win</button>
+					<button class="games__fun">play for fun</button>
+				</div>
+			</div>
+		</div>
+		<div class="games__row">
+			<div class="games__header">Video Slots<em><a href="#">View All</a></em></div>
+			<div class="games__item">
+				<img src="img/games/game-11.png" alt="" class="games__img">
+				<p class="games__descr">Ghost Pirates<em>Video Slot</em></p>
+				<div class="games__hover">
+					<button class="games__win">play to win</button>
+					<button class="games__fun">play for fun</button>
+				</div>
+			</div>
+			<div class="games__item">
+				<img src="img/games/game-12.png" alt="" class="games__img">
+				<p class="games__descr" data-type="star">Gold Sea<em>Video Slot</em></p>
+				<div class="games__hover">
+					<button class="games__win">play to win</button>
+					<button class="games__fun">play for fun</button>
+				</div>
+			</div>
+			<div class="games__item">
+				<img src="img/games/game-13.png" alt="" class="games__img">
+				<p class="games__descr" data-type="star">Calipso<em>Video Slot</em></p>
+				<div class="games__hover">
+					<button class="games__win">play to win</button>
+					<button class="games__fun">play for fun</button>
+				</div>
+			</div>
+			<div class="games__item">
+				<img src="img/games/game-14.png" alt="" class="games__img">
+				<p class="games__descr" data-type="star">Steam Tower<em>Video Slot</em></p>
+				<div class="games__hover">
+					<button class="games__win">play to win</button>
+					<button class="games__fun">play for fun</button>
+				</div>
+			</div>
+			<div class="games__item">
+				<img src="img/games/game-15.png" alt="" class="games__img">
+				<p class="games__descr" data-type="star">The Dark Knight<em>Video Slot</em></p>
+				<div class="games__hover">
+					<button class="games__win">play to win</button>
+					<button class="games__fun">play for fun</button>
+				</div>
+			</div>
+		</div>
+		<button class="games__more">View more</button>
+	</div>
+</section>
+<button class="liveChat">LIVE&nbsp;CHAT&nbsp;&nbsp;&#8657;</button>
+<button class="up">UP</button>
+<footer class="footer">
+  <div class="footer__divider"></div>
+  <nav class="footer__nav">
+    <div class="footer__container">
+      <ul class="footer__navList">
+        <li class="footer__navItem">Licence</li>
+        <li class="footer__navItem">Terms and conditions</li>
+        <li class="footer__navItem">Mobile</li>
+        <li class="footer__navItem">FAQ</li>
+        <li class="footer__navItem">Responsible Gaming</li>
+        <li class="footer__navItem">Partners</li>
+      </ul>
+    </div>
+  </nav>
+  <div class="footer__container">
+    <section class="footer__payments">
+      <img class="footer__paymentsItem" src="img/header/payments-1.png" alt="Payments" />
+      <img class="footer__paymentsItem" src="img/header/payments-2.png" alt="Payments" />
+      <p class="footer__paymentsText">
+        The website is operated and managed by MYEG B.V. (Emancipate Boulevard 29, Willemstad, Curacao). <br>
+        Licence No. 5536/JAZ. OceanCasino.com &copy; 2016
+      </p>
+    </section>
+    <section class="footer__socials">
+      <div class="footer__socialsRow">
+        <div class="footer__socialsItem">Fair<br>Licensed</div>
+        <div class="footer__socialsItem">100% Secure</div>
+        <div class="footer__socialsItem"></div>
+      </div>
+      <div class="footer__socialsRow">
+        <p class="footer__socialsText">
+          Follow us on social networks
+        </p>
+        <img src="img/header/socials-4.png" alt="Socials" />
+      </div>
+    </section>
+  </div>
+</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>

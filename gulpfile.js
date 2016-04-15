@@ -25,7 +25,7 @@ var path = {
         fonts: 'build/fonts/'
     },
     src: {
-        html: 'src/index.html',
+        html: 'src/*.html',
         js: 'src/js/main.js',
         style: 'src/sass/main.sass',
         css: './src/assets/css/main.css',

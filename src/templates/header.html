@@ -7,14 +7,34 @@
         <section class="loginBox">
           <form action="#" class="loginBox__form">
             <div class="loginBox__country"></div>
-            <input type="text" class="loginBox__username" placeholder="Username:">
-            <input type="password" class="loginBox__password" placeholder="Password:">
+            <input type="text" class="loginBox__username" placeholder="Username:" required>
+            <input type="password" class="loginBox__password" placeholder="Password:" required>
             <input type="submit" class="loginBox__submit" value="Login">
           </form>
           <a href="#" class="loginBox__forgot">Forgot Password?</a>
           <button class="loginBox__register">Register now!</button>
         </section>
 
+      </div>
+
+      <div class="header__container">
+        <div class="profileInfo">
+          <button class="profileInfo__logOut">Logout</button>
+          <div class="profileInfo__country"></div>
+          <button class="profileInfo__deposit">DEPOSIT</button>
+          <div class="profileInfo__item">
+            <p class="profileInfo__itemText">Active&nbsp;codes: </p>
+            <div class="profileInfo__itemInfo">123.243,00</div>
+          </div>
+          <div class="profileInfo__item">
+            <p class="profileInfo__itemText">Balance: </p>
+            <div class="profileInfo__itemInfo" data-type="balance">123.243,00</div>
+          </div>
+          <div class="profileInfo__item">
+            <p class="profileInfo__itemText">Welcome, </p>
+            <div class="profileInfo__itemInfo">Jamomoto149</div>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -29,8 +49,9 @@
 
       <nav class="header__nav">
         <ul class="header__navList">
-          <li class="header__navItem active">Home</li>
-          <li class="header__navItem">Games</li>
+          <li class="header__navItem active"><a href="/">Home</a></li>
+          <li class="header__navItem closed" data-type="profile"><a href="profile.html">My account</a></li>
+          <li class="header__navItem"><a href="games.html">Games</a></li>
           <li class="header__navItem">Promotions</li>
           <li class="header__navItem">VIP</li>
           <li class="header__navItem">Banking</li>
@@ -38,67 +59,9 @@
         </ul>
       </nav>
 
+      <button class="header__support">Support 24/7</button>
+
     </div>
 
   </div>
 </header>
-
-<section class="slider">
-  <div class="slider__item">
-    <img src="img/header/slider.png" alt="Entry Bonus">
-  </div>
-</section>
-
-<section class="jackpot">
-  <div class="jackpot__container">
-    <div class="jackpot__item">Jackpots: </div>
-    <div class="jackpot__item">
-      <img src="img/header/jackpot-1.png" alt="Jackpot">
-      <p class="jackpot__text">€&nbsp;5,228,81<span>4&nbsp;of&nbsp;King</span></p>
-    </div>
-    <div class="jackpot__item">
-      <img src="img/header/jackpot-2.png" alt="Jackpot">
-      <p class="jackpot__text">€&nbsp;5,100,12<span>Steam&nbsp;Tower</span></p>
-    </div>
-    <div class="jackpot__item">
-      <img src="img/header/jackpot-3.png" alt="Jackpot">
-      <p class="jackpot__text">€&nbsp;10,100,12<span>The&nbsp;Dark&nbsp;Knight</span></p>
-    </div>
-    <div class="jackpot__item">
-      <img src="img/header/jackpot-4.png" alt="Jackpot">
-      <p class="jackpot__text">€&nbsp;7,999,34<span>Ghost&nbsp;Pirates</span></p>
-    </div>
-    <div class="jackpot__item">
-      <img src="img/header/jackpot-5.png" alt="Jackpot">
-      <p class="jackpot__text">€&nbsp;5,999,34<span>The&nbsp;Dark&nbsp;Knight</span></p>
-    </div>
-  </div>
-</section>
-
-<section class="banners">
-  <div class="banners__item">
-    <img src="img/header/banner-1.png" alt="Banner">
-  </div>
-  <div class="banners__item">
-    <img src="img/header/banner-2.png" alt="Banner">
-  </div>
-  <div class="banners__item">
-    <img src="img/header/banner-3.png" alt="Banner">
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="footer__divider"></div>
-  <nav class="footer__nav">
-    <div class="footer__container">
-      <ul class="footer__navList">
-        <li class="footer__navItem">Licence</li>
-        <li class="footer__navItem">Terms and conditions</li>
-        <li class="footer__navItem">Mobile</li>
-        <li class="footer__navItem">FAQ</li>
-        <li class="footer__navItem">Responsible Gaming</li>
-        <li class="footer__navItem">Partners</li>
-      </ul>
-    </div>
-  </nav>
-</footer>

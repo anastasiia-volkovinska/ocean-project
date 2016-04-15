@@ -1,0 +1,81 @@
+.footer
+  background-image: url("img/header/footer-bg.png")
+  background-repeat: no-repeat
+  background-size: cover
+  &__divider
+    position: relative
+    z-index: 3
+    height: 0.3em
+    background-image: url("img/header/header-bg.png")
+    background-repeat: no-repeat
+    background-size: cover
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.5)
+
+  &__container
+    display: flex
+    max-width: 1000px
+    margin: 0 auto
+
+  &__nav
+    height: 2.5em
+    background-color: transparentize($dark-bg, 0.5)
+    &Item
+      display: inline-block
+      line-height: 2.5
+      color: #fff
+      margin-left: 1em
+      cursor: pointer
+
+  &__payments
+    display: flex
+    flex-direction: column
+    width: 70%
+    &Item
+      margin: 1em 0
+    &Text
+      margin: 1em 0
+      color: #457391
+      font-size: 0.8em
+      line-height: 1.5
+
+  &__socials
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    width: 30%
+    margin-top: 0.5em
+
+    &Row
+      display: flex
+      align-items: center
+      width: 13em
+      height: 3em
+      margin-bottom: 0.3em
+      margin-top: 0.3em
+    &Item
+      flex-basis: 5em
+      height: 3rem
+      color: #fff
+      font-size: 0.8em
+      &:nth-child(1)
+        flex-basis: 5em
+        padding: 1em 1em 0 2em
+        background-image: url("img/header/socials-1.png")
+        background-repeat: no-repeat
+        background-position: left center
+      &:nth-child(2)
+        flex-basis: 5em
+        padding: 1em 0 0 2.5em
+        background-image: url("img/header/socials-2.png")
+        background-repeat: no-repeat
+        background-position: left center
+      &:nth-child(3)
+        flex-basis: 5em
+        background-image: url("img/header/socials-3.png")
+        background-repeat: no-repeat
+        background-position: right center
+
+    &Text
+      font-size: 0.7em
+      padding-right: 1em
+      color: #fff

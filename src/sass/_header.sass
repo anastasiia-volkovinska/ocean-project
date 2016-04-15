@@ -1,3 +1,6 @@
+.closed
+  display: none
+
 .header
   position: relative
   height: $header-height
@@ -13,29 +16,30 @@
     top: 0
     left: 0
     width: 100%
-    // height: calc($header-height - 3em)
     z-index: 2
 
   &__higherLayer
-    @extend .header__lowerLayer
-    z-index: 1
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
 
   &__container
+    position: relative
     max-width: 1000px
     margin: 0 auto
 
-
-
-
   &__logo
+    position: relative
+    z-index: 3
     display: inline-block
-    padding: 1em
+    // padding: 1em
     padding-bottom: 0
 
   &__nav
     display: inline-block
     position: relative
-    top: -0.5em
+    top: -3em
 
     &List
       display: inline-block
@@ -44,11 +48,16 @@
       display: inline-block
       padding: 0.5em 1em
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
-      color: #fff
       font-family: $font
       font-size: 1em
+      color: #fff
       font-weight: normal
       cursor: pointer
+      & a
+        color: #fff
+
+      &.closed
+        display: none
       &.active,
       &:hover
         background-color: $dark-bg
@@ -56,15 +65,87 @@
         border-top-right-radius: 3px
         box-shadow: 1.5px 2.6px 5px rgba(0, 0, 0, 0.2)
 
-
-
+  &__support
+    display: none
+    &.open
+      display: block
+    text-indent: 1.5em
+    position: absolute
+    bottom: 4.2em
+    right: 0
+    padding: 0.5em 1em
+    border-radius: 3px
+    border: none
+    background-color: #fff
+    background-image: linear-gradient(to top, rgba(215, 215, 215, 0.24) 0%, rgba(255, 255, 255, 0.24) 100%), url("img/header/support.png")
+    background-repeat: no-repeat, no-repeat
+    background-position: left top, 7% center
+    color: $dark-bg
+    font-weight: bolder
+    cursor: pointer
 
   &__infoLine
     position: relative
     top: 1em
     height: 3em
-    // background-color: #3eb8ff
-    // box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15)
+    &.open
+      background-color: #3eb8ff
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15), 0 -1px 5px rgba(0, 0, 0, 0.05)
+
+.profileInfo
+  &.closed
+    display: none
+  &.open
+    display: flex
+
+  height: 3em
+  display: none
+  flex-direction: row-reverse
+  align-items: center
+  &__logOut
+    padding: 0.5em 1em
+    margin-left: 0.5em
+    background-color: white
+    border: none
+    background-image: linear-gradient(to top, rgba(215, 215, 215, 0.24) 0%, rgba(255, 255, 255, 0.24) 100%)
+    border-radius: 3px
+    font-weight: bolder
+    color: $dark-bg
+    cursor: pointer
+  &__country
+    @extend .loginBox__country
+  &__deposit
+    padding: 0.5em 1.5em
+    background-color: #ff00f0
+    border: 2px solid #1f82bc
+    border-radius: 5px
+    box-shadow: 2.5px 4.3px 5px rgba(0, 91, 175, 0.6), 0 4.3px 5px rgba(255, 255, 255, 0.6) inset, 0 -2.3px 5px rgba(255, 255, 255, 0.6)
+    font-weight: bold
+    color: #fff
+    margin-right: 1em
+    cursor: pointer
+  &__item
+    display: flex
+    align-items: center
+    flex-basis: 6em
+    height: 2rem
+    margin-right: 1rem
+    font-size: 0.7em
+    line-height: 1.5
+    color: #fff
+    &Text
+      margin-right: 0.5em
+    &Info
+      padding: 0.5em 1.5em
+      background-color: #1971a1
+      border-radius: 5px
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35)
+      color: #00fffb
+      &[data-type="balance"]
+        text-indent: 1.5em
+        background-image: url("img/header/evro.png")
+        background-repeat: no-repeat
+        background-position: 4% center
 
 %loginBox__item
   box-sizing: content-box
@@ -86,10 +167,15 @@
   &__country
     @extend %loginBox__item
     display: inline-block
+    box-sizing: border-box
     width: 3em
-    background-image: url("img/header/ua.png")
-    background-repeat: no-repeat
-    background-position: center
+    padding: 0
+    border: 5px solid $dark-bg
+    background-image: url("img/header/ua.png"), url("img/header/lang_arrow.png")
+    background-repeat: no-repeat, no-repeat
+    background-origin: padding-box, padding-box
+    background-position: left center, right center
+    cursor: pointer
 
   &__username
     @extend %loginBox__item
@@ -133,98 +219,3 @@
     color: #44a437
     text-transform: uppercase
     cursor: pointer
-
-
-.slider
-  &__item
-    background-color: #3BA4E6
-    text-align: center
-
-    & img
-      width: 100%
-      max-width: 80em
-      vertical-align: top
-
-
-.jackpot
-  position: relative
-  z-index: 3
-  background-image: url("img/header/header-bg.png")
-  background-repeat: no-repeat
-  background-size: cover
-  box-shadow: 0 -3px 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.2)
-  height: 4em
-  &__container
-    display: flex
-    max-width: 1000px
-    margin: 0 auto
-    padding: 0.5em
-    height: 4em
-
-  &__item
-    display: flex
-    flex-basis: 5em
-    flex-grow: 5
-    margin-left: 0.5em
-    background-color: $dark-bg
-    border-radius: 3px
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35),
-                inset 0 1px 2px rgba(0, 91, 175, 0.6)
-    &:first-child
-      flex-basis: 1em
-      font-size: 1.2em
-      line-height: 2.5
-      background-color: transparent
-      box-shadow: none
-      color: #fff
-
-  &__text
-    margin-left: 0.3em
-    font-size: 0.8em
-    +respond-to(wide-screens)
-      font-size: 0.9em
-      margin-left: 0.5em
-    line-height: 1.4rem
-    color: #fff
-    & span
-      display: block
-      font-size: 0.8em
-      color: #00fffb
-
-
-.banners
-  display: flex
-  justify-content: center
-  background-image: url("img/header/logo-white.png"), url("img/header/banners-bg-new.png")
-  background-repeat: no-repeat, no-repeat
-  background-position: right bottom, center
-  background-size: 10%, cover
-  &__item
-    margin: 2.5em 1em 3em 1em
-
-.footer
-  height: 15em
-  background-image: url("img/header/footer-bg.png")
-  background-repeat: no-repeat
-  background-size: cover
-  &__divider
-    position: relative
-    z-index: 3
-    height: 0.3em
-    background-image: url("img/header/header-bg.png")
-    background-repeat: no-repeat
-    background-size: cover
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.5)
-  &__container
-    max-width: 1000px
-    margin: 0 auto
-
-  &__nav
-    height: 2.5em
-    background-color: transparentize($dark-bg, 0.5)
-    &Item
-      display: inline-block
-      line-height: 2.5
-      color: #fff
-      margin-left: 1em
-      cursor: pointer
