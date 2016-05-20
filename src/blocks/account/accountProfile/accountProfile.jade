@@ -1,0 +1,66 @@
+section.profile__content
+	.profile__container
+		p.profile__path
+			| Home page > My profile
+		h2.profile__title Profile
+		form.profile__contentForm(action='#')
+			.profile__row
+				.profile__item
+					label.profile__label Nickname: 
+					input.profile__input(type='text', value='Jamomoto149')
+				.profile__item
+					label.profile__label Your ID: 
+					input.profile__input(type='text', value='215648543187')
+				.profile__item
+					label.profile__label Treatment: 
+					input.profile__input(type='text')
+				.profile__item
+					label.profile__label Name: 
+					input.profile__input(type='text', value='Ivan')
+				.profile__item
+					label.profile__label Surname: 
+					input.profile__input(type='text', value='Pupkin')
+			.profile__row
+				.profile__item
+					label.profile__label Birthday: 
+					input.profile__littleInput(type='text')
+					input.profile__littleInput(type='text')
+					input.profile__littleInput(type='text')
+				.profile__item
+					label.profile__label E-mail: 
+					input.profile__input(type='text', value='215648543187')
+				.profile__item
+					label.profile__label Phone: 
+					input.profile__input(type='text')
+				.profile__item
+					label.profile__label Country: 
+					input.profile__input(type='text', value='Ivan')
+				.profile__item
+					label.profile__label City: 
+					input.profile__input(type='text', value='Pupkin')
+			.profile__row
+				.profile__item
+					label.profile__label Adrress: 
+					input.profile__input(type='text', value='Jamomoto149')
+				.profile__item
+					label.profile__label Adrress2: 
+					input.profile__input(type='text', value='215648543187')
+				.profile__item
+					label.profile__label Post index: 
+					input.profile__input(type='text')
+				.profile__item
+					label.profile__label Currency: 
+					input.profile__input(type='text', value='Ivan')
+				.profile__submit
+					input(type='submit', name='submit', value='Refresh')
+		.profile__checks
+			.profile__checkItem
+				label
+					input(type='checkbox', checked='')
+					span
+					| I wish to receive news and offers by email.
+			.profile__checkItem
+				label
+					input(type='checkbox', checked='')
+					span
+					| I wish to receive news and offers SMS.

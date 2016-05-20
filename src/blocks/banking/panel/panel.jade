@@ -1,0 +1,12 @@
+//- include ../blocks/banking/panel/panel.jade
+-
+	var bankingItems = [
+	{name: "Deposit", type: "deposit"},
+	{name: "Withdraw", type: "withdraw"}
+	]
+ul.bankingPanel
+	each item, index in bankingItems
+		if index == 0
+			li: button.bankingPanel__button.bankingPanel__button--active(data-type=item.type)= item.name
+		else
+			li: button.bankingPanel__button(data-type=item.type)= item.name

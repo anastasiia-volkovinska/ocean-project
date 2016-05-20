@@ -1,0 +1,54 @@
+.accountPanel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__form {
+
+	}
+	&__label {
+		position: relative;
+		font-size: 0.7em;
+		color: white;
+		padding-right: 2em;
+		& input,
+		& select {
+			margin-left: 1em;
+		}
+	}
+	&__status {
+		@extend .accountPanel__label;
+		& input {
+			@extend .gamesPanel__select;
+			padding-left: 2.5em;
+			width: 86px;
+			color: #00fffb;
+			text-transform: none;
+			font-weight: 300;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			top: -13px;
+			left: 82px;
+			display: block;
+			width: 40px;
+			height: 40px;
+			background-image: url("img/profile/bronze.png");
+			background-repeat: no-repeat;
+			background-position: 0 center;
+		}
+	}
+	&__select {
+		@extend .gamesPanel__select;
+	}
+	&__buttons {
+		& button {
+			@extend %whiteButton;
+		}
+	}
+}
+@media screen and (max-width: 880px) {
+	.accountPanel__withdraw {
+		display: none;
+	}
+}

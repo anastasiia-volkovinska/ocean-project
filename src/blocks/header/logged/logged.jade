@@ -1,0 +1,14 @@
+//- include ../blocks/header/logged/logged.jade
+mixin logged(loggedIn)
+	if loggedIn
+		.logged
+			block form
+					.logged__item Welcome, 
+						.logged__field Jamomoto149
+					.logged__item Balance: 
+						.logged__field.logged__field--iconed 123.232,00
+					button.logged__deposit Deposit
+					button.logged__logout Logout
+	else
+		.logged.logged--closed
+			block form

@@ -1,0 +1,16 @@
+//- include ../blocks/header/entry/entry.jade
+mixin entry(loggedIn)
+	if !loggedIn
+		.entry
+			block form
+				form.entry__form(action='#', autocomplete='on')
+					input.entry__input(type='text', placeholder='Username:')
+					label.entry__label
+						input.entry__input.entry__input--iconed(type='password', placeholder='Password:')
+						img.entry__icon(src='img/header/search.png', alt='')
+					input.entry__submit(type='submit', value='Login')
+					input.entry__register(type='button', value='Register now!')
+
+	else 
+		.entry.entry--closed
+			block form

@@ -1,0 +1,14 @@
+//- include ../blocks/promotions/panel/panel.jade
+-
+	var promoItems = [
+	{name: "All Promotions", type: "all"},
+	{name: "Welcome Promotions", type: "welcome"},
+	{name: "Limited Promotions", type: "limited"},
+	{name: "Classic Promotions", type: "classic"}
+	]
+ul.promoPanel
+	each item, index in promoItems
+		if index == 0
+			li: button.promoPanel__button.promoPanel__button--active(data-type=item.type)= item.name
+		else
+			li: button.promoPanel__button(data-type=item.type)= item.name

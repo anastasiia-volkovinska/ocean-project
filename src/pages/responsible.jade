@@ -1,0 +1,10 @@
+extends long-layout
+block title
+	title Ocean Casino - Responsible Gaming
+block nav
+	+nav(false, 0)
+block breadcrumbs
+	+bread([{name: "Home Page", href: "/"},
+	{name: "Responsible Gaming", current: true}])
+block content
+	include ../blocks/responsible/content/content.jade

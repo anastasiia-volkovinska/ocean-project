@@ -1,0 +1,31 @@
+//- include ../partials/mixins.jade
+//- head-mixin
+mixin head(options)
+	meta(charset="utf-8")
+	meta(http-equiv="X-UA-Compatible" content="IE=edge")
+	meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+	
+	title= options.title
+	
+	link(rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon")
+	link(rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png")
+	link(rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png")
+	link(rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png")
+	
+	if options.fontAwesome 
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css")
+	if options.slickJS
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css")
+	if options.openSans
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,cyrillic")
+		
+	link(rel="stylesheet" href="main.css")
+//- scripts-mixin
+mixin scripts(options)
+	if options.jquery
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+	if options.slickJS
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js")
+	script(src="main.js")
+//- nav-mixin

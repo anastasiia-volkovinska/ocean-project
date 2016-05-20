@@ -1,0 +1,42 @@
+@media only screen and (max-width: 800px) {
+	.nav__link {
+		padding: 0.5em 1em;
+	}
+	.slider__item {
+		height: 18em;
+	}
+	.slick-dots {
+		bottom: 5px;
+		& li button::before {
+			font-size: 8px;
+		}
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.jackpot__item:first-child {
+		display: none;
+	}
+}
+@media only screen and (max-width: 830px) {
+	.jackpot__item:nth-child(5) {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+	.banners__item:last-child {
+		display: inline;
+	}
+}
+@media only screen and (max-width: 750px) {
+	.banners {
+		flex-wrap: wrap;
+		&__item {
+			margin: 1.5em 1em;
+		}
+	}
+	.banners__item:last-child {
+		display: inline;
+	}
+}

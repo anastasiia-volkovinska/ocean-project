@@ -1,0 +1,20 @@
+.policy {
+	&__title {
+		@extend %pageHeader;
+	}
+	&__header {
+		@extend .vip__header;
+	}
+	&__link {
+		@extend .vip__link;
+	}
+	&__text {
+		@extend .vip__text;
+	}
+	&__list {
+		@extend .vip__order;
+		list-style: circle;
+		list-style-position: inside;
+		line-height: 1.3;
+	}
+}

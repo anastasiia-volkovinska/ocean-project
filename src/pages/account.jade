@@ -1,0 +1,16 @@
+extends page-layout
+block title
+	title Ocean Casino - Account
+block logged
+	+logged(true)
+block entry
+	+entry(true)
+block nav
+	+nav(true, 3)
+block panel
+	include ../blocks/account/panel/panel.jade
+block breadcrumbs
+	+bread([{name: "Home Page", href: "/"},
+	{name: "Account", current: true}])
+block content
+	include ../blocks/account/content/content.jade

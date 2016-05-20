@@ -1,0 +1,21 @@
+.header {
+	&__top {
+		position: relative;
+		z-index: 2;
+
+		padding: 0.5em 0;
+
+		background-color: $bg-light-blue;
+		background-image: url("img/header/header-bg.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+	}
+	&__nav {
+		position: relative;
+		z-index: 1;
+
+		background-color: $bg-light-blue;
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+	}
+}

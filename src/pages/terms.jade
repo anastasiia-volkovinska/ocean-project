@@ -1,0 +1,10 @@
+extends long-layout
+block title
+	title Ocean Casino - Terms and Conditions
+block nav
+	+nav(false, 0)
+block breadcrumbs
+	+bread([{name: "Home Page", href: "/"},
+	{name: "Terms and Conditions", current: true}])
+block content
+	include ../blocks/terms/content/content.jade

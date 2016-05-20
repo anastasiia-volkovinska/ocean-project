@@ -1,0 +1,10 @@
+extends long-layout
+block title
+	title Ocean Casino - Private Policy
+block nav
+	+nav(false, 0)
+block breadcrumbs
+	+bread([{name: "Home Page", href: "/"},
+	{name: "Private Policy", current: true}])
+block content
+	include ../blocks/policy/content/content.jade

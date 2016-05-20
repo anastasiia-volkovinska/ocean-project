@@ -1,0 +1,12 @@
+extends page-layout
+block title
+	title Ocean Casino - Games
+block nav
+	+nav(false, 2)
+block panel
+	include ../blocks/games/panel/panel.jade
+block breadcrumbs
+	+bread([{name: "Home Page", href: "/"},
+	{name: "Casino Games", current: true}])
+block content
+	include ../blocks/games/content/content.jade

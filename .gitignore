@@ -3,4 +3,7 @@ node_modules
 .DS_Store
 *.psd
 mock_up
+dest
+build
 Thumbs.db
+temp

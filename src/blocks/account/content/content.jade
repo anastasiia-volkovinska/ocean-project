@@ -1,0 +1,155 @@
+.accountProfile
+	h2.accountProfile__title Profile
+	form.accountProfile__form(action='#')
+		.accountProfile__flexbox
+			.accountProfile__col
+				.accountProfile__item
+					label.accountProfile__label Nickname: 
+					input.accountProfile__input(type='text', value='Jamomoto149')
+				.accountProfile__item
+					label.accountProfile__label Your ID: 
+					input.accountProfile__input(type='text', value='215648543187')
+				.accountProfile__item
+					label.accountProfile__label Treatment: 
+					input.accountProfile__input(type='text')
+				.accountProfile__item
+					label.accountProfile__label Name: 
+					input.accountProfile__input(type='text', value='Ivan')
+				.accountProfile__item
+					label.accountProfile__label Surname: 
+					input.accountProfile__input(type='text', value='Pupkin')
+			.accountProfile__col
+				.accountProfile__item
+					label.accountProfile__label Birthday:
+					.accountProfile__birthdate
+						input.accountProfile__little(type='text')
+						input.accountProfile__little(type='text')
+						input.accountProfile__little(type='text')
+				.accountProfile__item
+					label.accountProfile__label E-mail: 
+					input.accountProfile__input(type='text', value='215648543187')
+				.accountProfile__item
+					label.accountProfile__label Phone: 
+					input.accountProfile__input(type='text')
+				.accountProfile__item
+					label.accountProfile__label Country: 
+					input.accountProfile__input(type='text', value='Ivan')
+				.accountProfile__item
+					label.accountProfile__label City: 
+					input.accountProfile__input(type='text', value='Pupkin')
+			.accountProfile__col
+				.accountProfile__item
+					label.accountProfile__label Adrress: 
+					input.accountProfile__input(type='text', value='Jamomoto149')
+				.accountProfile__item
+					label.accountProfile__label Adrress2: 
+					input.accountProfile__input(type='text', value='215648543187')
+				.accountProfile__item
+					label.accountProfile__label Post index: 
+					input.accountProfile__input(type='text')
+				.accountProfile__item
+					label.accountProfile__label Currency: 
+					input.accountProfile__input(type='text', value='Ivan')
+				.accountProfile__submit
+					input(type='submit', name='submit', value='Refresh')
+		.accountProfile__checks
+			.accountProfile__check
+				label
+					input(type='checkbox', checked)
+					span
+					| I wish to receive news and offers by email.
+			.accountProfile__check
+				label
+					input(type='checkbox', checked)
+					span
+					| I wish to receive news and offers SMS.
+
+.accountPassword
+	h2.accountPassword__title Change password
+	form.accountPassword__form
+		.accountPassword__item
+			label.accountPassword__old Old password:
+			input(type="password")
+		.accountPassword__item
+			label.accountPassword__new Your new password:
+			input(type="password")
+		.accountPassword__item
+			label.accountPassword__repeat Repeat the password:
+			input(type="password")
+		.accountPassword__item
+			label.accountPassword__captcha Please enter the characters from the image:
+			img.accountPassword__img(src="img/profile/captcha.png" alt="")
+			input(type='text')
+		input(type="submit" value="Save")
+
+.accountEmail
+	h2.accountEmail__title Change e-mail or phone
+	p.accountEmail__text
+		|Чтобы изменить e-mail адрес, пожалуйста, введите и подтвердите его в форме. Вам будет отправлен e-mail с подтвержением. 
+		|Перейдите по ссылке в письме, чтобы подтвердить новый e-mail адрес. Адрес не будет изменен, пока Вы не подтвердите это.
+	form.accountEmail__form
+		.accountEmail__item
+			label.accountEmail__email New e-mail:
+			input(type="email" placeholder="enter new e-mail...")
+			input(type="submit" value="Change")
+		.accountEmail__item
+			label.accountEmail__phone New phone:
+			input(type="tel" placeholder="enter new phone...")
+			input(type="submit" value="Change")
+
+.accountBonuses
+	h2.accountBonuses__title Active bonuses
+	.accountBonuses__flexbox
+		.accountBonuses__item
+			.bonus
+				.bonus__left
+					p.bonus__header Bonus account: 
+					img.bonus__img(src="img/profile/bonus-1.png" alt="")
+					p.bonus__date Active to
+						em 12.14.2016
+				.bonus__right
+					p.bonus__account 2000
+					p.bonus__header Your wager:
+					p.bonus__wager 1000
+					p.bonus__wagerCash 50$
+					button.bonus__button Pick up
+		.accountBonuses__item
+			.bonus
+				.bonus__left
+					p.bonus__header Bonus account: 
+					img.bonus__img(src="img/profile/bonus-2.png" alt="")
+					p.bonus__date Active to
+						em 12.14.2016
+				.bonus__right
+					p.bonus__account 2000
+					p.bonus__header Your wager:
+					p.bonus__wager 1000
+					p.bonus__wagerCash 50$
+					p.bonus__header.button Pick up after wager the entire amount
+		.accountBonuses__item
+			.bonus
+				.bonus__left
+					p.bonus__header Bonus account: 
+					img.bonus__img(src="img/profile/bonus-3.png" alt="")
+					p.bonus__date Active to
+						em 12.14.2016
+				.bonus__right
+					p.bonus__account 2000
+					p.bonus__header Your wager:
+					p.bonus__wager 1000
+					p.bonus__wagerCash 50$
+					button.bonus__button Pick up
+		.accountBonuses__item
+			a.bonus__all(href="promotions.html") View all bonus
+	.accountBonuses__text
+		|Your activity will be rewarded! Each bet in BOSS CASINO will bring you comp points - comps. These points you can convert into real money without any wagers or requirements. VIP players can change each 100 comps for 1$. Currency exchange depends from you VIP status.
+	a.accountBonuses__more(href="#")
+		|Read more about the VIP program
+	form.accountBonuses__form(action="#")
+		label.accountBonuses__label Current exchange rate:
+		input.accountBonuses__disabled(value="234551" disabled)
+		span.accountBonuses__case The exchange is available from 100 comps points
+		label.accountBonuses__label In stock:
+		input.accountBonuses__disabled(value="0.00" disabled)
+		input.accountBonuses__input(placeholder="enter exchange...")
+		input.accountBonuses__submit(type="submit" value="Exchange")

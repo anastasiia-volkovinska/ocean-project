@@ -1,0 +1,120 @@
+.popupRegister {
+	display: none;
+	&.open {
+		display: block;
+	}
+	position: absolute;
+	z-index: 1000;
+	top: 20%;
+	left: 50%;
+	margin-left: -375px;
+	min-width: 750px;
+	min-height: 200px;
+	background-color: $bg-light-blue;
+	border-radius: 5px;
+	border: 2px solid #8cd5ff;
+	padding: 3px;
+	&__close {
+		position: absolute;
+		top: -15px;
+		right: -15px;
+		cursor: pointer;
+	}
+	&__flexbox {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__tabs {
+		position: absolute;
+		top: -30px;
+		left: 180px;
+		display: flex;
+		width: 250px;
+		height: 30px;
+	}
+	&__tab {
+		&.active {
+			border-bottom-color: $bg-light-blue;
+			background-color: $bg-light-blue;
+		}
+		width: 50%;
+		text-align: center;
+		line-height: 28px;
+		cursor: pointer;
+		background-color: $text-dark-blue;
+		border: 2px solid #8cd5ff;
+		color: #fff;
+		// border-bottom-width: 0px;
+		border-top-right-radius: 3px;
+		border-top-left-radius: 3px;
+		font-weight: 300;
+	}
+	&__checks {
+		margin-top: 1.5em;
+	}
+	&__check {
+		margin-top: 0.5em;
+		position: relative;
+		& label {
+			color: #fff;
+			font-size: 0.9em;
+			line-height: 1.4;
+			padding-left: 2em;
+			font-weight: 300;
+		}
+		& input {
+			display: none;
+		}
+		& span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 20px;
+			height: 20px;
+			background-image: url("img/profile/check-off.png");
+			background-repeat: no-repeat;
+		}
+		& input:checked + span {
+			background-image: url("img/profile/check-on.png");
+			background-repeat: no-repeat;
+		}
+	}
+	&__form {
+		margin-top: 2em;
+	}
+	&__item {
+		&.closed {
+			display: none;
+		}
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 0.5em;
+	}
+	&__box {
+		width: 70%;
+	}
+	&__label {
+		color: #fff;
+		font-size: 0.9em;
+		font-weight: 300;
+		& .star {
+			color: gold;
+		}
+	}
+	&__input {
+		@extend .entry__input;
+		display: block;
+		width: 100%;
+		margin: 0;
+		border-radius: 3px;;
+	}
+	&__submit {
+		@extend %whiteButton;
+		color: $submit-green;
+		display: block;
+		margin: 0 auto;
+		margin-top: 1em;
+	}
+}

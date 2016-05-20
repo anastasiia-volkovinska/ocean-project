@@ -1,0 +1,75 @@
+mixin withdrawOpen(row, className)
+	tr(class=className+"__openRow closed")
+		td(colspan="4") 
+			div(class=className+"__openItem")
+				img(class=className+"__close" src="img/profile/close.png" alt="")
+				p(class=className+"__openHeader")
+					img(class=className+"__openImg" src=row.src alt="")
+					| #{row.name}
+				p(class=className+"__openText")= row.text
+				form(class=className+"__openForm" action="#")
+					label(class=className+"__openLabel") Amount:
+						input(class=className+"__openInput" placeholder="0.00")
+					input(class=className+"__openSubmit" type="submit" value="Continue")
+
+mixin depositOpen(row, className)
+	tr(class=className+"__openRow closed")
+		td(colspan="5") 
+			div(class=className+"__openItem")
+				img(class=className+"__close" src="img/profile/close.png" alt="")
+				p(class=className+"__openHeader")
+					img(class=className+"__openImg" src=row.src alt="")
+					| #{row.name}
+				p(class=className+"__openText")= row.text
+				form(class=className+"__openForm" action="#")
+					label(class=className+"__openLabel") Amount:
+						input(class=className+"__openInput" placeholder="0.00")
+					input(class=className+"__openSubmit" type="submit" value="Play")
+
+mixin withdrawRow(row, className)
+	tr(class=className+"__row")
+		td(class=className+"__item")
+			img(class=className+"__img" src=row.src alt="")
+			| #{row.name}
+		td(class=className+"__item")= row.commission
+		td(class=className+"__item")
+			span Min. 
+				em #{row.min}
+				|&nbsp;UAH
+			span Max. 
+				em #{row.max}
+				|&nbsp;UAH
+		td(class=className+"__item") 
+			button(class=className+"__button") Withdraw
+	+withdrawOpen(row, className)
+
+mixin depositRow(row, className)
+	tr(class=className+"__row")
+		td(class=className+"__item")
+			img(class=className+"__img" src=row.src alt="")
+			| #{row.name}
+		td(class=className+"__item")= row.commission
+		td(class=className+"__item")= row.time
+		td(class=className+"__item")
+			span Min. 
+				em #{row.min}
+				|&nbsp;UAH
+			span Max. 
+				em #{row.max}
+				|&nbsp;UAH
+		td(class=className+"__item") 
+			button(class=className+"__button") Deposit
+	+depositOpen(row, className)
+
+mixin table(options)
+	table(class=options.className+"__table")
+		thead
+			tr(class=options.className+"__header")
+				each header in options.thead
+					th= header
+		tbody
+			each item, index in options.rows
+				if(options.className == "bankingDeposit")
+					+depositRow(item, options.className)
+				else
+					+withdrawRow(item, options.className)

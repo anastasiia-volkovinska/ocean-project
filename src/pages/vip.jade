@@ -1,0 +1,10 @@
+extends long-layout
+block title
+	title Ocean Casino - VIP Club
+block nav
+	+nav(false, 5)
+block breadcrumbs
+	+bread([{name: "Home Page", href: "/"},
+	{name: "VIP", current: true}])
+block content
+	include ../blocks/vip/content/content.jade

@@ -1,0 +1,13 @@
+extends page-layout
+block title
+	title Ocean Casino - Banking
+block nav
+	+nav(false, 6)
+block panel
+	include ../blocks/banking/panel/panel.jade
+block breadcrumbs
+	+bread([{name: "Home Page", href: "/"},
+	{name: "Banking", href: "banking.html"},
+	{name: "Deposit", current: true}])
+block content
+	include ../blocks/banking/content/content.jade

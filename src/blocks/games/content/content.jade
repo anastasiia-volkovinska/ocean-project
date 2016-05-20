@@ -1,0 +1,59 @@
+-
+	var newRow = {
+	className: "gamesNew",
+	items: [
+	{hot: "new", src: "img/games/game-1.png", star: "", name: "The Queen", type: "Video Slot"},
+	{hot: "hot", src: "img/games/game-2.png", star: "star", name: "Gold Sea", type: "Video Slot"},
+	{hot: "", src: "img/games/game-3.png", star: "", name: "Calipso", type: "Video Slot"},
+	{hot: "", src: "img/games/game-4.png", star: "star", name: "Egypt Story", type: "Classic Slot"},
+	{hot: "new", src: "img/games/game-5.png", star: "", name: "The Queen", type: "Video Slot"}
+	]
+	}
+-
+	var popularRow = {
+	className: "gamesPopular",
+	items: [
+	{hot: "", src: "img/games/game-6.png", star: "star", name: "The Queen", type: "Video Slot"},
+	{hot: "", src: "img/games/game-7.png", star: "star", name: "Gold Sea", type: "Video Slot"},
+	{hot: "", src: "img/games/game-8.png", star: "", name: "Calipso", type: "Video Slot"},
+	{hot: "", src: "img/games/game-9.png", star: "star", name: "Egypt Story", type: "Classic Slot"},
+	{hot: "new", src: "img/games/game-10.png", star: "", name: "The Queen", type: "Video Slot"}
+	]
+	}
+-
+	var videoRow = {
+	className: "gamesVideo",
+	items: [
+	{hot: "hot", src: "img/games/game-11.png", star: "", name: "The Queen", type: "Video Slot"},
+	{hot: "hot", src: "img/games/game-12.png", star: "", name: "Gold Sea", type: "Video Slot"},
+	{hot: "", src: "img/games/game-13.png", star: "star", name: "Calipso", type: "Video Slot"},
+	{hot: "new", src: "img/games/game-14.png", star: "", name: "Egypt Story", type: "Classic Slot"},
+	{hot: "", src: "img/games/game-15.png", star: "", name: "The Queen", type: "Video Slot"}
+	]
+	}
+mixin gameRow(options)
+	div(class=options.className+"__row")
+		each item in options.items
+			div(class=options.className+"__item" data-type=item.hot)
+				div(class=options.className+"__figure")
+					img(class=options.className+"__img" src=item.src, alt='')
+					div(class=options.className+"__hover")
+						button(class=options.className+"__win") play to win
+						button(class=options.className+"__fun") play for fun
+				p(class=options.className+"__descr" data-type=item.star)
+					| #{item.name}
+					em #{item.type}
+.games
+	section.gamesNew.open
+		.gamesNew__title New games
+			a(href='#') View All
+		+gameRow(newRow)
+	section.gamesPopular.open
+		.gamesPopular__title Popular games
+			a(href='#') View All
+		+gameRow(popularRow)
+	section.gamesVideo.withoutLine.open
+		.gamesVideo__title Video Slots
+			a(href='#') View All
+		+gameRow(videoRow)
+	button.games__more View more

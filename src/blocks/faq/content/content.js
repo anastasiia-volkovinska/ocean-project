@@ -1,0 +1,10 @@
+$(".faq__question").click(function(){
+	$(".faq__question").removeClass("closed");
+	$(this).addClass("closed");
+	$(".faq__answer").removeClass("open");
+	$(this).siblings(".faq__answer").addClass("open");
+});
+$(".faq__answer").click(function(){
+	$(".faq__answer").removeClass("open");
+	$(".faq__question").removeClass("closed");
+});
