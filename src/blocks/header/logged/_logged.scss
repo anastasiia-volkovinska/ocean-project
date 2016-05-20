@@ -1,0 +1,71 @@
+.logged {
+	@extend .entry__form;
+	align-items: center;
+	&--closed {
+		display: none;
+	}
+	&__logout {
+		@extend .entry__submit;
+	}
+	&__deposit {
+		margin-right: 0.5rem;
+
+		padding: 0 1.5em;
+		height: 27px;
+
+		cursor: pointer;
+		transition: box-shadow 0.3s;
+		text-transform: uppercase;
+		line-height: 25px;
+
+		color: #fff;
+		border: 2px solid $text-dark-blue;
+		border-radius: 5px;
+		background-color: $deposit-button-fuksia;
+		box-shadow: 2.5px 4.3px 5px rgba(0, 91, 175, 0.6), 0 4.3px 5px rgba(255, 255, 255, 0.6) inset, 0 -2.3px 5px rgba(255, 255, 255, 0.6);
+
+		font-weight: bold;
+		&:hover {
+			box-shadow: 2px 4px 4px rgba(0, 91, 175, 0.5), 0 4.3px 5px rgba(255, 255, 255, 0.6) inset, 0 -2px 4px rgba(255, 255, 255, 0.5);
+		}
+	}
+	&__item {
+		position: relative;
+		display: flex;
+		align-items: center;
+
+		margin-right: 0.5rem;
+
+		color: white;
+
+		font-size: 14px;
+		font-weight: 300;
+	}
+	&__field {
+		@extend .entry__input;
+		margin-left: 0.5rem;
+		margin-right: 0;
+		width: 140px;
+
+		text-align: center;
+
+		color: $text-light-blue;
+
+		line-height: 25px;
+
+		&--iconed {
+			padding-right: 1.8em;
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 2px;
+				right: 2px;
+				width: 23px;
+				height: 23px;
+				background-image: url("img/header/evro.png");
+				background-repeat: no-repeat;
+			}
+		}
+	}
+}

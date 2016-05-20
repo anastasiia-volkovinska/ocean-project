@@ -1,10 +1,25 @@
 $(document).ready(function () {
+	//= ../blocks/header/entry/entry.js
+	//= ../blocks/header/logged/logged.js
+	//= ../blocks/buttons/upButton/upButton.js
+	//= ../blocks/promotions/panel/panel.js
+	//= ../blocks/promotions/content/content.js
+	//= ../blocks/banking/panel/panel.js
+	//= ../blocks/banking/table/table.js
+	//= ../blocks/games/panel/panel.js
+	//= ../blocks/faq/content/content.js
+	// ../blocks/accountDeposit/accountDeposit.js
+	// ../blocks/accountWithdraw/accountWithdraw.js
+	// ../blocks/accountPayments/accountPayments.js
+	// ../blocks/accountHistory/accountHistory.js
+	// ../blocks/accountResponsible/accountResponsible.js
 	$('.slider').slick({
 		autoplay: true,
 		infinite: true,
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
+		slidesToShow: 1,
+		slidesToScroll: 1,
 		arrows: false,
+		dots: true,
 		fade: true
 	});
 

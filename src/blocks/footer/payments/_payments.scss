@@ -1,0 +1,16 @@
+.payments {
+	&__img{
+		margin-bottom: 0.2em;
+		cursor: pointer;
+	}
+	&__copy {
+		margin: 0.5em 0;
+		color: $copy-text-color;
+		font-size: 0.8em;
+		line-height: 1.5;
+	}
+	&__licence {
+		display: block;
+		padding-top: 0.5em;
+	}
+}

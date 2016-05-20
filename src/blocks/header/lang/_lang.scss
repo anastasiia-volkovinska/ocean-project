@@ -1,0 +1,17 @@
+.lang {
+	height: 2em;
+	background-color: #1971a1;
+	border-radius: 3px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+	vertical-align: middle;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 3em;
+	padding: 0;
+	border: 5px solid #1971a1;
+	background-image: url("img/header/ua.png"), url("img/header/lang_arrow.png");
+	background-repeat: no-repeat, no-repeat;
+	background-origin: padding-box, padding-box;
+	background-position: left center, right center;
+	cursor: pointer;
+}

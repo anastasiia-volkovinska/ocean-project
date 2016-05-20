@@ -1,0 +1,33 @@
+.popupLogin {
+	@extend .popupDeposit;
+	&__close {
+		@extend .popupDeposit__close;
+	}
+	&__title {
+		@extend .popupDeposit__title;
+	}
+	&__item {
+		@extend .popupDeposit__item;
+	}
+	&__input {
+		@extend .popupDeposit__input;
+	}
+	&__label {
+		@extend .popupDeposit__label;
+	}
+	&__link {
+		display: block;
+		font-size: 0.8em;
+		text-decoration: underline;
+		color: $text-light-blue;
+		font-weight: 300;
+		margin-bottom: 0.5em;
+	}
+	&__submit {
+		@extend %whiteButton;
+		display: block;
+		margin: 0 auto;
+		margin-top: 1em;
+		color: $submit-green;
+	}
+}

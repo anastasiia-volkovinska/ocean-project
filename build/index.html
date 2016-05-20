@@ -1,183 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<title>Ocean Casino</title>
-
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,cyrillic'>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
-	<link rel="stylesheet" href="main.css">
-
-</head>
-
-<body>
-
-<header class="header">
-  <div class="header__lowerLayer">
-    <div class="header__infoLine">
-
-      <div class="header__container">
-
-        <section class="loginBox">
-          <form action="#" class="loginBox__form">
-            <div class="loginBox__country"></div>
-            <input type="text" class="loginBox__username" placeholder="Username:" required>
-            <input type="password" class="loginBox__password" placeholder="Password:" required>
-            <input type="submit" class="loginBox__submit" value="Login">
-          </form>
-          <a href="#" class="loginBox__forgot">Forgot Password?</a>
-          <button class="loginBox__register">Register now!</button>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Ocean Casino</title>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <section class="header__top">
+          <div class="container">
+            <div class="logo"><a href="/" class="logo__link"><img src="img/header/logo.png" alt="" class="logo__img"></a></div>
+                  <div class="logged logged--closed">
+                    <div class="logged__item">Welcome, 
+                      <div class="logged__field">Jamomoto149</div>
+                    </div>
+                    <div class="logged__item">Balance: 
+                      <div class="logged__field logged__field--iconed">123.232,00</div>
+                    </div>
+                    <button class="logged__deposit">Deposit</button>
+                    <button class="logged__logout">Logout</button>
+                  </div>
+                  <div class="entry">
+                    <form action="#" autocomplete="on" class="entry__form">
+                      <input type="text" placeholder="Username:" class="entry__input">
+                      <label class="entry__label">
+                        <input type="password" placeholder="Password:" class="entry__input entry__input--iconed"><img src="img/header/search.png" alt="" class="entry__icon">
+                      </label>
+                      <input type="submit" value="Login" class="entry__submit">
+                      <input type="button" value="Register now!" class="entry__register">
+                    </form>
+                  </div>
+          </div>
         </section>
-
-      </div>
-
-      <div class="header__container">
-        <div class="profileInfo">
-          <button class="profileInfo__logOut">Logout</button>
-          <div class="profileInfo__country"></div>
-          <button class="profileInfo__deposit">DEPOSIT</button>
-          <div class="profileInfo__item">
-            <p class="profileInfo__itemText">Active&nbsp;codes: </p>
-            <div class="profileInfo__itemInfo">123.243,00</div>
+        <section class="header__nav">
+          <div class="container">
+                  <ul class="nav"><a href="/" class="nav__link nav__link--active">
+                      <li class="nav__item">Home</li></a><a href="games.html" class="nav__link">
+                      <li class="nav__item">Games</li></a><a href="account.html" class="nav__link nav__link--closed">
+                      <li class="nav__item">Account</li></a><a href="promotions.html" class="nav__link">
+                      <li class="nav__item">Promotions</li></a><a href="vip.html" class="nav__link">
+                      <li class="nav__item">VIP</li></a><a href="banking.html" class="nav__link">
+                      <li class="nav__item">Banking</li></a><a href="#" class="nav__link">
+                      <li> 
+                        <div class="lang"></div>
+                      </li></a>
+                  </ul>
           </div>
-          <div class="profileInfo__item">
-            <p class="profileInfo__itemText">Balance: </p>
-            <div class="profileInfo__itemInfo" data-type="balance">123.243,00</div>
-          </div>
-          <div class="profileInfo__item">
-            <p class="profileInfo__itemText">Welcome, </p>
-            <div class="profileInfo__itemInfo">Jamomoto149</div>
+        </section>
+      </header>
+      <button class="live-chat">LIVE&nbsp;CHAT&nbsp;&nbsp;&#8657;</button>
+      <button class="upButton">UP</button>
+      <section class="slider">
+        <div class="slider__item"></div>
+        <div class="slider__item"></div>
+        <div class="slider__item"></div>
+        <div class="slider__item"></div>
+        <div class="slider__item"></div>
+      </section>
+      <section class="jackpot">
+        <div class="container">
+          <div class="jackpot__flexbox">
+            <div class="jackpot__item">Jackpots: </div>
+            <div class="jackpot__item"><img src="img/jackpot/jackpot-1.png" alt="" class="jackpot__img">
+              <p class="jackpot__text"><span class="jackpot__cash">€ 5,228,81</span><span class="jackpot__game">4 of King</span></p>
+            </div>
+            <div class="jackpot__item"><img src="img/jackpot/jackpot-2.png" alt="" class="jackpot__img">
+              <p class="jackpot__text"><span class="jackpot__cash">€ 5,100,12</span><span class="jackpot__game">Steam Tower</span></p>
+            </div>
+            <div class="jackpot__item"><img src="img/jackpot/jackpot-3.png" alt="" class="jackpot__img">
+              <p class="jackpot__text"><span class="jackpot__cash">€ 10,100,12</span><span class="jackpot__game">The Dark Knight</span></p>
+            </div>
+            <div class="jackpot__item"><img src="img/jackpot/jackpot-4.png" alt="" class="jackpot__img">
+              <p class="jackpot__text"><span class="jackpot__cash">€ 7,999,34</span><span class="jackpot__game">Ghost Pirates</span></p>
+            </div>
+            <div class="jackpot__item"><img src="img/jackpot/jackpot-5.png" alt="" class="jackpot__img">
+              <p class="jackpot__text"><span class="jackpot__cash">€ 5,999,34</span><span class="jackpot__game">The Dark Knight</span></p>
+            </div>
           </div>
         </div>
+      </section>
+      <section class="banners">
+        <div class="banners__item"><img src="img/banners/banner-1.png" alt="" class="banners__img"></div>
+        <div class="banners__item"><img src="img/banners/banner-2.png" alt="" class="banners__img"></div>
+        <div class="banners__item"><img src="img/banners/banner-3.png" alt="" class="banners__img"></div>
+        <div class="banners__item"><img src="img/banners/banner-4.png" alt="" class="banners__img"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__nav">
+        <div class="container">
+          <ul class="footer-nav">
+            <li class="footer-nav__item"><a href="responsible.html" class="footer-nav__link">Responsible Gaming</a></li>
+            <li class="footer-nav__item"><a href="policy.html" class="footer-nav__link">Private Policy</a></li>
+            <li class="footer-nav__item"><a href="terms.html" class="footer-nav__link">Terms and Conditions</a></li>
+            <li class="footer-nav__item"><a href="faq.html" class="footer-nav__link">FAQ</a></li>
+            <li class="footer-nav__item"><a href="affilate.html" class="footer-nav__link">Become an Affilate</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer__info">
+        <div class="container">
+          <div class="info">
+            <section class="info__payments">
+              <div class="payments"><img src="img/header/payments-1.png" alt="Payments" class="payments__img"><img src="img/header/payments-2.png" alt="Payments" class="payments__img">
+                <p class="payments__copy">The website is operated and managed by MYEG (Emancipate Boulevard 29, Willemstad, Curracao). Licence No. 5536/JAZ.<span class="payments__licence"> OceanCasino.com © 2016</span></p>
+              </div>
+            </section>
+            <section class="info__socials">
+              <div class="socials">
+                <div class="socials__row">
+                  <div class="socials__item">Fair<br>Licensed</div>
+                  <div class="socials__item">100%<br>Secure</div>
+                  <div class="socials__item"></div>
+                </div>
+                <div class="socials__row">
+                  <p class="socials__text">Follow us on:</p><img src="img/header/socials-4.png" alt="Socials" class="socials__img">
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <div class="overlay"></div>
+    <div class="popupDeposit">
+      <div class="popupDeposit__title">Your Deposit</div><img src="img/profile/close.png" alt="" class="popupDeposit__close">
+      <form class="popupDeposit__form">
+        <div class="popupDeposit__item">
+          <label class="popupDeposit__label">Name:</label>
+          <input class="popupDeposit__input">
+        </div>
+        <div class="popupDeposit__item">
+          <label class="popupDeposit__label">Card number:</label>
+          <input class="popupDeposit__input">
+        </div>
+        <div class="popupDeposit__item">
+          <label class="popupDeposit__label iconed">Total:</label>
+          <input class="popupDeposit__input">
+        </div>
+        <div class="popupDeposit__item little">
+          <label class="popupDeposit__label">CVV:</label>
+          <div class="popupDeposit__flexbox">
+            <input class="popupDeposit__input">
+            <input type="submit" value="Replenish" class="popupDeposit__submit">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="popupForgot">
+      <div class="popupForgot__title">Forgot password</div>
+      <div class="popupForgot__text">Please enter your email and you will receive an email with an instruction how to reset your password.</div><img src="img/profile/close.png" alt="" class="popupForgot__close">
+      <form class="popupForgot__form">
+        <div class="popupForgot__item">
+          <label class="popupForgot__label">E-mail:</label>
+          <input class="popupForgot__input">
+        </div>
+        <div class="popupForgot__item">
+          <label class="popupForgot__label">Please, enter chars from the image:</label><img src="img/header/captcha.png" alt="" class="popupForgot__img">
+          <input class="popupForgot__input">
+        </div>
+        <div class="popupForgot__item">
+          <input type="submit" value="Send" class="popupForgot__submit">
+        </div>
+      </form>
+    </div>
+    <div class="popupLogin">
+      <div class="popupLogin__title">Enter account</div><img src="img/profile/close.png" alt="" class="popupLogin__close">
+      <form class="popupLogin__form">
+        <div class="popupLogin__item">
+          <label class="popupLogin__label">E-mail, Phone or Login:</label>
+          <input class="popupLogin__input">
+        </div>
+        <div class="popupLogin__item">
+          <label class="popupLogin__label">Password:</label>
+          <input type="password" class="popupLogin__input">
+        </div><a href="#" class="popupLogin__link">Register</a><a href="#" class="popupLogin__link">Forgot password?</a>
+        <div class="popupLogin__item">
+          <input type="submit" value="Login" class="popupLogin__submit">
+        </div>
+      </form>
+    </div>
+    <div class="popupRegister open"><img src="img/profile/close.png" alt="" class="popupRegister__close">
+      <div class="popupRegister__tabs">
+        <div class="popupRegister__tab active">On phone</div>
+        <div class="popupRegister__tab">On e-mail</div>
       </div>
-
-    </div>
-  </div>
-  <div class="header__higherLayer">
-
-    <div class="header__container">
-
-      <div class="header__logo">
-        <img src="img/header/logo.png" alt="Logo Ocean Casino">
+      <div class="popupRegister__flexbox"><img src="img/header/banner-left.png" alt="" class="popupRegister__left">
+        <form class="popupRegister__form">
+          <div class="popupRegister__item">
+            <label class="popupRegister__label">Phone:<em class="star">*</em></label>
+            <div class="popupRegister__box">
+              <input class="popupRegister__input">
+            </div>
+          </div>
+          <div class="popupRegister__item closed">
+            <label class="popupRegister__label">E-mail:<em class="star">*</em></label>
+            <div class="popupRegister__box">
+              <input type="email" class="popupRegister__input">
+            </div>
+          </div>
+          <div class="popupRegister__item">
+            <label class="popupRegister__label">Login:</label>
+            <div class="popupRegister__box">
+              <input class="popupRegister__input">
+            </div>
+          </div>
+          <div class="popupRegister__item">
+            <label class="popupRegister__label">Password:<em class="star">*</em></label>
+            <div class="popupRegister__box">
+              <input type="password" class="popupRegister__input">
+            </div>
+          </div>
+          <div class="popupRegister__item">
+            <label class="popupRegister__label">Currency:</label>
+            <div class="popupRegister__box">
+              <select class="popupRegister__select">
+                <option value="1">EUR</option>
+                <option value="2">USD</option>
+                <option value="3">RUS</option>
+              </select>
+              <label class="popupRegister__label">Promo Code:</label>
+              <input class="popupRegister__input little">
+            </div>
+          </div>
+          <div class="popupRegister__checks">
+            <div class="popupRegister__check">
+              <label>
+                <input type="checkbox" checked><span></span>I wish to receive news and offers by email.
+              </label>
+            </div>
+            <div class="popupRegister__check">
+              <label>
+                <input type="checkbox" checked><span></span>I wish to receive news and offers SMS.
+              </label>
+            </div>
+          </div>
+          <input type="submit" value="Sign Up" class="popupRegister__submit">
+        </form><img src="img/header/banner-right.png" alt="" class="popupRegister__right">
       </div>
-
-      <nav class="header__nav">
-        <ul class="header__navList">
-          <li class="header__navItem active"><a href="/">Home</a></li>
-          <li class="header__navItem closed" data-type="profile"><a href="profile.html">My account</a></li>
-          <li class="header__navItem"><a href="games.html">Games</a></li>
-          <li class="header__navItem">Promotions</li>
-          <li class="header__navItem">VIP</li>
-          <li class="header__navItem">Banking</li>
-          <li class="header__navItem">About Us</li>
-        </ul>
-      </nav>
-
-      <button class="header__support">Support 24/7</button>
-
     </div>
-
-  </div>
-</header>
-<section class="slider">
-  <div class="slider__item"></div>
-  <div class="slider__item"></div>
-  <div class="slider__item"></div>
-  <div class="slider__item"></div>
-  <div class="slider__item"></div>
-</section>
-
-<section class="jackpot">
-  <div class="jackpot__container">
-    <div class="jackpot__item">Jackpots: </div>
-    <div class="jackpot__item">
-      <img src="img/header/jackpot-1.png" alt="Jackpot">
-      <p class="jackpot__text">€&nbsp;5,228,81<span>4&nbsp;of&nbsp;King</span></p>
-    </div>
-    <div class="jackpot__item">
-      <img src="img/header/jackpot-2.png" alt="Jackpot">
-      <p class="jackpot__text">€&nbsp;5,100,12<span>Steam&nbsp;Tower</span></p>
-    </div>
-    <div class="jackpot__item">
-      <img src="img/header/jackpot-3.png" alt="Jackpot">
-      <p class="jackpot__text">€&nbsp;10,100,12<span>The&nbsp;Dark&nbsp;Knight</span></p>
-    </div>
-    <div class="jackpot__item">
-      <img src="img/header/jackpot-4.png" alt="Jackpot">
-      <p class="jackpot__text">€&nbsp;7,999,34<span>Ghost&nbsp;Pirates</span></p>
-    </div>
-    <div class="jackpot__item">
-      <img src="img/header/jackpot-5.png" alt="Jackpot">
-      <p class="jackpot__text">€&nbsp;5,999,34<span>The&nbsp;Dark&nbsp;Knight</span></p>
-    </div>
-  </div>
-</section>
-
-<section class="banners">
-  <div class="banners__item">
-    <img src="img/header/banner-1.png" alt="Banner">
-  </div>
-  <div class="banners__item">
-    <img src="img/header/banner-2.png" alt="Banner">
-  </div>
-  <div class="banners__item">
-    <img src="img/header/banner-3.png" alt="Banner">
-  </div>
-</section>
-
-<button class="liveChat">LIVE&nbsp;CHAT&nbsp;&nbsp;&#8657;</button>
-<footer class="footer">
-  <div class="footer__divider"></div>
-  <nav class="footer__nav">
-    <div class="footer__container">
-      <ul class="footer__navList">
-        <li class="footer__navItem">Licence</li>
-        <li class="footer__navItem">Terms and conditions</li>
-        <li class="footer__navItem">Mobile</li>
-        <li class="footer__navItem">FAQ</li>
-        <li class="footer__navItem">Responsible Gaming</li>
-        <li class="footer__navItem">Partners</li>
-      </ul>
-    </div>
-  </nav>
-  <div class="footer__container">
-    <section class="footer__payments">
-      <img class="footer__paymentsItem" src="img/header/payments-1.png" alt="Payments" />
-      <img class="footer__paymentsItem" src="img/header/payments-2.png" alt="Payments" />
-      <p class="footer__paymentsText">
-        The website is operated and managed by MYEG B.V. (Emancipate Boulevard 29, Willemstad, Curacao). <br>
-        Licence No. 5536/JAZ. OceanCasino.com &copy; 2016
-      </p>
-    </section>
-    <section class="footer__socials">
-      <div class="footer__socialsRow">
-        <div class="footer__socialsItem">Fair<br>Licensed</div>
-        <div class="footer__socialsItem">100% Secure</div>
-        <div class="footer__socialsItem"></div>
-      </div>
-      <div class="footer__socialsRow">
-        <p class="footer__socialsText">
-          Follow us on social networks
-        </p>
-        <img src="img/header/socials-4.png" alt="Socials" />
-      </div>
-    </section>
-  </div>
-</footer>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
-	<script src="main.js"></script>
-
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>

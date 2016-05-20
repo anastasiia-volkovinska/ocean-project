@@ -1,0 +1,103 @@
+@import "base/_variables.scss";
+@import "base/_reset.scss";
+@import "base/_mixins.scss";
+@import "base/_fonts.scss";
+
+// For side-buttons
+@import "../blocks/buttons/liveChatButton/_liveChatButton.scss";
+@import "../blocks/buttons/upButton/_upButton.scss";
+
+// For header
+@import "../blocks/header/_header.scss";
+@import "../blocks/header/logo/_logo.scss";
+@import "../blocks/header/entry/_entry.scss";
+@import "../blocks/header/logged/_logged.scss";
+@import "../blocks/header/nav/_nav.scss";
+@import "../blocks/header/lang/_lang.scss";
+
+// For footer
+@import "../blocks/footer/_footer.scss";
+@import "../blocks/footer/footer-nav/_footer-nav.scss";
+@import "../blocks/footer/payments/_payments.scss";
+@import "../blocks/footer/socials/_socials.scss";
+
+// For all pages
+@import "../blocks/pages/_pages.scss";
+@import "../blocks/pages/breadcrumbs/_breadcrumbs.scss";
+
+// For index.html
+@import "../blocks/index/slider/_slider.scss";
+@import "../blocks/index/jackpots/_jackpots.scss";
+@import "../blocks/index/banners/_banners.scss";
+
+// For promotions.html
+@import "../blocks/promotions/panel/_panel.scss";
+@import "../blocks/promotions/content/_content.scss";
+
+// For banking.html
+@import "../blocks/banking/panel/_panel.scss";
+@import "../blocks/banking/content/_content.scss";
+@import "../blocks/banking/table/_table.scss";
+
+// For games.html
+@import "../blocks/games/panel/_panel.scss";
+@import "../blocks/games/content/_content.scss";
+
+// For faq.html
+@import "../blocks/faq/panel/_panel.scss";
+@import "../blocks/faq/content/_content.scss";
+
+// For vip.html
+@import "../blocks/vip/content/_content.scss";
+
+// For responsible.html
+@import "../blocks/responsible/content/_content.scss";
+
+// For policy.html
+@import "../blocks/policy/content/_content.scss";
+
+// For terms.html
+@import "../blocks/terms/content/_content.scss";
+
+// For account.html
+@import "../blocks/account/panel/_panel.scss";
+@import "../blocks/account/content/_content.scss";
+
+// For popups
+@import "../blocks/popups/deposit/_deposit.scss";
+@import "../blocks/popups/forgot/_forgot.scss";
+@import "../blocks/popups/login/_login.scss";
+@import "../blocks/popups/register/_register.scss";
+
+// @import "../blocks/accountContent/_accountContent.scss";
+// @import "../blocks/accountProfile/_accountProfile.scss";
+// @import "../blocks/accountDeposit/_accountDeposit.scss";
+// @import "../blocks/accountWithdraw/_accountWithdraw.scss";
+// @import "../blocks/accountPayments/_accountPayments.scss";
+// @import "../blocks/accountHistory/_accountHistory.scss";
+// @import "../blocks/accountEmail/_accountEmail.scss";
+// @import "../blocks/accountPassword/_accountPassword.scss";
+// @import "../blocks/accountResponsible/_accountResponsible.scss";
+// @import "../blocks/accountBonuses/_accountBonuses.scss";
+
+
+@import "../blocks/_media.scss";
+
+*	{
+	box-sizing: border-box;
+}
+html, body {
+	width: 100%;
+	height: 1px;
+	min-height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 0.5em;
+}

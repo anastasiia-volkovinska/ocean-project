@@ -1,0 +1,27 @@
+.banners {
+	display: flex;
+	justify-content: center;
+	background-image: url("img/banners/banners-bg.png");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+	&__item {
+		position: relative;
+		top: 0px;
+		margin: 2.5em 1em 3em 1em;
+		box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.4);
+		cursor: pointer;
+		transition: all 0.3s;
+		&:hover {
+			top: -1px;
+			box-shadow: 2px 6px 7px rgba(0, 0, 0, 0.5);
+		}
+		&:last-child {
+			display: none;
+		}
+	}
+	&__img {
+		vertical-align: top;
+		border-radius: 3px;
+	}
+}

@@ -1,0 +1,18 @@
+//- include ../blocks/index/jackpots/jackpots.jade
+-
+	var jackpotItems = [
+	{cash: "€ 5,228,81", game: "4 of King"}, 
+	{cash: "€ 5,100,12", game: "Steam Tower"}, 
+	{cash: "€ 10,100,12", game: "The Dark Knight"}, 
+	{cash: "€ 7,999,34", game: "Ghost Pirates"}, 
+	{cash: "€ 5,999,34", game: "The Dark Knight"}]
+section.jackpot
+	.container
+		.jackpot__flexbox
+			.jackpot__item Jackpots: 
+			each item, index in jackpotItems
+				.jackpot__item
+					img.jackpot__img(src='img/jackpot/jackpot-#{index+1}.png', alt='')
+					p.jackpot__text
+						span.jackpot__cash= item.cash
+						span.jackpot__game= item.game

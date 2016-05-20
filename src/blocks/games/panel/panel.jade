@@ -1,0 +1,11 @@
+.gamesPanel
+	form.gamesPanel__form(action='#')
+		select.gamesPanel__select(name='games')
+			option(value='1' data-type="gamesAll") All Games
+			option(value='2' data-type="gamesNew") New Games
+			option(value='3' data-type="gamesPopular") Popular Games
+			option(value='4' data-type="gamesVideo") Video Slots
+		input.gamesPanel__search(type='search', name='search', placeholder='Search game:')
+	p.gamesPanel__title Select creator: 
+	img.gamesPanel__img(src='img/games/all-games-1.png', alt='')
+	img.gamesPanel__img(src='img/games/all-games-2.png', alt='')

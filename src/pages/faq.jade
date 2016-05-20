@@ -1,0 +1,12 @@
+extends page-layout
+block title
+	title Ocean Casino - FAQ
+block nav
+	+nav(false, 0)
+block panel
+	include ../blocks/faq/panel/panel.jade
+block breadcrumbs
+	+bread([{name: "Home Page", href: "/"},
+	{name: "FAQ", current: true}])
+block content
+	include ../blocks/faq/content/content.jade

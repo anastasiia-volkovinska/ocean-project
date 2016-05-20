@@ -1,0 +1,16 @@
+//- include ../blocks/footer/footer-nav/footer-nav.jade
+-
+	var footerNavItems = [
+	{name: "Responsible Gaming", href: "responsible.html"},
+	{name: "Private Policy", href: "policy.html"},
+	{name: "Terms and Conditions", href: "terms.html"},
+	{name: "FAQ", href: "faq.html"},
+	{name: "Become an Affilate", href: "affilate.html"}]
+ul.footer-nav
+	each item in footerNavItems
+		if item.active 
+			li.footer-nav__item.footer-nav__item--active
+				a.footer-nav__link(href=item.href)= item.name
+		else
+			li.footer-nav__item
+				a.footer-nav__link(href=item.href)= item.name

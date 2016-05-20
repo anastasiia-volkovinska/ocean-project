@@ -1,0 +1,12 @@
+.accountPanel
+	form.accountPanel__form(action='#')
+		label.accountPanel__label Select profile menu:
+			select.accountPanel__select
+				option(value='1') My profile info
+				option(value='2') My profile cash
+				option(value='3') My profile deposit
+		label.accountPanel__status Your status:
+			input(type='text', value='Bronze', disabled)
+	.accountPanel__buttons
+		button.accountPanel__deposit Make a Deposit
+		button.accountPanel__withdraw Withdraw money

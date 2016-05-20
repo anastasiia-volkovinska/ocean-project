@@ -1,0 +1,48 @@
+.faq {
+	&__title {
+		@extend %pageHeader;
+	}
+	&__text {
+		@extend %mainText;
+		color: $table-text;
+	}
+	&__list {
+		margin-top: 1em;
+	}
+	&__item {
+		font-size: 0.9em;
+		color: $text-light-blue;
+		&:nth-child(2n+1) {
+			background-color: $text-dark-blue;
+		}
+		&:nth-child(2n) {
+			background-color: $table-bg;
+		}
+	}
+	&__question {
+		padding: 0.7em 1em;
+		background-image: url("img/games/arrow-left.png");
+		background-repeat: no-repeat;
+		background-position: 99%;
+		cursor: pointer;
+	}
+	&__answer {
+		display: none;
+		&.open {
+			display: block;
+		}
+		padding: 1em 1.5em;
+		background-color: $table-bg-dark;
+		background-image: url("img/games/select-arrow.png");
+		background-repeat: no-repeat;
+		background-position: 99%;
+		cursor: pointer;
+	}
+	&__name {
+		margin-bottom: 0.5em;
+	}
+	&__descr {
+		font-size: 0.9em;
+		color: $bg-light-blue;
+	}
+}

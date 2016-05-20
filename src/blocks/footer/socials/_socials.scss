@@ -1,0 +1,42 @@
+.socials {
+	display: flex;
+	flex-direction: column;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 0.5em;
+	}
+	&__item {
+		width: 45%;
+		height: 3rem;
+		color: #fff;
+		font-size: 0.8em;
+		&:nth-child(1) {
+			padding: 1em 1em 0 2.2em;
+			background-image: url("img/footer/socials-1.png");
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
+		&:nth-child(2) {
+			padding: 1em 0 0 2.8em;
+			background-image: url("img/footer/socials-2.png");
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
+		&:nth-child(3) {
+			width: 20%;
+			background-image: url("img/footer/socials-3.png");
+			background-repeat: no-repeat;
+			background-position: right center;
+		}
+	}
+	&__img {
+		cursor: pointer;
+	}
+	&__text {
+		font-size: 0.9em;
+        padding-right: 1em;
+        color: #fff;
+	}
+}

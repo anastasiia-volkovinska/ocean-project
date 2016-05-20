@@ -1,0 +1,17 @@
+section.accountEmail
+	.profile__container
+		p.profile__path
+			| Home page > My profile > Change e-mail or phone
+		h2.profile__title Change e-mail or phone
+		p.accountEmail__text
+			|Чтобы изменить e-mail адрес, пожалуйста, введите и подтвердите его в форме. Вам будет отправлен e-mail с подтвержением. 
+			|Перейдите по ссылке в письме, чтобы подтвердить новый e-mail адрес. Адрес не будет изменен, пока Вы не подтвердите это.
+		form.accountEmail__form
+			.accountEmail__item
+				label.accountEmail__email New e-mail:
+				input(type="email" placeholder="enter new e-mail...")
+				input(type="submit" value="Change")
+			.accountEmail__item
+				label.accountEmail__phone New phone:
+				input(type="tel" placeholder="enter new phone...")
+				input(type="submit" value="Change")

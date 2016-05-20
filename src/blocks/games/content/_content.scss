@@ -1,0 +1,152 @@
+.games {
+	padding-bottom: 1.5em;
+	&__more {
+		@extend %whiteButton;
+		display: block;
+		margin: 30px auto 0 auto;
+		width: 116px;
+		color: #008d75;
+	}
+}
+.gamesNew,
+.gamesPopular,
+.gamesVideo {
+	display: none;
+	&.open {
+		display: block;
+	}
+	&.withoutLine {
+		border-bottom: none;
+	}
+	&__title {
+		@extend %pageHeader;
+		& a {
+			font-style: normal;
+			text-transform: none;
+			text-decoration: underline;
+			float: right;
+			font-size: 0.8em;
+			color: $text-blue;
+		}
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 2em;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	}
+	&__item {
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 0.5em;
+		}
+		&[data-type="new"]:after {
+			content: "";
+			position: absolute;
+			z-index: 10;
+			top: -7px;
+			right: -8px;
+			display: block;
+			width: 40px;
+			height: 40px;
+			background-image: url("img/games/new.png");
+			background-repeat: no-repeat;
+		}
+		&[data-type="hot"]:after {
+			content: "";
+			position: absolute;
+			z-index: 10;
+			top: -7px;
+			right: -8px;
+			display: block;
+			width: 40px;
+			height: 40px;
+			background-image: url("img/games/hot.png");
+			background-repeat: no-repeat;
+		}
+	}
+	&__figure {
+		position: relative;
+		border-radius: 3px;
+		cursor: pointer;
+		&:hover {
+			& .gamesNew__hover,
+			& .gamesPopular__hover,
+			& .gamesVideo__hover {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+	&__img {
+		vertical-align: bottom;
+	}
+	&__hover {
+		display: none;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background-color: rgba($bg-light-blue, 0.5);
+		border-radius: 3px;
+	}
+	&__win {
+		background-color: $deposit-button-fuksia;
+		border-radius: 3px;
+		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.45);
+		text-transform: uppercase;
+		color: white;
+		border: none;
+		border-top: 2px solid rgba(255, 255, 255, 0.7);
+		width: 75%;
+		margin-bottom: 0.5em;
+		font-family: "Open Sans";
+		font-size: 1.1em;
+		font-weight: 300;
+		line-height: 1.4;
+		cursor: pointer;
+	}
+	&__fun {
+		@extend .gamesNew__win;
+		background-color: $bg-light-blue;
+	}
+	&__descr {
+		padding-top: 0.5em;
+		padding-left: 2em;
+		font-weight: 400;
+		color: #4fbaff;
+		font-size: 17px;
+		cursor: pointer;
+		background-position: 4% center;
+		background-repeat: no-repeat;
+		background-image: url("img/games/games-star-off.png");
+		& em {
+			display: block;
+			padding-top: 0.4em;
+			font-style: normal;
+			color: #01f7f6;
+			font-size: 12px;
+		}
+		&[data-type="star"] {
+			background-image: url("img/games/game-star.png");
+		}
+	}
+}
+
+@media screen and (max-width: 995px) {
+	.gamesNew__win,
+	.gamesPopular__win,
+	.gamesVideo__win {
+		font-size: 0.9em;
+	}
+}
+@media screen and (max-width: 850px) {
+	.gamesNew__win,
+	.gamesPopular__win,
+	.gamesVideo__win {
+		font-size: 0.8em;
+	}
+}

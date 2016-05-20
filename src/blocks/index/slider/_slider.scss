@@ -1,0 +1,42 @@
+.slider {
+	margin-bottom: 0;
+	&__item {
+		height: 25em;
+		background-position: center, center;
+		background-repeat: repeat-x, no-repeat;
+		background-size: auto 100%;
+		border-image-width: 0;
+		&:nth-child(1) {
+			background-image: url("img/slider/Volna.png"), url("img/slider/slider-1.png");
+		}
+
+		&:nth-child(2) {
+			background-image: url("img/slider/Volna.png"), url("img/slider/slider-2.png");
+		}
+
+		&:nth-child(3) {
+			background-image: url("img/slider/Volna.png"), url("img/slider/slider-3.png");
+		}
+
+		&:nth-child(4) {
+			background-image: url("img/slider/Volna.png"), url("img/slider/slider-4.png");
+		}
+
+		&:nth-child(5) {
+			background-image: url("img/slider/Volna.png"), url("img/slider/slider-5.png");
+		}
+	}
+}
+
+.slick-dots {
+	bottom: 10px;
+	& li button::before {
+		font-size: 10px;
+		color: #fff;
+		opacity: 0.2;
+	}
+	& li.slick-active button::before {
+		color: #fff;
+		opacity: 0.8;
+	}
+}

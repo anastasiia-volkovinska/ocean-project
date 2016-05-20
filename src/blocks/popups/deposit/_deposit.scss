@@ -1,0 +1,89 @@
+.overlay {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(#000, 0.7);
+}
+.popupDeposit {
+	display: none;
+	&.open {
+		display: block;
+	}
+	position: absolute;
+	z-index: 1000;
+	top: 20%;
+	left: 50%;
+	margin-left: -125px;
+	width: 250px;
+	min-height: 200px;
+	background-color: $bg-light-blue;
+	border-radius: 3px;
+	border: 2px solid rgba(#fff, 0.3);
+	padding: 0.5em 1em;
+	&__close {
+		position: absolute;
+		top: -15px;
+		right: -15px;
+		cursor: pointer;
+	}
+	&__title {
+		color: #fff;
+		font-weight: 300;
+		font-size: 1.1em;
+		margin-bottom: 1em;
+	}
+	&__flexbox {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__item {
+		margin-bottom: 0.5em;
+		&.little {
+			& .popupDeposit__input {
+				width: 100px;
+				margin-right: 1em;
+			}
+		}
+	}
+	&__label {
+		display: block;
+		margin-bottom: 0.5em;
+		font-size: 0.8em;
+		color: #fff;
+		font-weight: 300;
+		&.iconed {
+			position: relative;
+			&:after {
+				content: "";
+				position: absolute;
+				display: block;
+				width: 23px;
+				height: 23px;
+				top: 21px;
+				right: 2px;
+				background-image: url("img/header/evro.png");
+				background-repeat: no-repeat;
+			}
+			& + .popupDeposit__input {
+				padding-right: 2.5em;
+			}
+		}
+	}
+	&__input {
+		@extend .entry__input;
+		display: block;
+		width: 100%;
+		margin: 0;
+		border-radius: 3px;
+	}
+	&__submit {
+		@extend %whiteButton;
+		color: $submit-green;
+	}
+}

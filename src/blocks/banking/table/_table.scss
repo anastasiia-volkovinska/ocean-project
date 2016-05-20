@@ -1,0 +1,151 @@
+.banking {
+	padding-bottom: 1.5em;
+}
+.bankingDeposit,
+.bankingWithdraw {
+	display: none;
+	&.open {
+		display: block;
+	}
+	&__title {
+		@extend %pageHeader;
+	}
+	&__text {
+		color: $table-text;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+		margin-bottom: 1.5em;
+		&--strong {
+			display: block;
+			font-size: 1.2em;
+			font-weight: normal;
+			margin-bottom: 0.2em;
+		}
+	}
+	&__table {
+		width: 100%;
+		background-color: $table-bg;
+	}
+	&__header {
+		background-color: #1971a1;
+		& th {
+			color: white;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 22px;
+			padding: 0.5em;
+		}
+	}
+	&__row {
+		&.closed {
+			display: none;
+		}
+		&:nth-of-type(4n+1) {
+			background-color: $table-bg-dark;
+		}
+	}
+	&__item {
+		padding: 0.2em;
+		color: $text-light-blue;
+		&:first-child {
+			line-height: 26px;
+		}
+		&:last-child {
+			text-align: right;
+		}
+		& span {
+			display: block;
+			color: $text-blue;
+			margin-bottom: 2px;
+			& em {
+				font-style: normal;
+				color: $text-light-blue;
+			}
+		}
+	}
+	&__img {
+		vertical-align: bottom;
+		margin-right: 0.5em;
+	}
+	&__button {
+		width: 111px;
+		height: 27px;
+		background-color: $deposit-button-fuksia;
+		background-image: linear-gradient(to top, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.5) 100%);
+		border-radius: 3px;
+		border: none;
+		color: #fff;
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 18px;
+		cursor: pointer;
+	}
+
+	&__openRow {
+		&.closed {
+			display: none;
+		}
+		&:nth-of-type(4n+2) {
+			background-color: $table-bg-dark;
+		}
+	}
+	&__openItem {
+		position: relative;
+	}
+	&__close {
+		position: absolute;
+		top: 0.5em;
+		right: 0.5em;
+		cursor: pointer;
+	}
+	&__openHeader {
+		padding: 0.2em;
+		color: $text-light-blue;
+		line-height: 26px;
+	}
+	&__openImg {
+		@extend .bankingDeposit__img;
+	}
+	&__openText {
+		margin: 0.5em 3.7em;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+		color: $text-blue;
+	}
+	&__openForm {
+		margin: 1.5em 0.5em
+	}
+	&__openLabel {
+		position: relative;
+		color: $text-blue;
+		padding-right: 1em;
+		font-size: 14px;
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0px;
+			right: 19px;
+			display: block;
+			width: 23px;
+			height: 23px;
+			background-image: url("img/header/evro.png");
+			background-repeat: no-repeat;
+		}
+	}
+	&__openInput {
+		box-sizing: border-box;
+		margin-left: 3px;
+		padding: 0 0.5em;
+		width: 165px;
+		height: 26px;
+		background-color: white;
+		border: 1px solid $table-text;
+		border-radius: 3px;
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+	}
+	&__openSubmit {
+		@extend .bankingDeposit__button;
+	}
+}

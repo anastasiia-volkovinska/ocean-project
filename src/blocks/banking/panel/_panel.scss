@@ -1,0 +1,9 @@
+.bankingPanel {
+	display: flex;
+	&__button {
+		@extend %whiteButton;
+		&--active {
+			@extend %whiteButton--active;
+		}
+	}
+}

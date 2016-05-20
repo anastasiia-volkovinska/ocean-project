@@ -1,0 +1,36 @@
+include ../table/table.jade
+-
+	var withdrawOptions = {
+	className: "bankingWithdraw",
+	thead: ["Credit cards", "The Commission", "Limitation on transactions", " "],
+	rows: [
+	{src: "img/profile/visa.png", name: "VISA Credit card", commission: "0%", min: 20, max: 11100, text: "Money transfer directly to your Bank account."},
+	{src: "img/profile/visa.png", name: "VISA Credit card", commission: "0%", min: 20, max: 11100, text: "Money transfer directly to your Bank account."},
+	{src: "img/profile/visa.png", name: "VISA Credit card", commission: "0%", min: 20, max: 11100, text: "Money transfer directly to your Bank account."},
+	{src: "img/profile/visa.png", name: "VISA Credit card", commission: "0%", min: 20, max: 11100, text: "Money transfer directly to your Bank account."},
+	{src: "img/profile/visa.png", name: "VISA Credit card", commission: "0%", min: 20, max: 11100, text: "Money transfer directly to your Bank account."}
+	]
+	}
+-
+	var depositOptions = {
+	className: "bankingDeposit",
+	thead: ["Credit cards", "The Commission", "Processing time", "Limitation on transactions", " "],
+	rows: [
+	{src: "img/profile/visa.png", name: "VISA Credit card", commission: "0%", time: "Instantly", min: 20, max: 11100, text: "Money transfer directly to your Bank account."},
+	{src: "img/profile/visa.png", name: "VISA Credit card", commission: "0%", time: "Instantly", min: 20, max: 11100, text: "Money transfer directly to your Bank account."},
+	{src: "img/profile/visa.png", name: "VISA Credit card", commission: "0%", time: "Instantly", min: 20, max: 11100, text: "Money transfer directly to your Bank account."},
+	{src: "img/profile/visa.png", name: "VISA Credit card", commission: "0%", time: "Instantly", min: 20, max: 11100, text: "Money transfer directly to your Bank account."},
+	{src: "img/profile/visa.png", name: "VISA Credit card", commission: "0%", time: "Instantly", min: 20, max: 11100, text: "Money transfer directly to your Bank account."}
+	]
+	}
+.banking
+	section.bankingWithdraw(data-type="withdraw")
+		.bankingWithdraw__title Withdrawals
+		.bankingWithdraw__text
+			strong.bankingWithdraw__text--strong Helpful information about withdrawals:
+			| If the method that you used for deposit accepts the financial credit, then withdrawal shall be done with the same method (this is requirement of laws for anti-money laundering and for safety provision of your funds). If you used the method that doesn't allow to accept the financial credit, you can use the following options:
+		+table(withdrawOptions)
+	section.bankingDeposit.open(data-type="deposit")
+		.bankingDeposit__title To make a deposit
+		.bankingDeposit__text With BOSSCASINO you can to play in live casino for real money in real time. Here you can deposit free. We offer a different range of promotions and payoffs for loyal players. More importantly, all your personal details and funds are safe with us. You can find numerous ways of payments in our system. Choose the best one and make deposit to play and win!
+		+table(depositOptions)

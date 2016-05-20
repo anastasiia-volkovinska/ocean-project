@@ -1,0 +1,81 @@
+.profile {
+	position: relative;
+	&__panelContainer {
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 0.5em 0;
+	}
+	&__panel {
+		z-index: 10;
+		background-color: rgba(0, 0, 0, 0.15);
+		// background-image: url("img/header/header-bg.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		// background-color: rgba(113, 199, 249, 0.5);
+		background-blend-mode: multiply;
+		// border-top: 1px solid rgba(255, 255, 255, 0.05);
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15), 0 -2px 5px rgba(0, 0, 0, 0.15);
+	}
+	& label {
+		font-size: 0.7em;
+		color: white;
+		padding-right: 2em;
+	}
+	&__select {
+		width: 163px;
+		height: 27px;
+		background-color: #10222c;
+		border-radius: 3px;
+		border: none;
+		padding-left: 0.5em;
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+		color: white;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	&__status {
+		position: relative;
+		margin-left: 2em;
+		& input {
+			box-sizing: border-box;
+			margin-left: 1em;
+			padding-left: 2.5em;
+			width: 86px;
+			height: 27px;
+			background-color: #10222c;
+			border-radius: 3px;
+			border: none;
+			box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+			color: #00fffb;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: -13px;
+			left: 80px;
+			display: block;
+			width: 40px;
+			height: 40px;
+			background-image: url("img/profile/bronze.png");
+			background-repeat: no-repeat;
+			background-position: 0 center;
+		}
+	}
+	&__buttons {
+		& button {
+			width: 111px;
+			height: 25px;
+			border: none;
+			background-color: white;
+			background-image: linear-gradient(to top, rgba(215, 215, 215, 0.24) 0%, rgba(255, 255, 255, 0.24) 100%);
+			border-radius: 3px;
+			text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+			color: #1971a1;
+			cursor: pointer;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+		}
+	}
+}

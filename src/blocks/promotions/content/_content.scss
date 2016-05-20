@@ -1,0 +1,84 @@
+.promo {
+	&__title {
+		@extend %pageHeader;
+		padding-left: 0.5em;
+	}
+}
+.promoAll {
+	display: none;
+	&.open {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		width: 20%;
+		padding: 0 0.5em;
+		margin-bottom: 1.5em;
+		min-width: 150px;
+	}
+	&__img {
+		max-width: 100%;
+		margin-bottom: 0.5em;
+		cursor: pointer;
+	}
+	&__name {
+		font-size: 0.9em;
+		color: $text-blue;
+		cursor: pointer;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__type {
+		margin-top: 0.2em;
+		font-size: 0.7em;
+		color: $text-light-blue;
+	}
+}
+
+.promoLimited,
+.promoWelcome,
+.promoClassic {
+	display: none;
+	&.open {
+		display: block;
+	}
+	&__item {
+		display: flex;
+		padding-bottom: 1em;
+	}
+	&__left {
+		width: 25%;
+		min-width: 200px;
+		margin-right: 0.5em;
+	}
+	&__title {
+		@extend %subHeader;
+	}
+	&__text {
+		@extend %mainText;
+	}
+	&__advanced {
+		@extend %mainText;
+		display: none;
+		&.open {
+			display: block;
+		}
+	}
+	&__more {
+		font-size: 0.8em;
+		color: $text-light-blue;
+		border-bottom: 1px solid $text-light-blue;
+		cursor: pointer;
+		&::after {
+			content: "\2193";
+			margin-left: 0.2em;
+		}
+		&.open {
+			&::after {
+				content: "\2191";
+				margin-left: 0.2em;
+			}
+		}
+	}
+}

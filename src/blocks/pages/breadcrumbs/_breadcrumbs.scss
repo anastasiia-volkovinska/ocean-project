@@ -1,0 +1,35 @@
+.breadcrumbs {
+	display: flex;
+	padding: 0.5em 0;
+	padding-left: 0.5em;
+	&__item {
+		&:not(:last-child) {
+			&:after {
+				display: inline;
+				margin: 0 0.5em;
+				content: "\00bb";
+				vertical-align: top;
+				color: #fff;
+			}
+		}
+		&--current {
+			& .breadcrumbs__link {
+				font-size: 14px;
+				font-weight: 300;
+				color: #fff;
+				&:hover {
+					text-decoration: none;
+					cursor: default;
+				}
+			}
+		}
+	}
+	&__link {
+		font-size: 14px;
+		font-weight: 300;
+		color: $text-light-blue;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
