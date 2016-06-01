@@ -1,0 +1,12 @@
+extends page-layout
+block title
+	title Ocean Casino - Live Casino
+block nav
+	+nav(false, 4)
+block panel
+	include ../blocks/games/panel/panel.jade
+block breadcrumbs
+	+bread([{name: "Home Page", href: "/"},
+	{name: "Live Casino", current: true}])
+block content
+	include ../blocks/live-casino/content/content.jade

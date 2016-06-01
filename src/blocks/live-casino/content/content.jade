@@ -1,0 +1,60 @@
+mixin liveCasinoRow(options)
+	div(class=options.className+"__row")
+		each item in options.items
+			div(class=options.className+"__item" data-type=item.hot)
+				div(class=options.className+"__figure")
+					img(class=options.className+"__img" src=item.src, alt='')
+					div(class=options.className+"__hover")
+						a(class=options.className+"__win" href="game.html") play to win
+				p(class=options.className+"__descr" data-type=item.star)
+					| #{item.name}
+					em
+						span 24/7 
+						|#{item.type}
+-
+	var liveCasinoItems1 = {
+	className: "live-casino",
+	items: [
+	{hot: "new", src: "img/lottery/lottery-1.png", star: "star", name: "Lotto 7 - 42", type: "UTC 06:00 - 00:00"},
+	{hot: "hot", src: "img/lottery/lottery-2.png", star: "star", name: "Lotto 5 - 36", type: "UTC 06:00 - 00:00"},
+	{hot: "", src: "img/lottery/lottery-3.png", star: "", name: "Lotto 6 - 49", type: "UTC 06:00 - 00:00"},
+	{hot: "", src: "img/lottery/lottery-4.png", star: "star", name: "Lotto 6 - 49", type: "UTC 06:00 - 00:00"},
+	{hot: "new", src: "img/lottery/lottery-5.png", star: "star", name: "Lotto 7 - 42", type: "UTC 06:00 - 00:00"}
+	]
+	}
+-
+	var liveCasinoItems2 = {
+	className: "live-casino",
+	items: [
+	{hot: "", src: "img/lottery/lottery-2.png", star: "star", name: "Lotto 7 - 42", type: "UTC 06:00 - 00:00"},
+	{hot: "", src: "img/lottery/lottery-4.png", star: "star", name: "Lotto 5 - 36", type: "UTC 06:00 - 00:00"},
+	{hot: "new", src: "img/lottery/lottery-3.png", star: "", name: "Lotto 6 - 49", type: "UTC 06:00 - 00:00"},
+	{hot: "", src: "img/lottery/lottery-5.png", star: "star", name: "Lotto 6 - 49", type: "UTC 06:00 - 00:00"},
+	{hot: "new", src: "img/lottery/lottery-1.png", star: "star", name: "Lotto 7 - 42", type: "UTC 06:00 - 00:00"}
+	]
+	}
+-
+	var asideItems = [
+	{src: 'img/live-casino/icon-1.png', text: 'Rouletee', number: 58},
+	{src: 'img/live-casino/icon-2.png', text: 'BlackJack', number: 10},
+	{src: 'img/live-casino/icon-3.png', text: 'Baocarat', number: 5},
+	{src: 'img/live-casino/icon-4.png', text: 'Poker', number: 7},
+	{src: 'img/live-casino/icon-5.png', text: 'Dice', number: 9},
+	{src: 'img/live-casino/icon-6.png', text: 'ALL', number: 100}
+	]
+
+.live-casino
+	aside.live-casino__aside
+		.aside
+			h3.aside__title Live Casino
+			ul.aside__list
+				each item in asideItems
+					li.aside__item
+						img.aside__img(src=item.src alt='')
+						p.aside__text #{item.text}
+						.aside__box
+							span.aside__number #{item.number}
+	h2.live-casino__title Live Casino
+	+liveCasinoRow(liveCasinoItems1)
+	+liveCasinoRow(liveCasinoItems2)
+	button.games__more View more
