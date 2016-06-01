@@ -1,0 +1,26 @@
+.virtual-sports {
+	&__title {
+		@extend %pageHeader;
+	}
+	&__flexbox {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	&__content {
+		padding: 0.5em;
+		border-radius: 4px;
+		background-image: url("img/games/background_blue.png");
+		background-repeat: no-repeat;
+		margin-right: 0.5em;
+		&.closed {
+			display: none;
+		}
+	}
+	&__video {
+		max-width: 100%;
+	}
+	&__aside {
+		width: 20%;
+	}
+}

@@ -1,0 +1,12 @@
+extends page-layout
+block title
+	title Ocean Casino - Virtual Sports
+block nav
+	+nav(false, 7)
+block panel
+	include ../blocks/virtual-sports/panel/panel.jade
+block breadcrumbs
+	+bread([{name: "Home Page", href: "/"},
+	{name: "Virtual Sports", current: true}])
+block content
+	include ../blocks/virtual-sports/content/content.jade

@@ -1,0 +1,93 @@
+.sportBox {
+	&__betBox {
+		background-image: url("img/games/background_blue.png");
+		background-repeat: no-repeat;
+		min-height: 250px;
+		border-radius: 4px;
+		max-width: 100%;
+	}
+	&__banner {
+		margin-top: 0.5em;
+		max-width: 100%;
+		border-radius: 4px;
+	}
+}
+
+.bet {
+	padding-bottom: 0.5em;
+	&__header {
+		background-color: rgba(0, 0, 0, 0.25);
+		padding: 0.5em;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 0.9em;
+	}
+	&__text {
+		padding: 0.5em;
+		font-size: 0.8em;
+		color: #fff;
+		line-height: 1.3;
+	}
+	&__help {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 1em;
+		padding: 0.3em 0;
+		color: #fff;
+		font-size: 0.8em;
+		background-color: #52fffc;
+		background-image: linear-gradient(to top, #ef007c 0%, #ff5db1 100%);
+		border-radius: 3px;
+		box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+		border: none;
+		width: 90%;
+		cursor: pointer;
+	}
+	&__form {
+		display: flex;
+	}
+	&__item {
+		position: relative;
+		margin-left: 0.5em;
+		width: 50%;
+		&[data-type="currency"]::before {
+			position: absolute;
+			content: "";
+			display: block;
+			width: 25px;
+			height: 25px;
+			top: 3px;
+			left: 2px;
+			background-image: url("img/virtual-sports/evro.png");
+			background-repeat: no-repeat;
+			background-size: 60% auto;
+		}
+		&[data-type="time"]::before {
+			position: absolute;
+			content: "";
+			display: block;
+			width: 25px;
+			height: 25px;
+			top: 3px;
+			left: 2px;
+			background-image: url("img/virtual-sports/clock.png");
+			background-repeat: no-repeat;
+			background-size: 80% auto;
+		}
+	}
+	&__select {
+		width: 90%;
+		margin-bottom: 0.5em;
+		height: 25px;
+		background-color: #00fffb;
+		background-image: linear-gradient(to top, rgba(215, 215, 215, 0.24) 0%, rgba(255, 255, 255, 0.24) 100%);
+		border-radius: 2px;
+		border: none;
+		box-shadow: 0 3px 0 rgba(0, 0, 0, 0.12);
+	}
+	&__label {
+		font-size: 0.8em;
+		line-height: 1.4;
+		color: #fff;
+	}
+}

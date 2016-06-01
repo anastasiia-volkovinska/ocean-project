@@ -30,6 +30,14 @@ $(document).ready(function () {
 		$(".promo ul").removeClass("open");
 		$(".promo ul[data-type=" + type + "]").addClass("open");
 	});
+	$(".virtual-sportsPanel__button").click(function () {
+		$(".virtual-sportsPanel__button").removeClass("virtual-sportsPanel__button--active");
+		$(this).addClass("virtual-sportsPanel__button--active");
+		$(".breadcrumbs__item--current .breadcrumbs__link").text($(this).text());
+		$(".virtual-sports__content").addClass("closed");
+		var type = $(this).data("type");
+		$(".virtual-sports__content[data-type=" + type + "]").removeClass("closed");
+	});
 	$(".promoLimited__more").click(function () {
 		$(".promoLimited__advanced").removeClass("open");
 		$(this).siblings(".promoLimited__advanced").addClass("open");

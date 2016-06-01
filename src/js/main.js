@@ -3,6 +3,7 @@ $(document).ready(function () {
 	//= ../blocks/header/logged/logged.js
 	//= ../blocks/buttons/upButton/upButton.js
 	//= ../blocks/promotions/panel/panel.js
+	//= ../blocks/virtual-sports/panel/panel.js
 	//= ../blocks/promotions/content/content.js
 	//= ../blocks/banking/panel/panel.js
 	//= ../blocks/banking/table/table.js

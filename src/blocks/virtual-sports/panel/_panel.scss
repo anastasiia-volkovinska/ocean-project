@@ -1,0 +1,9 @@
+.virtual-sportsPanel {
+	display: flex;
+	&__button {
+		@extend %whiteButton;
+		&--active {
+			@extend %whiteButton--active;
+		}
+	}
+}

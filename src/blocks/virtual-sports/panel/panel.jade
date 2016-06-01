@@ -1,0 +1,12 @@
+-
+	var virtualItems = [
+	{name: "Football", type: "football"},
+	{name: "Horse Racing", type: "horse"},
+	{name: "Grayhounds", type: "grayhounds"}
+	]
+ul.virtual-sportsPanel
+	each item, index in virtualItems
+		if index == 0
+			li: button.virtual-sportsPanel__button.virtual-sportsPanel__button--active(data-type=item.type)= item.name
+		else
+			li: button.virtual-sportsPanel__button(data-type=item.type)= item.name

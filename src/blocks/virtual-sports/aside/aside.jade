@@ -1,0 +1,29 @@
+.sportBox
+	section.sportBox__betBox
+		.bet
+			h4.bet__header Bet Slip
+			p.bet__text 
+				|Your betslip is empty.
+				br
+				|To place a bet, register or login and click on any price.
+			h4.bet__header My Sports Account
+			p.bet__text
+				|Login above to place bet
+			button.bet__help Help &amp; Support
+			form.bet__form
+				.bet__item(data-type="time")
+					select.bet__select
+						option(value="1")
+						option(value="2")
+						option(value="3")
+					label.bet__label 
+						|Tuesday
+						br
+						|31.05.2016
+				.bet__item(data-type="currency")
+					select.bet__select
+						option(value="1")
+						option(value="2")
+						option(value="3")
+					label.bet__label Format: 11/4
+	img.sportBox__banner(src='img/virtual-sports/banner.png' alt='')

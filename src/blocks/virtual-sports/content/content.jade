@@ -1,0 +1,11 @@
+.virtual-sports
+	h2.virtual-sports__title Virtual Sports
+	main.virtual-sports__flexbox
+		section.virtual-sports__content(data-type="football")
+			video.virtual-sports__video(src="img/virtual-sports/video/football.mp4" controls)
+		section.virtual-sports__content.closed(data-type="horse")
+			video.virtual-sports__video(src="img/virtual-sports/video/horses.mp4" controls)
+		section.virtual-sports__content.closed(data-type="grayhounds")
+			video.virtual-sports__video(src="img/virtual-sports/video/dogs.mp4" controls)
+		aside.virtual-sports__aside
+			include ../aside/aside.jade
