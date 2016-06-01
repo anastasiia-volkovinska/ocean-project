@@ -1,5 +1,8 @@
 .accountPayments {
 	min-height: 600px;
+	&__title {
+		@extend %pageHeader;
+	}
 	&__text {
 		color: #abe0ff;
 		font-size: 14px;

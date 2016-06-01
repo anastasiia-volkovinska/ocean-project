@@ -44,6 +44,9 @@
 	&__buttons {
 		& button {
 			@extend %whiteButton;
+			&.active {
+				@extend %whiteButton--active;
+			}
 		}
 	}
 }

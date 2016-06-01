@@ -2,9 +2,15 @@
 	form.accountPanel__form(action='#')
 		label.accountPanel__label Select profile menu:
 			select.accountPanel__select
-				option(value='1') My profile info
-				option(value='2') My profile cash
-				option(value='3') My profile deposit
+				option(value='1' data-type="accountProfile") My profile
+				option(value='2' data-type="accountBonuses") Bonuses
+				option(value='3' data-type="accountEmail") Change Email
+				option(value='4' data-type="accountPassword") Change Password
+				option(value='5' data-type="accountWithdraw") Withdraw
+				option(value='6' data-type="accountDeposit") Deposit
+				option(value='7' data-type="accountHistory") History
+				option(value='8' data-type="accountPayments") Expected
+				option(value='9' data-type="accountResponsible") Responsible
 		label.accountPanel__status Your status:
 			input(type='text', value='Bronze', disabled)
 	.accountPanel__buttons

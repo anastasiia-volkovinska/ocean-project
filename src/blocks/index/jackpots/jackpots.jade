@@ -9,9 +9,9 @@
 section.jackpot
 	.container
 		.jackpot__flexbox
-			.jackpot__item Jackpots: 
+			.jackpot__item(href="game.html") Jackpots: 
 			each item, index in jackpotItems
-				.jackpot__item
+				a.jackpot__item(href="game.html")
 					img.jackpot__img(src='img/jackpot/jackpot-#{index+1}.png', alt='')
 					p.jackpot__text
 						span.jackpot__cash= item.cash

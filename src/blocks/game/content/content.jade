@@ -1,0 +1,34 @@
+.game
+	.game__fav
+		-
+			var favouriteItems = [
+			{game: "4 of King", prod: "Another Games"}, 
+			{game: "Steam Tower", prod: "Another Games"}, 
+			{game: "The Dark Knight", prod: "Another Games"}, 
+			{game: "Ghost Pirates", prod: "Another Games"}]
+		section.favourite
+			.container
+				.favourite__flexbox
+					.favourite__item(href="game.html") Latest played: 
+					each item, index in favouriteItems
+						a.favourite__item(href="game.html")
+							img.favourite__star(src="img/games/star.png" alt="")
+							img.favourite__img(src='img/jackpot/jackpot-#{index+1}.png', alt='')
+							p.favourite__text
+								span.favourite__game= item.game
+								span.favourite__prod= item.prod
+	.game__screen
+		.container
+			.screen
+				img.screen__close(src="img/games/close.png" alt="")
+				.screen__header
+					.screen__title The Dark Knight
+					.screen__right
+						button.screen__latest Latest
+						button.screen__login Login
+						button.screen__deposit.closed Deposit
+						button.screen__register Register Now!
+						.screen__favourite Favourite
+						.screen__fullscreen FullScreen
+				.screen__game
+					img.screen__img(src="img/games/game.png" alt="")

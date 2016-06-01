@@ -8,11 +8,14 @@ $(document).ready(function () {
 	//= ../blocks/banking/table/table.js
 	//= ../blocks/games/panel/panel.js
 	//= ../blocks/faq/content/content.js
-	// ../blocks/accountDeposit/accountDeposit.js
-	// ../blocks/accountWithdraw/accountWithdraw.js
-	// ../blocks/accountPayments/accountPayments.js
-	// ../blocks/accountHistory/accountHistory.js
-	// ../blocks/accountResponsible/accountResponsible.js
+	//= ../blocks/popups/register/register.js
+	//= ../blocks/account/accountDeposit/accountDeposit.js
+	//= ../blocks/account/accountWithdraw/accountWithdraw.js
+	//= ../blocks/account/accountPayments/accountPayments.js
+	//= ../blocks/account/accountHistory/accountHistory.js
+	//= ../blocks/account/accountResponsible/accountResponsible.js
+	//= ../blocks/account/panel/panel.js
+	//= ../blocks/game/content/content.js
 	$('.slider').slick({
 		autoplay: true,
 		infinite: true,
