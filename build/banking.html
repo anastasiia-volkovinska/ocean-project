@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Ocean Casino - Banking</title>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <section class="header__top">
+          <div class="container">
+            <div class="logo"><a href="/" class="logo__link"><img src="img/header/logo.png" alt="" class="logo__img"></a></div>
+                  <div class="logged logged--closed">
+                    <div class="logged__item">Welcome, 
+                      <div class="logged__field">Jamomoto149</div>
+                    </div>
+                    <div class="logged__item">Balance: 
+                      <div class="logged__field logged__field--iconed">123.232,00</div>
+                    </div><a href="banking.html" class="logged__deposit">Deposit</a>
+                    <button class="logged__logout">Logout</button>
+                  </div>
+                  <div class="entry">
+                    <form action="#" autocomplete="on" class="entry__form">
+                      <div class="entry__lang">
+                        <div class="lang"></div>
+                      </div>
+                      <input type="text" placeholder="Username:" class="entry__input">
+                      <label class="entry__label">
+                        <input type="password" placeholder="Password:" class="entry__input entry__input--iconed"><img src="img/header/search.png" alt="" class="entry__icon">
+                      </label>
+                      <input type="submit" value="Login" class="entry__submit">
+                      <input type="button" value="Register now!" class="entry__register">
+                    </form>
+                  </div>
+          </div>
+        </section>
+        <section class="header__nav">
+          <div class="container">
+                  <ul class="nav"><a href="/" class="nav__link">
+                      <li class="nav__item">Home</li></a><a href="games.html" class="nav__link">
+                      <li class="nav__item">Games</li></a><a href="account.html" class="nav__link nav__link--closed">
+                      <li class="nav__item">Account</li></a><a href="live-casino.html" class="nav__link">
+                      <li class="nav__item">Live Casino</li></a><a href="sports.html" class="nav__link">
+                      <li class="nav__item">Sports</li></a><a href="live-sports.html" class="nav__link">
+                      <li class="nav__item">Live Sports</li></a><a href="virtual-sports.html" class="nav__link">
+                      <li class="nav__item">Virtual Sports</li></a><a href="lottery.html" class="nav__link">
+                      <li class="nav__item">Lottery</li></a><a href="promotions.html" class="nav__link">
+                      <li class="nav__item">Promotions</li></a><a href="vip.html" class="nav__link">
+                      <li class="nav__item">VIP</li></a><a href="banking.html" class="nav__link nav__link--active">
+                      <li class="nav__item">Banking</li></a>
+                  </ul>
+          </div>
+        </section>
+      </header>
+      <button class="live-chat">LIVE&nbsp;CHAT&nbsp;&nbsp;&#8657;</button>
+      <button class="upButton">UP</button>
+      <div class="page">
+        <div class="page__panel">
+          <div class="container">
+            <ul class="bankingPanel">
+              <li>
+                <button data-type="deposit" class="bankingPanel__button bankingPanel__button--active">Deposit</button>
+              </li>
+              <li>
+                <button data-type="withdraw" class="bankingPanel__button">Withdraw</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="page__content">
+          <div class="container">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Home Page</a></li>
+              <li class="breadcrumbs__item"><a href="banking.html" class="breadcrumbs__link">Banking</a></li>
+              <li class="breadcrumbs__item breadcrumbs__item--current"><a href="#" class="breadcrumbs__link">Deposit</a></li>
+            </ul>
+            <div class="banking">
+              <section data-type="withdraw" class="bankingWithdraw">
+                <div class="bankingWithdraw__title">Withdrawals</div>
+                <div class="bankingWithdraw__text"><strong class="bankingWithdraw__text--strong">Helpful information about withdrawals:</strong>If the method that you used for deposit accepts the financial credit, then withdrawal shall be done with the same method (this is requirement of laws for anti-money laundering and for safety provision of your funds). If you used the method that doesn't allow to accept the financial credit, you can use the following options:</div>
+                            <table class="bankingWithdraw__table">
+                              <thead>
+                                <tr class="bankingWithdraw__header">
+                                  <th>Credit cards</th>
+                                  <th>The Commission</th>
+                                  <th>Limitation on transactions</th>
+                                  <th> </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                            <tr class="bankingWithdraw__row">
+                                              <td class="bankingWithdraw__item"><img src="img/profile/visa.png" alt="" class="bankingWithdraw__img">VISA Credit card</td>
+                                              <td class="bankingWithdraw__item">0%</td>
+                                              <td class="bankingWithdraw__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                              <td class="bankingWithdraw__item"> 
+                                                <button class="bankingWithdraw__button">Withdraw</button>
+                                              </td>
+                                            </tr>
+                                                        <tr class="bankingWithdraw__openRow closed">
+                                                          <td colspan="4"> 
+                                                            <div class="bankingWithdraw__openItem"><img src="img/profile/close.png" alt="" class="bankingWithdraw__close">
+                                                              <table cellspacing="0" cellpadding="0" class="bankingWithdraw__openTable">
+                                                                <tr>
+                                                                  <th width="30%">&nbsp;</th>
+                                                                  <th width="20%">&nbsp;</th>
+                                                                  <th width="25%">&nbsp;</th>
+                                                                  <th width="25%">&nbsp;</th>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>
+                                                                    <p class="bankingWithdraw__openHeader"><img src="img/profile/visa.png" alt="" class="bankingWithdraw__openImg">VISA Credit card</p>
+                                                                  </td>
+                                                                  <td class="bankingWithdraw__item">0%</td>
+                                                                  <td class="bankingWithdraw__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                                                  <td>&nbsp;</td>
+                                                                </tr>
+                                                              </table>
+                                                              <p class="bankingWithdraw__openText">Money transfer directly to your Bank account.</p>
+                                                              <form action="#" class="bankingWithdraw__openForm">
+                                                                <label class="bankingWithdraw__openLabel">Amount:
+                                                                  <input placeholder="0.00" class="bankingWithdraw__openInput">
+                                                                </label>
+                                                                <input type="submit" value="Continue" class="bankingWithdraw__openSubmit">
+                                                              </form>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                                            <tr class="bankingWithdraw__row">
+                                              <td class="bankingWithdraw__item"><img src="img/profile/visa.png" alt="" class="bankingWithdraw__img">VISA Credit card</td>
+                                              <td class="bankingWithdraw__item">0%</td>
+                                              <td class="bankingWithdraw__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                              <td class="bankingWithdraw__item"> 
+                                                <button class="bankingWithdraw__button">Withdraw</button>
+                                              </td>
+                                            </tr>
+                                                        <tr class="bankingWithdraw__openRow closed">
+                                                          <td colspan="4"> 
+                                                            <div class="bankingWithdraw__openItem"><img src="img/profile/close.png" alt="" class="bankingWithdraw__close">
+                                                              <table cellspacing="0" cellpadding="0" class="bankingWithdraw__openTable">
+                                                                <tr>
+                                                                  <th width="30%">&nbsp;</th>
+                                                                  <th width="20%">&nbsp;</th>
+                                                                  <th width="25%">&nbsp;</th>
+                                                                  <th width="25%">&nbsp;</th>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>
+                                                                    <p class="bankingWithdraw__openHeader"><img src="img/profile/visa.png" alt="" class="bankingWithdraw__openImg">VISA Credit card</p>
+                                                                  </td>
+                                                                  <td class="bankingWithdraw__item">0%</td>
+                                                                  <td class="bankingWithdraw__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                                                  <td>&nbsp;</td>
+                                                                </tr>
+                                                              </table>
+                                                              <p class="bankingWithdraw__openText">Money transfer directly to your Bank account.</p>
+                                                              <form action="#" class="bankingWithdraw__openForm">
+                                                                <label class="bankingWithdraw__openLabel">Amount:
+                                                                  <input placeholder="0.00" class="bankingWithdraw__openInput">
+                                                                </label>
+                                                                <input type="submit" value="Continue" class="bankingWithdraw__openSubmit">
+                                                              </form>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                                            <tr class="bankingWithdraw__row">
+                                              <td class="bankingWithdraw__item"><img src="img/profile/visa.png" alt="" class="bankingWithdraw__img">VISA Credit card</td>
+                                              <td class="bankingWithdraw__item">0%</td>
+                                              <td class="bankingWithdraw__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                              <td class="bankingWithdraw__item"> 
+                                                <button class="bankingWithdraw__button">Withdraw</button>
+                                              </td>
+                                            </tr>
+                                                        <tr class="bankingWithdraw__openRow closed">
+                                                          <td colspan="4"> 
+                                                            <div class="bankingWithdraw__openItem"><img src="img/profile/close.png" alt="" class="bankingWithdraw__close">
+                                                              <table cellspacing="0" cellpadding="0" class="bankingWithdraw__openTable">
+                                                                <tr>
+                                                                  <th width="30%">&nbsp;</th>
+                                                                  <th width="20%">&nbsp;</th>
+                                                                  <th width="25%">&nbsp;</th>
+                                                                  <th width="25%">&nbsp;</th>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>
+                                                                    <p class="bankingWithdraw__openHeader"><img src="img/profile/visa.png" alt="" class="bankingWithdraw__openImg">VISA Credit card</p>
+                                                                  </td>
+                                                                  <td class="bankingWithdraw__item">0%</td>
+                                                                  <td class="bankingWithdraw__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                                                  <td>&nbsp;</td>
+                                                                </tr>
+                                                              </table>
+                                                              <p class="bankingWithdraw__openText">Money transfer directly to your Bank account.</p>
+                                                              <form action="#" class="bankingWithdraw__openForm">
+                                                                <label class="bankingWithdraw__openLabel">Amount:
+                                                                  <input placeholder="0.00" class="bankingWithdraw__openInput">
+                                                                </label>
+                                                                <input type="submit" value="Continue" class="bankingWithdraw__openSubmit">
+                                                              </form>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                                            <tr class="bankingWithdraw__row">
+                                              <td class="bankingWithdraw__item"><img src="img/profile/visa.png" alt="" class="bankingWithdraw__img">VISA Credit card</td>
+                                              <td class="bankingWithdraw__item">0%</td>
+                                              <td class="bankingWithdraw__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                              <td class="bankingWithdraw__item"> 
+                                                <button class="bankingWithdraw__button">Withdraw</button>
+                                              </td>
+                                            </tr>
+                                                        <tr class="bankingWithdraw__openRow closed">
+                                                          <td colspan="4"> 
+                                                            <div class="bankingWithdraw__openItem"><img src="img/profile/close.png" alt="" class="bankingWithdraw__close">
+                                                              <table cellspacing="0" cellpadding="0" class="bankingWithdraw__openTable">
+                                                                <tr>
+                                                                  <th width="30%">&nbsp;</th>
+                                                                  <th width="20%">&nbsp;</th>
+                                                                  <th width="25%">&nbsp;</th>
+                                                                  <th width="25%">&nbsp;</th>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>
+                                                                    <p class="bankingWithdraw__openHeader"><img src="img/profile/visa.png" alt="" class="bankingWithdraw__openImg">VISA Credit card</p>
+                                                                  </td>
+                                                                  <td class="bankingWithdraw__item">0%</td>
+                                                                  <td class="bankingWithdraw__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                                                  <td>&nbsp;</td>
+                                                                </tr>
+                                                              </table>
+                                                              <p class="bankingWithdraw__openText">Money transfer directly to your Bank account.</p>
+                                                              <form action="#" class="bankingWithdraw__openForm">
+                                                                <label class="bankingWithdraw__openLabel">Amount:
+                                                                  <input placeholder="0.00" class="bankingWithdraw__openInput">
+                                                                </label>
+                                                                <input type="submit" value="Continue" class="bankingWithdraw__openSubmit">
+                                                              </form>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                                            <tr class="bankingWithdraw__row">
+                                              <td class="bankingWithdraw__item"><img src="img/profile/visa.png" alt="" class="bankingWithdraw__img">VISA Credit card</td>
+                                              <td class="bankingWithdraw__item">0%</td>
+                                              <td class="bankingWithdraw__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                              <td class="bankingWithdraw__item"> 
+                                                <button class="bankingWithdraw__button">Withdraw</button>
+                                              </td>
+                                            </tr>
+                                                        <tr class="bankingWithdraw__openRow closed">
+                                                          <td colspan="4"> 
+                                                            <div class="bankingWithdraw__openItem"><img src="img/profile/close.png" alt="" class="bankingWithdraw__close">
+                                                              <table cellspacing="0" cellpadding="0" class="bankingWithdraw__openTable">
+                                                                <tr>
+                                                                  <th width="30%">&nbsp;</th>
+                                                                  <th width="20%">&nbsp;</th>
+                                                                  <th width="25%">&nbsp;</th>
+                                                                  <th width="25%">&nbsp;</th>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>
+                                                                    <p class="bankingWithdraw__openHeader"><img src="img/profile/visa.png" alt="" class="bankingWithdraw__openImg">VISA Credit card</p>
+                                                                  </td>
+                                                                  <td class="bankingWithdraw__item">0%</td>
+                                                                  <td class="bankingWithdraw__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                                                  <td>&nbsp;</td>
+                                                                </tr>
+                                                              </table>
+                                                              <p class="bankingWithdraw__openText">Money transfer directly to your Bank account.</p>
+                                                              <form action="#" class="bankingWithdraw__openForm">
+                                                                <label class="bankingWithdraw__openLabel">Amount:
+                                                                  <input placeholder="0.00" class="bankingWithdraw__openInput">
+                                                                </label>
+                                                                <input type="submit" value="Continue" class="bankingWithdraw__openSubmit">
+                                                              </form>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                              </tbody>
+                            </table>
+              </section>
+              <section data-type="deposit" class="bankingDeposit open">
+                <div class="bankingDeposit__title">To make a deposit</div>
+                <div class="bankingDeposit__text">With BOSSCASINO you can to play in live casino for real money in real time. Here you can deposit free. We offer a different range of promotions and payoffs for loyal players. More importantly, all your personal details and funds are safe with us. You can find numerous ways of payments in our system. Choose the best one and make deposit to play and win!</div>
+                            <table class="bankingDeposit__table">
+                              <thead>
+                                <tr class="bankingDeposit__header">
+                                  <th>Credit cards</th>
+                                  <th>The Commission</th>
+                                  <th>Processing time</th>
+                                  <th>Limitation on transactions</th>
+                                  <th> </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                            <tr class="bankingDeposit__row">
+                                              <td class="bankingDeposit__item"><img src="img/profile/visa.png" alt="" class="bankingDeposit__img">VISA Credit card</td>
+                                              <td class="bankingDeposit__item">0%</td>
+                                              <td class="bankingDeposit__item">Instantly</td>
+                                              <td class="bankingDeposit__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                              <td class="bankingDeposit__item"> 
+                                                <button class="bankingDeposit__button">Deposit</button>
+                                              </td>
+                                            </tr>
+                                                        <tr class="bankingDeposit__openRow closed">
+                                                          <td colspan="5">
+                                                            <div class="bankingDeposit__openItem"><img src="img/profile/close.png" alt="" class="bankingDeposit__close">
+                                                              <table cellspacing="0" cellpadding="0" class="bankingDeposit__openTable">
+                                                                <tr>
+                                                                  <th width="23%">&nbsp;</th>
+                                                                  <th width="17%">&nbsp;</th>
+                                                                  <th width="15%">&nbsp;</th>
+                                                                  <th width="20%">&nbsp;</th>
+                                                                  <th width="20%">&nbsp;</th>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>
+                                                                    <p class="bankingDeposit__openHeader"><img src="img/profile/visa.png" alt="" class="bankingDeposit__openImg">VISA Credit card</p>
+                                                                  </td>
+                                                                  <td class="bankingDeposit__item">0%</td>
+                                                                  <td class="bankingDeposit__item">Instantly</td>
+                                                                  <td class="bankingDeposit__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                                                  <td>&nbsp;</td>
+                                                                </tr>
+                                                              </table>
+                                                              <p class="bankingDeposit__openText">Money transfer directly to your Bank account.</p>
+                                                              <form action="#" class="bankingDeposit__openForm">
+                                                                <label class="bankingDeposit__openLabel">Amount:
+                                                                  <input placeholder="0.00" class="bankingDeposit__openInput">
+                                                                </label>
+                                                                <input type="submit" value="Play" class="bankingDeposit__openSubmit">
+                                                              </form>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                                            <tr class="bankingDeposit__row">
+                                              <td class="bankingDeposit__item"><img src="img/profile/visa.png" alt="" class="bankingDeposit__img">VISA Credit card</td>
+                                              <td class="bankingDeposit__item">0%</td>
+                                              <td class="bankingDeposit__item">Instantly</td>
+                                              <td class="bankingDeposit__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                              <td class="bankingDeposit__item"> 
+                                                <button class="bankingDeposit__button">Deposit</button>
+                                              </td>
+                                            </tr>
+                                                        <tr class="bankingDeposit__openRow closed">
+                                                          <td colspan="5">
+                                                            <div class="bankingDeposit__openItem"><img src="img/profile/close.png" alt="" class="bankingDeposit__close">
+                                                              <table cellspacing="0" cellpadding="0" class="bankingDeposit__openTable">
+                                                                <tr>
+                                                                  <th width="23%">&nbsp;</th>
+                                                                  <th width="17%">&nbsp;</th>
+                                                                  <th width="15%">&nbsp;</th>
+                                                                  <th width="20%">&nbsp;</th>
+                                                                  <th width="20%">&nbsp;</th>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>
+                                                                    <p class="bankingDeposit__openHeader"><img src="img/profile/visa.png" alt="" class="bankingDeposit__openImg">VISA Credit card</p>
+                                                                  </td>
+                                                                  <td class="bankingDeposit__item">0%</td>
+                                                                  <td class="bankingDeposit__item">Instantly</td>
+                                                                  <td class="bankingDeposit__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                                                  <td>&nbsp;</td>
+                                                                </tr>
+                                                              </table>
+                                                              <p class="bankingDeposit__openText">Money transfer directly to your Bank account.</p>
+                                                              <form action="#" class="bankingDeposit__openForm">
+                                                                <label class="bankingDeposit__openLabel">Amount:
+                                                                  <input placeholder="0.00" class="bankingDeposit__openInput">
+                                                                </label>
+                                                                <input type="submit" value="Play" class="bankingDeposit__openSubmit">
+                                                              </form>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                                            <tr class="bankingDeposit__row">
+                                              <td class="bankingDeposit__item"><img src="img/profile/visa.png" alt="" class="bankingDeposit__img">VISA Credit card</td>
+                                              <td class="bankingDeposit__item">0%</td>
+                                              <td class="bankingDeposit__item">Instantly</td>
+                                              <td class="bankingDeposit__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                              <td class="bankingDeposit__item"> 
+                                                <button class="bankingDeposit__button">Deposit</button>
+                                              </td>
+                                            </tr>
+                                                        <tr class="bankingDeposit__openRow closed">
+                                                          <td colspan="5">
+                                                            <div class="bankingDeposit__openItem"><img src="img/profile/close.png" alt="" class="bankingDeposit__close">
+                                                              <table cellspacing="0" cellpadding="0" class="bankingDeposit__openTable">
+                                                                <tr>
+                                                                  <th width="23%">&nbsp;</th>
+                                                                  <th width="17%">&nbsp;</th>
+                                                                  <th width="15%">&nbsp;</th>
+                                                                  <th width="20%">&nbsp;</th>
+                                                                  <th width="20%">&nbsp;</th>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>
+                                                                    <p class="bankingDeposit__openHeader"><img src="img/profile/visa.png" alt="" class="bankingDeposit__openImg">VISA Credit card</p>
+                                                                  </td>
+                                                                  <td class="bankingDeposit__item">0%</td>
+                                                                  <td class="bankingDeposit__item">Instantly</td>
+                                                                  <td class="bankingDeposit__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                                                  <td>&nbsp;</td>
+                                                                </tr>
+                                                              </table>
+                                                              <p class="bankingDeposit__openText">Money transfer directly to your Bank account.</p>
+                                                              <form action="#" class="bankingDeposit__openForm">
+                                                                <label class="bankingDeposit__openLabel">Amount:
+                                                                  <input placeholder="0.00" class="bankingDeposit__openInput">
+                                                                </label>
+                                                                <input type="submit" value="Play" class="bankingDeposit__openSubmit">
+                                                              </form>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                                            <tr class="bankingDeposit__row">
+                                              <td class="bankingDeposit__item"><img src="img/profile/visa.png" alt="" class="bankingDeposit__img">VISA Credit card</td>
+                                              <td class="bankingDeposit__item">0%</td>
+                                              <td class="bankingDeposit__item">Instantly</td>
+                                              <td class="bankingDeposit__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                              <td class="bankingDeposit__item"> 
+                                                <button class="bankingDeposit__button">Deposit</button>
+                                              </td>
+                                            </tr>
+                                                        <tr class="bankingDeposit__openRow closed">
+                                                          <td colspan="5">
+                                                            <div class="bankingDeposit__openItem"><img src="img/profile/close.png" alt="" class="bankingDeposit__close">
+                                                              <table cellspacing="0" cellpadding="0" class="bankingDeposit__openTable">
+                                                                <tr>
+                                                                  <th width="23%">&nbsp;</th>
+                                                                  <th width="17%">&nbsp;</th>
+                                                                  <th width="15%">&nbsp;</th>
+                                                                  <th width="20%">&nbsp;</th>
+                                                                  <th width="20%">&nbsp;</th>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>
+                                                                    <p class="bankingDeposit__openHeader"><img src="img/profile/visa.png" alt="" class="bankingDeposit__openImg">VISA Credit card</p>
+                                                                  </td>
+                                                                  <td class="bankingDeposit__item">0%</td>
+                                                                  <td class="bankingDeposit__item">Instantly</td>
+                                                                  <td class="bankingDeposit__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                                                  <td>&nbsp;</td>
+                                                                </tr>
+                                                              </table>
+                                                              <p class="bankingDeposit__openText">Money transfer directly to your Bank account.</p>
+                                                              <form action="#" class="bankingDeposit__openForm">
+                                                                <label class="bankingDeposit__openLabel">Amount:
+                                                                  <input placeholder="0.00" class="bankingDeposit__openInput">
+                                                                </label>
+                                                                <input type="submit" value="Play" class="bankingDeposit__openSubmit">
+                                                              </form>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                                            <tr class="bankingDeposit__row">
+                                              <td class="bankingDeposit__item"><img src="img/profile/visa.png" alt="" class="bankingDeposit__img">VISA Credit card</td>
+                                              <td class="bankingDeposit__item">0%</td>
+                                              <td class="bankingDeposit__item">Instantly</td>
+                                              <td class="bankingDeposit__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                              <td class="bankingDeposit__item"> 
+                                                <button class="bankingDeposit__button">Deposit</button>
+                                              </td>
+                                            </tr>
+                                                        <tr class="bankingDeposit__openRow closed">
+                                                          <td colspan="5">
+                                                            <div class="bankingDeposit__openItem"><img src="img/profile/close.png" alt="" class="bankingDeposit__close">
+                                                              <table cellspacing="0" cellpadding="0" class="bankingDeposit__openTable">
+                                                                <tr>
+                                                                  <th width="23%">&nbsp;</th>
+                                                                  <th width="17%">&nbsp;</th>
+                                                                  <th width="15%">&nbsp;</th>
+                                                                  <th width="20%">&nbsp;</th>
+                                                                  <th width="20%">&nbsp;</th>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>
+                                                                    <p class="bankingDeposit__openHeader"><img src="img/profile/visa.png" alt="" class="bankingDeposit__openImg">VISA Credit card</p>
+                                                                  </td>
+                                                                  <td class="bankingDeposit__item">0%</td>
+                                                                  <td class="bankingDeposit__item">Instantly</td>
+                                                                  <td class="bankingDeposit__item"><span>Min. <em>20</em>&nbsp;UAH</span><span>Max. <em>11100</em>&nbsp;UAH</span></td>
+                                                                  <td>&nbsp;</td>
+                                                                </tr>
+                                                              </table>
+                                                              <p class="bankingDeposit__openText">Money transfer directly to your Bank account.</p>
+                                                              <form action="#" class="bankingDeposit__openForm">
+                                                                <label class="bankingDeposit__openLabel">Amount:
+                                                                  <input placeholder="0.00" class="bankingDeposit__openInput">
+                                                                </label>
+                                                                <input type="submit" value="Play" class="bankingDeposit__openSubmit">
+                                                              </form>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                              </tbody>
+                            </table>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <section class="footer__nav">
+        <div class="container">
+          <ul class="footer-nav">
+            <li class="footer-nav__item"><a href="responsible.html" class="footer-nav__link">Responsible Gaming</a></li>
+            <li class="footer-nav__item"><a href="policy.html" class="footer-nav__link">Private Policy</a></li>
+            <li class="footer-nav__item"><a href="terms.html" class="footer-nav__link">Terms and Conditions</a></li>
+            <li class="footer-nav__item"><a href="faq.html" class="footer-nav__link">FAQ</a></li>
+            <li class="footer-nav__item"><a href="affilate.html" class="footer-nav__link">Become an Affilate</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer__info">
+        <div class="container">
+          <div class="new-info"><img src="img/footer/footer-new-info.png" alt="" class="new-info__img">
+            <p class="new-info__copy">The website is operated and managed by MYEG (Emancipate Boulevard 29, Willemstad, Curracao). Licence No. 5536/JAZ.<span class="new-info__licence"> OceanCasino.com © 2016</span></p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <div class="overlay"></div>
+    <div class="popupDeposit">
+      <div class="popupDeposit__title">Your Deposit</div><img src="img/profile/close.png" alt="" class="popupDeposit__close">
+      <form class="popupDeposit__form">
+        <div class="popupDeposit__item">
+          <label class="popupDeposit__label">Name:</label>
+          <input class="popupDeposit__input">
+        </div>
+        <div class="popupDeposit__item">
+          <label class="popupDeposit__label">Card number:</label>
+          <input class="popupDeposit__input">
+        </div>
+        <div class="popupDeposit__item">
+          <label class="popupDeposit__label iconed">Total:</label>
+          <input class="popupDeposit__input">
+        </div>
+        <div class="popupDeposit__item little">
+          <label class="popupDeposit__label">CVV:</label>
+          <div class="popupDeposit__flexbox">
+            <input class="popupDeposit__input">
+            <input type="submit" value="Replenish" class="popupDeposit__submit">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="popupForgot">
+      <div class="popupForgot__title">Forgot password</div>
+      <div class="popupForgot__text">Please enter your email and you will receive an email with an instruction how to reset your password.</div><img src="img/profile/close.png" alt="" class="popupForgot__close">
+      <form class="popupForgot__form">
+        <div class="popupForgot__item">
+          <label class="popupForgot__label">E-mail:</label>
+          <input class="popupForgot__input">
+        </div>
+        <div class="popupForgot__item">
+          <label class="popupForgot__label">Please, enter chars from the image:</label><img src="img/header/captcha.png" alt="" class="popupForgot__img">
+          <input class="popupForgot__input">
+        </div>
+        <div class="popupForgot__item">
+          <input type="submit" value="Send" class="popupForgot__submit">
+        </div>
+      </form>
+    </div>
+    <div class="popupLogin">
+      <div class="popupLogin__title">Enter account</div><img src="img/profile/close.png" alt="" class="popupLogin__close">
+      <form class="popupLogin__form">
+        <div class="popupLogin__item">
+          <label class="popupLogin__label">E-mail, Phone or Login:</label>
+          <input class="popupLogin__input">
+        </div>
+        <div class="popupLogin__item">
+          <label class="popupLogin__label">Password:</label>
+          <input type="password" class="popupLogin__input">
+        </div><a href="#" class="popupLogin__link">Register</a><a href="#" class="popupLogin__link">Forgot password?</a>
+        <div class="popupLogin__item">
+          <input type="submit" value="Login" class="popupLogin__submit">
+        </div>
+      </form>
+    </div>
+    <div class="popupRegister"><img src="img/profile/close.png" alt="" class="popupRegister__close">
+      <div class="popupRegister__tabs">
+        <div data-type="phone" class="popupRegister__tab active">On phone</div>
+        <div data-type="email" class="popupRegister__tab">On e-mail</div>
+      </div>
+      <div class="popupRegister__flexbox"><img src="img/header/banner-left.png" alt="" class="popupRegister__left">
+        <form class="popupRegister__form">
+          <div data-type="email" class="popupRegister__item">
+            <label class="popupRegister__label">Phone:<em class="star">*</em></label>
+            <div class="popupRegister__box">
+              <input class="popupRegister__input">
+            </div>
+          </div>
+          <div data-type="phone" class="popupRegister__item closed">
+            <label class="popupRegister__label">E-mail:<em class="star">*</em></label>
+            <div class="popupRegister__box">
+              <input type="email" class="popupRegister__input">
+            </div>
+          </div>
+          <div class="popupRegister__item">
+            <label class="popupRegister__label">Login:</label>
+            <div class="popupRegister__box">
+              <input class="popupRegister__input">
+            </div>
+          </div>
+          <div class="popupRegister__item">
+            <label class="popupRegister__label">Password:<em class="star">*</em></label>
+            <div class="popupRegister__box">
+              <input type="password" class="popupRegister__input">
+            </div>
+          </div>
+          <div class="popupRegister__item">
+            <label class="popupRegister__label">Currency:</label>
+            <div class="popupRegister__box">
+              <select class="popupRegister__select">
+                <option value="1">EUR</option>
+                <option value="2">USD</option>
+                <option value="3">RUS</option>
+              </select>
+              <label class="popupRegister__label">Promocode:</label>
+              <input class="popupRegister__input little">
+            </div>
+          </div>
+          <div class="popupRegister__checks">
+            <div class="popupRegister__check">
+              <label>
+                <input type="checkbox" checked><span></span>I wish to receive news and offers by email.
+              </label>
+            </div>
+            <div class="popupRegister__check">
+              <label>
+                <input type="checkbox" checked><span></span>I wish to receive news and offers SMS.
+              </label>
+            </div>
+          </div>
+          <input type="submit" value="Sign Up" class="popupRegister__submit">
+        </form>
+        <form class="popupRegister__form second closed">
+          <div class="popupRegister__text">Для подтверждения регестрации введите код высланный на ваш e-mail или телефон:</div>
+          <input class="popupRegister__input second">
+          <input type="submit" value="Accept" class="popupRegister__accept">
+        </form><img src="img/header/banner-right.png" alt="" class="popupRegister__right">
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
