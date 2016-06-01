@@ -3,9 +3,26 @@ mixin withdrawOpen(row, className)
 		td(colspan="4") 
 			div(class=className+"__openItem")
 				img(class=className+"__close" src="img/profile/close.png" alt="")
-				p(class=className+"__openHeader")
-					img(class=className+"__openImg" src=row.src alt="")
-					| #{row.name}
+				table(class=className+"__openTable" cellspacing="0" cellpadding="0")
+					tr
+						th(width="30%") &nbsp;
+						th(width="20%") &nbsp;
+						th(width="25%") &nbsp;
+						th(width="25%") &nbsp;
+					tr
+						td
+							p(class=className+"__openHeader")
+								img(class=className+"__openImg" src=row.src alt="")
+								| #{row.name}
+						td(class=className+"__item") #{row.commission}
+						td(class=className+"__item")
+							span Min. 
+								em #{row.min}
+								|&nbsp;UAH
+							span Max. 
+								em #{row.max}
+								|&nbsp;UAH
+						td &nbsp;
 				p(class=className+"__openText")= row.text
 				form(class=className+"__openForm" action="#")
 					label(class=className+"__openLabel") Amount:
@@ -14,12 +31,31 @@ mixin withdrawOpen(row, className)
 
 mixin depositOpen(row, className)
 	tr(class=className+"__openRow closed")
-		td(colspan="5") 
+		td(colspan="5")
 			div(class=className+"__openItem")
 				img(class=className+"__close" src="img/profile/close.png" alt="")
-				p(class=className+"__openHeader")
-					img(class=className+"__openImg" src=row.src alt="")
-					| #{row.name}
+				table(class=className+"__openTable" cellspacing="0" cellpadding="0")
+					tr
+						th(width="23%") &nbsp;
+						th(width="17%") &nbsp;
+						th(width="15%") &nbsp;
+						th(width="20%") &nbsp;
+						th(width="20%") &nbsp;
+					tr
+						td
+							p(class=className+"__openHeader")
+								img(class=className+"__openImg" src=row.src alt="")
+								| #{row.name}
+						td(class=className+"__item") #{row.commission}
+						td(class=className+"__item") #{row.time}
+						td(class=className+"__item")
+							span Min. 
+								em #{row.min}
+								|&nbsp;UAH
+							span Max. 
+								em #{row.max}
+								|&nbsp;UAH
+						td &nbsp;
 				p(class=className+"__openText")= row.text
 				form(class=className+"__openForm" action="#")
 					label(class=className+"__openLabel") Amount:

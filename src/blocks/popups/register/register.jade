@@ -1,17 +1,17 @@
-.popupRegister.open
+.popupRegister
 	img.popupRegister__close(src="img/profile/close.png" alt="")
 	.popupRegister__tabs
-		.popupRegister__tab.active On phone
-		.popupRegister__tab On e-mail
+		.popupRegister__tab.active(data-type="phone") On phone
+		.popupRegister__tab(data-type="email") On e-mail
 	.popupRegister__flexbox
 		img.popupRegister__left(src="img/header/banner-left.png" alt="")
 		form.popupRegister__form
-			.popupRegister__item
+			.popupRegister__item(data-type="email")
 				label.popupRegister__label Phone:
 					em.star *
 				.popupRegister__box
 					input.popupRegister__input
-			.popupRegister__item.closed
+			.popupRegister__item.closed(data-type="phone")
 				label.popupRegister__label E-mail:
 					em.star *
 				.popupRegister__box
@@ -32,7 +32,7 @@
 						option(value="1") EUR
 						option(value="2") USD
 						option(value="3") RUS
-					label.popupRegister__label Promo Code:
+					label.popupRegister__label Promocode:
 					input.popupRegister__input.little
 			.popupRegister__checks
 				.popupRegister__check
@@ -46,6 +46,9 @@
 						span
 						| I wish to receive news and offers SMS.
 			input.popupRegister__submit(type="submit" value="Sign Up")
-			
+		form.popupRegister__form.second.closed
+			.popupRegister__text Для подтверждения регестрации введите код высланный на ваш e-mail или телефон:
+			input.popupRegister__input.second
+			input.popupRegister__accept(type="submit" value="Accept")
 		img.popupRegister__right(src="img/header/banner-right.png" alt="")
 	

@@ -1,0 +1,24 @@
+-
+	var asideItems = [
+	{src: 'img/games/icons/icon-1.png', text: 'Favourites', number: 5},
+	{src: 'img/games/icons/icon-2.png', text: 'Video Slots', number: 478},
+	{src: 'img/games/icons/icon-3.png', text: 'Table Games', number: 82},
+	{src: 'img/games/icons/icon-4.png', text: 'Video Poker', number: 11},
+	{src: 'img/games/icons/icon-5.png', text: 'Classic Slots', number: 0},
+	{src: 'img/games/icons/icon-6.png', text: 'Skretch Cards', number: 5},
+	{src: 'img/games/icons/icon-7.png', text: 'Other Games', number: 91},
+	{src: 'img/games/icons/icon-8.png', text: 'Jackpot Games', number: 33},
+	{src: 'img/games/icons/icon-9.png', text: 'Popular Games', number: 14},
+	{src: 'img/games/icons/icon-10.png', text: 'New Games', number: 19},
+	{src: 'img/games/icons/icon-11.png', text: 'All Games', number: 668}
+	]
+.aside
+	h3.aside__title Games Casino
+	ul.aside__list
+		each item in asideItems
+			li.aside__item
+				img.aside__img(src=#{item.src} alt='')
+				p.aside__text #{item.text}
+				.aside__box
+					span.aside__number #{item.number}
+	block

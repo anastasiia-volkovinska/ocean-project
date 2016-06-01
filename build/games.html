@@ -27,12 +27,14 @@
                     </div>
                     <div class="logged__item">Balance: 
                       <div class="logged__field logged__field--iconed">123.232,00</div>
-                    </div>
-                    <button class="logged__deposit">Deposit</button>
+                    </div><a href="banking.html" class="logged__deposit">Deposit</a>
                     <button class="logged__logout">Logout</button>
                   </div>
                   <div class="entry">
                     <form action="#" autocomplete="on" class="entry__form">
+                      <div class="entry__lang">
+                        <div class="lang"></div>
+                      </div>
                       <input type="text" placeholder="Username:" class="entry__input">
                       <label class="entry__label">
                         <input type="password" placeholder="Password:" class="entry__input entry__input--iconed"><img src="img/header/search.png" alt="" class="entry__icon">
@@ -48,13 +50,15 @@
                   <ul class="nav"><a href="/" class="nav__link">
                       <li class="nav__item">Home</li></a><a href="games.html" class="nav__link nav__link--active">
                       <li class="nav__item">Games</li></a><a href="account.html" class="nav__link nav__link--closed">
-                      <li class="nav__item">Account</li></a><a href="promotions.html" class="nav__link">
+                      <li class="nav__item">Account</li></a><a href="live-casino.html" class="nav__link">
+                      <li class="nav__item">Live Casino</li></a><a href="sports.html" class="nav__link">
+                      <li class="nav__item">Sports</li></a><a href="live-sports.html" class="nav__link">
+                      <li class="nav__item">Live Sports</li></a><a href="virtual-sports.html" class="nav__link">
+                      <li class="nav__item">Virtual Sports</li></a><a href="lottery.html" class="nav__link">
+                      <li class="nav__item">Lottery</li></a><a href="promotions.html" class="nav__link">
                       <li class="nav__item">Promotions</li></a><a href="vip.html" class="nav__link">
                       <li class="nav__item">VIP</li></a><a href="banking.html" class="nav__link">
-                      <li class="nav__item">Banking</li></a><a href="#" class="nav__link">
-                      <li> 
-                        <div class="lang"></div>
-                      </li></a>
+                      <li class="nav__item">Banking</li></a>
                   </ul>
           </div>
         </section>
@@ -85,51 +89,87 @@
               <li class="breadcrumbs__item breadcrumbs__item--current"><a href="#" class="breadcrumbs__link">Casino Games</a></li>
             </ul>
             <div class="games">
+              <aside class="games__aside">
+                <div class="aside">
+                  <h3 class="aside__title">Games Casino</h3>
+                  <ul class="aside__list">
+                    <li class="aside__item"><img src="img/games/icons/icon-1.png" alt="" class="aside__img">
+                      <p class="aside__text">Favourites</p>
+                      <div class="aside__box"><span class="aside__number">5</span></div>
+                    </li>
+                    <li class="aside__item"><img src="img/games/icons/icon-2.png" alt="" class="aside__img">
+                      <p class="aside__text">Video Slots</p>
+                      <div class="aside__box"><span class="aside__number">478</span></div>
+                    </li>
+                    <li class="aside__item"><img src="img/games/icons/icon-3.png" alt="" class="aside__img">
+                      <p class="aside__text">Table Games</p>
+                      <div class="aside__box"><span class="aside__number">82</span></div>
+                    </li>
+                    <li class="aside__item"><img src="img/games/icons/icon-4.png" alt="" class="aside__img">
+                      <p class="aside__text">Video Poker</p>
+                      <div class="aside__box"><span class="aside__number">11</span></div>
+                    </li>
+                    <li class="aside__item"><img src="img/games/icons/icon-5.png" alt="" class="aside__img">
+                      <p class="aside__text">Classic Slots</p>
+                      <div class="aside__box"><span class="aside__number">0</span></div>
+                    </li>
+                    <li class="aside__item"><img src="img/games/icons/icon-6.png" alt="" class="aside__img">
+                      <p class="aside__text">Skretch Cards</p>
+                      <div class="aside__box"><span class="aside__number">5</span></div>
+                    </li>
+                    <li class="aside__item"><img src="img/games/icons/icon-7.png" alt="" class="aside__img">
+                      <p class="aside__text">Other Games</p>
+                      <div class="aside__box"><span class="aside__number">91</span></div>
+                    </li>
+                    <li class="aside__item"><img src="img/games/icons/icon-8.png" alt="" class="aside__img">
+                      <p class="aside__text">Jackpot Games</p>
+                      <div class="aside__box"><span class="aside__number">33</span></div>
+                    </li>
+                    <li class="aside__item"><img src="img/games/icons/icon-9.png" alt="" class="aside__img">
+                      <p class="aside__text">Popular Games</p>
+                      <div class="aside__box"><span class="aside__number">14</span></div>
+                    </li>
+                    <li class="aside__item"><img src="img/games/icons/icon-10.png" alt="" class="aside__img">
+                      <p class="aside__text">New Games</p>
+                      <div class="aside__box"><span class="aside__number">19</span></div>
+                    </li>
+                    <li class="aside__item"><img src="img/games/icons/icon-11.png" alt="" class="aside__img">
+                      <p class="aside__text">All Games</p>
+                      <div class="aside__box"><span class="aside__number">668</span></div>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
               <section class="gamesNew open">
                 <div class="gamesNew__title">New games<a href="#">View All</a></div>
                             <div class="gamesNew__row">
                               <div data-type="new" class="gamesNew__item">
                                 <div class="gamesNew__figure"><img src="img/games/game-1.png" alt="" class="gamesNew__img">
-                                  <div class="gamesNew__hover">
-                                    <button class="gamesNew__win">play to win</button>
-                                    <button class="gamesNew__fun">play for fun</button>
-                                  </div>
+                                  <div class="gamesNew__hover"><a href="game.html" class="gamesNew__win">play to win</a><a href="game.html" class="gamesNew__fun">play for fun</a></div>
                                 </div>
                                 <p data-type="" class="gamesNew__descr">The Queen<em>Video Slot</em></p>
                               </div>
                               <div data-type="hot" class="gamesNew__item">
                                 <div class="gamesNew__figure"><img src="img/games/game-2.png" alt="" class="gamesNew__img">
-                                  <div class="gamesNew__hover">
-                                    <button class="gamesNew__win">play to win</button>
-                                    <button class="gamesNew__fun">play for fun</button>
-                                  </div>
+                                  <div class="gamesNew__hover"><a href="game.html" class="gamesNew__win">play to win</a><a href="game.html" class="gamesNew__fun">play for fun</a></div>
                                 </div>
                                 <p data-type="star" class="gamesNew__descr">Gold Sea<em>Video Slot</em></p>
                               </div>
                               <div data-type="" class="gamesNew__item">
                                 <div class="gamesNew__figure"><img src="img/games/game-3.png" alt="" class="gamesNew__img">
-                                  <div class="gamesNew__hover">
-                                    <button class="gamesNew__win">play to win</button>
-                                    <button class="gamesNew__fun">play for fun</button>
-                                  </div>
+                                  <div class="gamesNew__hover"><a href="game.html" class="gamesNew__win">play to win</a><a href="game.html" class="gamesNew__fun">play for fun</a></div>
                                 </div>
                                 <p data-type="" class="gamesNew__descr">Calipso<em>Video Slot</em></p>
                               </div>
                               <div data-type="" class="gamesNew__item">
                                 <div class="gamesNew__figure"><img src="img/games/game-4.png" alt="" class="gamesNew__img">
-                                  <div class="gamesNew__hover">
-                                    <button class="gamesNew__win">play to win</button>
-                                    <button class="gamesNew__fun">play for fun</button>
-                                  </div>
+                                  <div class="gamesNew__hover"><a href="game.html" class="gamesNew__win">play to win</a><a href="game.html" class="gamesNew__fun">play for fun</a></div>
                                 </div>
                                 <p data-type="star" class="gamesNew__descr">Egypt Story<em>Classic Slot</em></p>
                               </div>
                               <div data-type="new" class="gamesNew__item">
                                 <div class="gamesNew__figure"><img src="img/games/game-5.png" alt="" class="gamesNew__img">
-                                  <div class="gamesNew__hover">
-                                    <button class="gamesNew__win">play to win</button>
-                                    <button class="gamesNew__fun">play for fun</button>
-                                  </div>
+                                  <div class="gamesNew__hover"><a href="game.html" class="gamesNew__win">play to win</a><a href="game.html" class="gamesNew__fun">play for fun</a></div>
                                 </div>
                                 <p data-type="" class="gamesNew__descr">The Queen<em>Video Slot</em></p>
                               </div>
@@ -140,46 +180,31 @@
                             <div class="gamesPopular__row">
                               <div data-type="" class="gamesPopular__item">
                                 <div class="gamesPopular__figure"><img src="img/games/game-6.png" alt="" class="gamesPopular__img">
-                                  <div class="gamesPopular__hover">
-                                    <button class="gamesPopular__win">play to win</button>
-                                    <button class="gamesPopular__fun">play for fun</button>
-                                  </div>
+                                  <div class="gamesPopular__hover"><a href="game.html" class="gamesPopular__win">play to win</a><a href="game.html" class="gamesPopular__fun">play for fun</a></div>
                                 </div>
                                 <p data-type="star" class="gamesPopular__descr">The Queen<em>Video Slot</em></p>
                               </div>
                               <div data-type="" class="gamesPopular__item">
                                 <div class="gamesPopular__figure"><img src="img/games/game-7.png" alt="" class="gamesPopular__img">
-                                  <div class="gamesPopular__hover">
-                                    <button class="gamesPopular__win">play to win</button>
-                                    <button class="gamesPopular__fun">play for fun</button>
-                                  </div>
+                                  <div class="gamesPopular__hover"><a href="game.html" class="gamesPopular__win">play to win</a><a href="game.html" class="gamesPopular__fun">play for fun</a></div>
                                 </div>
                                 <p data-type="star" class="gamesPopular__descr">Gold Sea<em>Video Slot</em></p>
                               </div>
                               <div data-type="" class="gamesPopular__item">
                                 <div class="gamesPopular__figure"><img src="img/games/game-8.png" alt="" class="gamesPopular__img">
-                                  <div class="gamesPopular__hover">
-                                    <button class="gamesPopular__win">play to win</button>
-                                    <button class="gamesPopular__fun">play for fun</button>
-                                  </div>
+                                  <div class="gamesPopular__hover"><a href="game.html" class="gamesPopular__win">play to win</a><a href="game.html" class="gamesPopular__fun">play for fun</a></div>
                                 </div>
                                 <p data-type="" class="gamesPopular__descr">Calipso<em>Video Slot</em></p>
                               </div>
                               <div data-type="" class="gamesPopular__item">
                                 <div class="gamesPopular__figure"><img src="img/games/game-9.png" alt="" class="gamesPopular__img">
-                                  <div class="gamesPopular__hover">
-                                    <button class="gamesPopular__win">play to win</button>
-                                    <button class="gamesPopular__fun">play for fun</button>
-                                  </div>
+                                  <div class="gamesPopular__hover"><a href="game.html" class="gamesPopular__win">play to win</a><a href="game.html" class="gamesPopular__fun">play for fun</a></div>
                                 </div>
                                 <p data-type="star" class="gamesPopular__descr">Egypt Story<em>Classic Slot</em></p>
                               </div>
                               <div data-type="new" class="gamesPopular__item">
                                 <div class="gamesPopular__figure"><img src="img/games/game-10.png" alt="" class="gamesPopular__img">
-                                  <div class="gamesPopular__hover">
-                                    <button class="gamesPopular__win">play to win</button>
-                                    <button class="gamesPopular__fun">play for fun</button>
-                                  </div>
+                                  <div class="gamesPopular__hover"><a href="game.html" class="gamesPopular__win">play to win</a><a href="game.html" class="gamesPopular__fun">play for fun</a></div>
                                 </div>
                                 <p data-type="" class="gamesPopular__descr">The Queen<em>Video Slot</em></p>
                               </div>
@@ -190,46 +215,31 @@
                             <div class="gamesVideo__row">
                               <div data-type="hot" class="gamesVideo__item">
                                 <div class="gamesVideo__figure"><img src="img/games/game-11.png" alt="" class="gamesVideo__img">
-                                  <div class="gamesVideo__hover">
-                                    <button class="gamesVideo__win">play to win</button>
-                                    <button class="gamesVideo__fun">play for fun</button>
-                                  </div>
+                                  <div class="gamesVideo__hover"><a href="game.html" class="gamesVideo__win">play to win</a><a href="game.html" class="gamesVideo__fun">play for fun</a></div>
                                 </div>
                                 <p data-type="" class="gamesVideo__descr">The Queen<em>Video Slot</em></p>
                               </div>
                               <div data-type="hot" class="gamesVideo__item">
                                 <div class="gamesVideo__figure"><img src="img/games/game-12.png" alt="" class="gamesVideo__img">
-                                  <div class="gamesVideo__hover">
-                                    <button class="gamesVideo__win">play to win</button>
-                                    <button class="gamesVideo__fun">play for fun</button>
-                                  </div>
+                                  <div class="gamesVideo__hover"><a href="game.html" class="gamesVideo__win">play to win</a><a href="game.html" class="gamesVideo__fun">play for fun</a></div>
                                 </div>
                                 <p data-type="" class="gamesVideo__descr">Gold Sea<em>Video Slot</em></p>
                               </div>
                               <div data-type="" class="gamesVideo__item">
                                 <div class="gamesVideo__figure"><img src="img/games/game-13.png" alt="" class="gamesVideo__img">
-                                  <div class="gamesVideo__hover">
-                                    <button class="gamesVideo__win">play to win</button>
-                                    <button class="gamesVideo__fun">play for fun</button>
-                                  </div>
+                                  <div class="gamesVideo__hover"><a href="game.html" class="gamesVideo__win">play to win</a><a href="game.html" class="gamesVideo__fun">play for fun</a></div>
                                 </div>
                                 <p data-type="star" class="gamesVideo__descr">Calipso<em>Video Slot</em></p>
                               </div>
                               <div data-type="new" class="gamesVideo__item">
                                 <div class="gamesVideo__figure"><img src="img/games/game-14.png" alt="" class="gamesVideo__img">
-                                  <div class="gamesVideo__hover">
-                                    <button class="gamesVideo__win">play to win</button>
-                                    <button class="gamesVideo__fun">play for fun</button>
-                                  </div>
+                                  <div class="gamesVideo__hover"><a href="game.html" class="gamesVideo__win">play to win</a><a href="game.html" class="gamesVideo__fun">play for fun</a></div>
                                 </div>
                                 <p data-type="" class="gamesVideo__descr">Egypt Story<em>Classic Slot</em></p>
                               </div>
                               <div data-type="" class="gamesVideo__item">
                                 <div class="gamesVideo__figure"><img src="img/games/game-15.png" alt="" class="gamesVideo__img">
-                                  <div class="gamesVideo__hover">
-                                    <button class="gamesVideo__win">play to win</button>
-                                    <button class="gamesVideo__fun">play for fun</button>
-                                  </div>
+                                  <div class="gamesVideo__hover"><a href="game.html" class="gamesVideo__win">play to win</a><a href="game.html" class="gamesVideo__fun">play for fun</a></div>
                                 </div>
                                 <p data-type="" class="gamesVideo__descr">The Queen<em>Video Slot</em></p>
                               </div>
@@ -255,24 +265,8 @@
       </section>
       <section class="footer__info">
         <div class="container">
-          <div class="info">
-            <section class="info__payments">
-              <div class="payments"><img src="img/header/payments-1.png" alt="Payments" class="payments__img"><img src="img/header/payments-2.png" alt="Payments" class="payments__img">
-                <p class="payments__copy">The website is operated and managed by MYEG (Emancipate Boulevard 29, Willemstad, Curracao). Licence No. 5536/JAZ.<span class="payments__licence"> OceanCasino.com © 2016</span></p>
-              </div>
-            </section>
-            <section class="info__socials">
-              <div class="socials">
-                <div class="socials__row">
-                  <div class="socials__item">Fair<br>Licensed</div>
-                  <div class="socials__item">100%<br>Secure</div>
-                  <div class="socials__item"></div>
-                </div>
-                <div class="socials__row">
-                  <p class="socials__text">Follow us on:</p><img src="img/header/socials-4.png" alt="Socials" class="socials__img">
-                </div>
-              </div>
-            </section>
+          <div class="new-info"><img src="img/footer/footer-new-info.png" alt="" class="new-info__img">
+            <p class="new-info__copy">The website is operated and managed by MYEG (Emancipate Boulevard 29, Willemstad, Curracao). Licence No. 5536/JAZ.<span class="new-info__licence"> OceanCasino.com © 2016</span></p>
           </div>
         </div>
       </section>
@@ -335,20 +329,20 @@
         </div>
       </form>
     </div>
-    <div class="popupRegister open"><img src="img/profile/close.png" alt="" class="popupRegister__close">
+    <div class="popupRegister"><img src="img/profile/close.png" alt="" class="popupRegister__close">
       <div class="popupRegister__tabs">
-        <div class="popupRegister__tab active">On phone</div>
-        <div class="popupRegister__tab">On e-mail</div>
+        <div data-type="phone" class="popupRegister__tab active">On phone</div>
+        <div data-type="email" class="popupRegister__tab">On e-mail</div>
       </div>
       <div class="popupRegister__flexbox"><img src="img/header/banner-left.png" alt="" class="popupRegister__left">
         <form class="popupRegister__form">
-          <div class="popupRegister__item">
+          <div data-type="email" class="popupRegister__item">
             <label class="popupRegister__label">Phone:<em class="star">*</em></label>
             <div class="popupRegister__box">
               <input class="popupRegister__input">
             </div>
           </div>
-          <div class="popupRegister__item closed">
+          <div data-type="phone" class="popupRegister__item closed">
             <label class="popupRegister__label">E-mail:<em class="star">*</em></label>
             <div class="popupRegister__box">
               <input type="email" class="popupRegister__input">
@@ -374,7 +368,7 @@
                 <option value="2">USD</option>
                 <option value="3">RUS</option>
               </select>
-              <label class="popupRegister__label">Promo Code:</label>
+              <label class="popupRegister__label">Promocode:</label>
               <input class="popupRegister__input little">
             </div>
           </div>
@@ -391,6 +385,11 @@
             </div>
           </div>
           <input type="submit" value="Sign Up" class="popupRegister__submit">
+        </form>
+        <form class="popupRegister__form second closed">
+          <div class="popupRegister__text">Для подтверждения регестрации введите код высланный на ваш e-mail или телефон:</div>
+          <input class="popupRegister__input second">
+          <input type="submit" value="Accept" class="popupRegister__accept">
         </form><img src="img/header/banner-right.png" alt="" class="popupRegister__right">
       </div>
     </div>

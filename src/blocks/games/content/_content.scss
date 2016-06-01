@@ -7,6 +7,18 @@
 		width: 116px;
 		color: #008d75;
 	}
+	&__aside {
+		display: block;
+		position: fixed;
+		top: 20%;
+		left: calc(50% - 500px - 200px - 5px);
+		width: 200px;
+	}
+}
+@media screen and (max-width: 1400px) {
+	.games__aside {
+		display: none;
+	}
 }
 .gamesNew,
 .gamesPopular,
@@ -86,6 +98,7 @@
 	&__hover {
 		display: none;
 		position: absolute;
+		text-align: center;
 		top: 0;
 		bottom: 0;
 		right: 0;

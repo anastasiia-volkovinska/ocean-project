@@ -81,7 +81,10 @@
 		line-height: 18px;
 		cursor: pointer;
 	}
-
+	&__openTable {
+		width: 100%;
+		// table-layout: fixed;
+	}
 	&__openRow {
 		&.closed {
 			display: none;

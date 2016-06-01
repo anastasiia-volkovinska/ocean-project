@@ -1,16 +1,22 @@
 "use strict";
 
 $(document).ready(function () {
-	$(".entry__submit").click(function (event) {
+	$(".entry__submit, .screen__login").click(function (event) {
 		event.preventDefault();
 		$(".entry").addClass("entry--closed");
 		$(".logged").removeClass("logged--closed");
 		$(".nav__link--closed").removeClass("nav__link--closed");
+		$(".screen__deposit").toggleClass("closed");
+		$(".screen__login").toggleClass("closed");
+		$(".screen__register").toggleClass("closed");
 	});
 	$(".logged__logout").click(function (event) {
 		$(".logged").addClass("logged--closed");
 		$(".nav__link:nth-child(3)").addClass("nav__link--closed");
 		$(".entry").removeClass("entry--closed");
+		$(".screen__deposit").toggleClass("closed");
+		$(".screen__login").toggleClass("closed");
+		$(".screen__register").toggleClass("closed");
 	});
 	$(".upButton").click(function () {
 		$('html, body').animate({ scrollTop: 0 }, 'slow');
@@ -120,11 +126,179 @@ $(document).ready(function () {
 		$(".faq__answer").removeClass("open");
 		$(".faq__question").removeClass("closed");
 	});
-	// ../blocks/accountDeposit/accountDeposit.js
-	// ../blocks/accountWithdraw/accountWithdraw.js
-	// ../blocks/accountPayments/accountPayments.js
-	// ../blocks/accountHistory/accountHistory.js
-	// ../blocks/accountResponsible/accountResponsible.js
+	$(".popupRegister__tab").click(function () {
+		$(".popupRegister__tab").removeClass("active");
+		$(this).addClass("active");
+		var data = $(this).data("type");
+		$(".popupRegister__item").removeClass("closed");
+		$(".popupRegister__item[data-type=" + data + "]").addClass("closed");
+	});
+	$(".overlay, .popupRegister__close, .popupLogin__close, .popupDeposit__close, .popupForgot__close").click(function () {
+		$(".overlay").removeClass("open");
+		$(".popupRegister, .popupLogin, .popupDeposit, .popupForgot").removeClass("open");
+	});
+	$(".popupRegister__submit").click(function (e) {
+		e.preventDefault();
+		$(".popupRegister__form").toggleClass("closed");
+	});
+
+	function openRegistration() {
+		$(".popupRegister").addClass("open");
+		$(".overlay").addClass("open");
+	}
+	function openLogin() {
+		$(".popupLogin").addClass("open");
+		$(".overlay").addClass("open");
+	}
+	function openForgot() {
+		$(".popupForgot").addClass("open");
+		$(".overlay").addClass("open");
+	}
+	function openDeposit() {
+		$(".popupDeposit").addClass("open");
+		$(".overlay").addClass("open");
+	}
+	$(".entry__icon").click(function () {
+		openForgot();
+	});
+	$(".entry__register, .screen__register").click(function () {
+		openRegistration();
+	});
+	$(".accountDeposit__button").click(function (event) {
+		$(".accountDeposit__openRow").addClass("accountDeposit__openRow--closed");
+		$(".accountDeposit__row").removeClass("accountDeposit__row--closed");
+		var button = $(event.target);
+		var parent = button.parent().parent();
+		parent.addClass("accountDeposit__row--closed");
+		var submenu = parent.next();
+		submenu.removeClass("accountDeposit__openRow--closed");
+		// parent.next().removeClass("accountDeposit__openRow--closed");
+	});
+	$(".accountDeposit__close").click(function (event) {
+		$(".accountDeposit__openRow").addClass("accountDeposit__openRow--closed");
+		$(".accountDeposit__row").removeClass("accountDeposit__row--closed");
+	});
+	$(".accountWithdraw__button").click(function (event) {
+		$(".accountWithdraw__openRow").addClass("accountWithdraw__openRow--closed");
+		$(".accountWithdraw__row").removeClass("accountWithdraw__row--closed");
+		var button = $(event.target);
+		var parent = button.parent().parent();
+		parent.addClass("accountWithdraw__row--closed");
+		var submenu = parent.next();
+		submenu.removeClass("accountWithdraw__openRow--closed");
+		// parent.next().removeClass("accountWithdraw__openRow--closed");
+	});
+	$(".accountWithdraw__close").click(function (event) {
+		$(".accountWithdraw__openRow").addClass("accountWithdraw__openRow--closed");
+		$(".accountWithdraw__row").removeClass("accountWithdraw__row--closed");
+	});
+	$(".accountPayments__button").click(function (event) {
+		$(".accountPayments__openRow").addClass("accountPayments__openRow--closed");
+		$(".accountPayments__row").removeClass("accountPayments__row--closed");
+		var button = $(event.target);
+		var parent = button.parent().parent();
+		parent.addClass("accountPayments__row--closed");
+		var submenu = parent.next();
+		submenu.removeClass("accountPayments__openRow--closed");
+		// parent.next().removeClass("accountPayments__openRow--closed");
+	});
+	$(".accountPayments__close").click(function (event) {
+		$(".accountPayments__openRow").addClass("accountPayments__openRow--closed");
+		$(".accountPayments__row").removeClass("accountPayments__row--closed");
+	});
+
+	$('.input_file input[type=file]').change(function () {
+		var t = $(this).val();
+		if (t.indexOf('C:\\fakepath\\') + 1) t = t.substr(12);
+		var e = $(this).next().find('.fake_file_input');
+		e.val(t);
+	});
+	$('.clear_input').click(function () {
+		var a = $(this).parent();
+		var e = a.find('.fake_file_input');
+		var t = a.find('input[type=file]');
+		t.replaceWith('<input type="file" name="" >');
+		e.val('');
+	});
+	$(".accountHistory__button").click(function (event) {
+		$(".accountHistory__openRow").addClass("accountHistory__openRow--closed");
+		$(".accountHistory__row").removeClass("accountHistory__row--closed");
+		var button = $(event.target);
+		var parent = button.parent().parent();
+		parent.addClass("accountHistory__row--closed");
+		var submenu = parent.next();
+		submenu.removeClass("accountHistory__openRow--closed");
+		// parent.next().removeClass("accountHistory__openRow--closed");
+	});
+	$(".accountHistory__close").click(function (event) {
+		$(".accountHistory__openRow").addClass("accountHistory__openRow--closed");
+		$(".accountHistory__row").removeClass("accountHistory__row--closed");
+	});
+	$(".accountResponsible__button").click(function (event) {
+		$(".accountResponsible__openRow").addClass("accountResponsible__openRow--closed");
+		$(".accountResponsible__row").removeClass("accountResponsible__row--closed");
+		var button = $(event.target);
+		var parent = button.parent().parent();
+		parent.addClass("accountResponsible__row--closed");
+		var submenu = parent.next();
+		submenu.removeClass("accountResponsible__openRow--closed");
+		// parent.next().removeClass("accountResponsible__openRow--closed");
+	});
+	$(".accountResponsible__close").click(function (event) {
+		$(".accountResponsible__openRow").addClass("accountResponsible__openRow--closed");
+		$(".accountResponsible__row").removeClass("accountResponsible__row--closed");
+	});
+	$(".accountResponsible__exclusionButton").click(function () {
+		$(".accountResponsible__exclusionButton").addClass("clicked");
+		$(".accountResponsible__limitButton").removeClass("clicked");
+		$(".accountResponsible__exclusion").removeClass("closed");
+		$(".accountResponsible__header").addClass("closed");
+		$(".accountResponsible__table tbody").addClass("closed");
+	});
+	$(".accountResponsible__limitButton").click(function () {
+		$(".accountResponsible__limitButton").addClass("clicked");
+		$(".accountResponsible__exclusionButton").removeClass("clicked");
+		$(".accountResponsible__exclusion").addClass("closed");
+		$(".accountResponsible__header").removeClass("closed");
+		$(".accountResponsible__table tbody").removeClass("closed");
+	});
+	$(".accountPanel__select").change(function (event) {
+		var type = $(".accountPanel__select option:selected").data("type");
+		console.log(type);
+		$(".account>div").removeClass("open");
+		$("." + type).addClass("open");
+	});
+	$(".accountPanel__withdraw").click(function () {
+		$(this).addClass("active");
+		$(".accountPanel__deposit").removeClass("active");
+		$(".account>div").removeClass("open");
+		$(".accountWithdraw").addClass("open");
+	});
+	$(".accountPanel__deposit").click(function () {
+		$(this).addClass("active");
+		$(".accountPanel__withdraw").removeClass("active");
+		$(".account>div").removeClass("open");
+		$(".accountDeposit").addClass("open");
+	});
+	$(".screen__latest").click(function () {
+		$(".game__fav, .screen").toggleClass("open");
+	});
+	$(".screen__fullscreen").click(function () {
+		var game = document.querySelector(".screen__img");
+		launchFullScreen(game);
+	});
+	function launchFullScreen(element) {
+		if (element.requestFullScreen) {
+			element.requestFullScreen();
+		} else if (element.mozRequestFullScreen) {
+			element.mozRequestFullScreen();
+		} else if (element.webkitRequestFullScreen) {
+			element.webkitRequestFullScreen();
+		}
+	}
+	$(".screen__close").click(function () {
+		$(".screen").addClass("closed");
+	});
 	$('.slider').slick({
 		autoplay: true,
 		infinite: true,

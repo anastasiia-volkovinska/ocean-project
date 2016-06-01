@@ -1,0 +1,51 @@
+.aside {
+	background-image: url("img/games/background_blue.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 5px;
+	&__title {
+		text-align: center;
+		padding: 0.5em 0;
+		background-color: rgba(0, 0, 0, 0.4);
+		color: #fff;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+	&__list {
+
+	}
+	&__item {
+		display: flex;
+		padding: 0.2em;
+		justify-content: space-between;
+		align-items: center;
+		cursor: pointer;
+		background-color: transparent;
+		transition: all 0.3s;
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.15);
+		}
+		&:not(:last-child) {
+			border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+		}
+	}
+	&__img {
+		margin-left: 3px;
+	}
+	&__text {
+		color: #fff;
+		font-size: 0.9em;
+	}
+	&__box {
+		width: 35px;
+		height: 25px;
+		background-color: $table-bg;
+		border-radius: 3px;
+	}
+	&__number {
+		line-height: 25px;
+		margin-left: 0.5em;
+		font-size: 0.8em;
+		color: $text-light-blue;
+	}
+}

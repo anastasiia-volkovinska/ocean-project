@@ -1,0 +1,18 @@
+.new-info {
+	&__img{
+		margin-bottom: 0.2em;
+		cursor: pointer;
+		max-width: 100%;
+	}
+	&__copy {
+		margin: 0.5em 0;
+		text-align: center;
+		color: $copy-text-color;
+		font-size: 0.8em;
+		line-height: 1.5;
+	}
+	&__licence {
+		display: block;
+		padding-top: 0.5em;
+	}
+}

@@ -1,9 +1,9 @@
 .page {
-	min-height: 800px;
-	background-image: url("img/games/game-bg.png");
-	background-repeat: no-repeat;
-	background-position: bottom center;
-	background-size: cover;
+	min-height: 1200px;
+	background-image: url("img/games/bg-top.png"), url("img/games/bg-bottom.png"), url("img/games/bg-middle.png");
+	background-repeat: no-repeat, no-repeat, repeat-y;
+	background-position: top, bottom center;
+	background-size: 100% auto, 100% auto, 100% auto;
 	&__panel {
 		position: relative;
 		z-index: 1;

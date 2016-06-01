@@ -55,13 +55,16 @@ html(lang="en")
 							include ../blocks/footer/footer-nav/footer-nav.jade
 				section.footer__info
 					.container
-						.info
-							section.info__payments
-								block payments
-									include ../blocks/footer/payments/payments.jade
-							section.info__socials
-								block socials
-									include ../blocks/footer/socials/socials.jade
+						block footer-info
+							include ../blocks/footer/new-info/new-info.jade
+						//- Old Footer
+						//- .info
+						//- 	section.info__payments
+						//- 		block payments
+						//- 			include ../blocks/footer/payments/payments.jade
+						//- 	section.info__socials
+						//- 		block socials
+						//- 			include ../blocks/footer/socials/socials.jade
 
 		block popups
 			include ../blocks/popups/deposit/deposit.jade

@@ -4,6 +4,8 @@ mixin entry(loggedIn)
 		.entry
 			block form
 				form.entry__form(action='#', autocomplete='on')
+					.entry__lang
+						include ../lang/lang.jade
 					input.entry__input(type='text', placeholder='Username:')
 					label.entry__label
 						input.entry__input.entry__input--iconed(type='password', placeholder='Password:')

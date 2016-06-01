@@ -20,6 +20,7 @@
 @import "../blocks/footer/footer-nav/_footer-nav.scss";
 @import "../blocks/footer/payments/_payments.scss";
 @import "../blocks/footer/socials/_socials.scss";
+@import "../blocks/footer/new-info/_new-info.scss";
 
 // For all pages
 @import "../blocks/pages/_pages.scss";
@@ -42,6 +43,7 @@
 // For games.html
 @import "../blocks/games/panel/_panel.scss";
 @import "../blocks/games/content/_content.scss";
+@import "../blocks/games/aside/_aside.scss";
 
 // For faq.html
 @import "../blocks/faq/panel/_panel.scss";
@@ -68,6 +70,13 @@
 @import "../blocks/popups/forgot/_forgot.scss";
 @import "../blocks/popups/login/_login.scss";
 @import "../blocks/popups/register/_register.scss";
+
+// For game.html
+@import "../blocks/game/content/_content.scss";
+
+// For affilate.html
+@import "../blocks/affilate/content/_content.scss";
+
 
 // @import "../blocks/accountContent/_accountContent.scss";
 // @import "../blocks/accountProfile/_accountProfile.scss";

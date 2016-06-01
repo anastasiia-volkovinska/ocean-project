@@ -81,7 +81,14 @@
 		}
 	}
 	&__form {
+		max-width: 380px;
+		&.closed {
+			display: none;
+		}
 		margin-top: 2em;
+		&.second {
+			text-align: center;
+		}
 	}
 	&__item {
 		&.closed {
@@ -108,9 +115,34 @@
 		display: block;
 		width: 100%;
 		margin: 0;
-		border-radius: 3px;;
+		border-radius: 3px;
+		&.little {
+			width: 50px;
+		}
+		&.second {
+			width: 200px;
+			margin: 0 auto;
+			margin-top: 1.5em;
+			margin-bottom: 1.5em;
+		}
 	}
-	&__submit {
+	&__text {
+		font-size: 0.8em;
+		color: #fff;
+		font-weight: 300;
+		line-height: 1.3;
+	}
+	&__select {
+		@extend .entry__input;
+		width: 70px;
+	}
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__submit,
+	&__accept {
 		@extend %whiteButton;
 		color: $submit-green;
 		display: block;

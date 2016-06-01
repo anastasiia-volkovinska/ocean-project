@@ -300,3 +300,1086 @@
 		font-size: 1.2em;
 	}
 }
+
+.accountDeposit {
+	display: none;
+	&.open {
+		display: block;
+	}
+	min-height: 600px;
+	&__title {
+		@extend %pageHeader;
+	}
+	&__text {
+		color: #abe0ff;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+		margin-bottom: 1.5em;
+	}
+	&__openRow--closed {
+		display: none;
+	}
+	&__openItem {
+		position: relative;
+	}
+	&__close {
+		position: absolute;
+		top: 0.5em;
+		right: 0.5em;
+		cursor: pointer;
+	}
+	&__openHeader {
+		padding: 0.2em;
+		color: #01f7f6;
+		line-height: 26px;
+	}
+	&__openImg {
+		@extend .accountDeposit__img;
+	}
+	&__openText {
+		margin: 0.5em 4em;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+		color: #4fbaff;
+	}
+	&__openForm {
+		margin: 1.5em 0.5em
+	}
+	&__openLabel {
+		position: relative;
+		color: #4fbaff !important;
+		padding-right: 1em !important;
+		&:after {
+			content: "";
+			top: 2px;
+			position: absolute;
+			right: 22px;
+			display: block;
+			width: 23px;
+			height: 23px;
+			background-image: url("img/header/evro.png");
+			background-repeat: no-repeat;
+		}
+	}
+	&__openInput {
+		box-sizing: border-box;
+		margin-left: 3px;
+		padding: 0 0.5em;
+		width: 165px;
+		height: 26px;
+		background-color: white;
+		border: 1px solid #b7d9ec;
+		border-radius: 3px;
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+	}
+	&__openSubmit {
+		@extend .accountDeposit__button;
+	}
+	&__row--closed {
+		display: none;
+	}
+	&__row:nth-of-type(4n+1) {
+		background-color: #0d2b3b;
+	}
+	&__openRow:nth-of-type(4n+2) {
+		background-color: #0d2b3b;
+	}
+	&__header {
+		background-color: #1971a1;
+	}
+	&__item {
+		padding: 0.2em;
+		color: #01f7f6;
+		&:first-child {
+			line-height: 26px;
+		}
+		& span {
+			display: block;
+			color: #4fbaff;
+			margin-bottom: 2px;
+			& em {
+				font-style: normal;
+				color: #01f7f6;
+			}
+		}
+	}
+	&__img {
+		vertical-align: bottom;
+		margin-right: 0.5em;
+		margin-left: 0.2em;
+	}
+	&__button {
+		width: 111px;
+		height: 27px;
+		background-color: #ff00f0;
+		background-image: linear-gradient(to top, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.5) 100%);
+		border-radius: 3px;
+		border: none;
+		color: #fff;
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 18px;
+		cursor: pointer;
+	}
+
+	&__table {
+		width: 100%;
+		background-color: #0e5278;
+		& th {
+			color: white;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 22px;
+			padding: 0.5em;
+		}
+	}
+}
+.accountWithdraw {
+	display: none;
+	&.open {
+		display: block;
+	}
+	min-height: 600px;
+	&__title {
+		@extend %pageHeader;
+	}
+	&__text {
+		color: #abe0ff;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+		margin-bottom: 1.5em;
+		& em {
+			font-style: normal;
+			font-size: 1.2em;
+		}
+	}
+	&__openRow--closed {
+		display: none;
+	}
+	&__openItem {
+		position: relative;
+	}
+	&__close {
+		position: absolute;
+		top: 0.5em;
+		right: 0.5em;
+		cursor: pointer;
+	}
+	&__openHeader {
+		padding: 0.2em;
+		color: #01f7f6;
+		line-height: 26px;
+	}
+	&__openImg {
+		@extend .accountDeposit__img;
+	}
+	&__openText {
+		margin: 0.5em 4em;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+		color: #4fbaff;
+	}
+	&__openForm {
+		margin: 1.5em 0.5em
+	}
+	&__openLabel {
+		position: relative;
+		color: #4fbaff !important;
+		padding-right: 1em !important;
+		&:after {
+			content: "";
+			position: absolute;
+			top: 2px;
+			right: 22px;
+			display: block;
+			width: 23px;
+			height: 23px;
+			background-image: url("img/header/evro.png");
+			background-repeat: no-repeat;
+		}
+	}
+	&__openInput {
+		box-sizing: border-box;
+		margin-left: 3px;
+		padding: 0 0.5em;
+		width: 165px;
+		height: 26px;
+		background-color: white;
+		border: 1px solid #b7d9ec;
+		border-radius: 3px;
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+	}
+	&__openSubmit {
+		@extend .accountDeposit__button;
+	}
+	&__row--closed {
+		display: none;
+	}
+	&__row:nth-of-type(4n+1) {
+		background-color: #0d2b3b;
+	}
+	&__openRow:nth-of-type(4n+2) {
+		background-color: #0d2b3b;
+	}
+	&__header {
+		background-color: #1971a1;
+	}
+	&__item {
+		padding: 0.2em;
+		color: #01f7f6;
+		&:first-child {
+			line-height: 26px;
+		}
+		& span {
+			display: block;
+			color: #4fbaff;
+			margin-bottom: 2px;
+			& em {
+				font-style: normal;
+				color: #01f7f6;
+			}
+		}
+	}
+	&__img {
+		vertical-align: bottom;
+		margin-right: 0.5em;
+		margin-left: 0.2em;
+	}
+	&__button {
+		width: 111px;
+		height: 27px;
+		background-color: #ff00f0;
+		background-image: linear-gradient(to top, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.5) 100%);
+		border-radius: 3px;
+		border: none;
+		color: #fff;
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 18px;
+		cursor: pointer;
+	}
+
+	&__table {
+		width: 100%;
+		background-color: #0e5278;
+		& th {
+			color: white;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 22px;
+			padding: 0.5em;
+		}
+	}
+}
+.accountPayments {
+	display: none;
+	&.open {
+		display: block;
+	}
+	min-height: 600px;
+	&__title {
+		@extend %pageHeader;
+	}
+	&__text {
+		color: #abe0ff;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+		margin-bottom: 1.5em;
+		& em {
+			font-style: normal;
+			font-size: 1.2em;
+		}
+	}
+	&__openRow--closed {
+		display: none;
+	}
+	&__openItem {
+		position: relative;
+	}
+	&__close {
+		position: absolute;
+		top: 0.5em;
+		right: 0.5em;
+		cursor: pointer;
+	}
+	&__openHeader {
+		padding: 0.2em;
+		color: #01f7f6;
+		line-height: 26px;
+	}
+	&__openImg {
+		@extend .accountDeposit__img;
+	}
+	&__openText {
+		margin: 0.5em 4em;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+		color: #4fbaff;
+		& em {
+			font-style: normal;
+			color: #01f7f6;
+		}
+	}
+	&__openForm {
+		margin: 1.5em 0.5em;
+		margin-bottom: 0;
+	}
+	&__openWarning {
+		color: #bda4c3;
+		font-size: 13px;
+		margin-top: -10px;
+		margin-bottom: 10px;
+		margin-left: 10px;
+	}
+	&__openLabel {
+		position: relative;
+		margin-left: 2.5em;
+		color: #4fbaff !important;
+		padding-right: 1em !important;
+		&:before {
+			content: "";
+			position: absolute;
+			top: -3px;
+			left: -10px;
+			display: block;
+			width: 16px;
+			height: 13px;
+			background-image: url("img/profile/folder.png");
+			background-repeat: no-repeat;
+		}
+	}
+	&__openInput {
+		box-sizing: border-box;
+		margin-left: 3px;
+		padding: 0 0.5em;
+		width: 165px;
+		height: 26px;
+		background-color: white;
+		border: 1px solid #b7d9ec;
+		border-radius: 3px;
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+	}
+	&__openSubmit {
+		@extend .accountDeposit__button;
+	}
+	&__row--closed {
+		display: none;
+	}
+	&__row:nth-of-type(4n+1) {
+		background-color: #0d2b3b;
+	}
+	&__openRow:nth-of-type(4n+2) {
+		background-color: #0d2b3b;
+	}
+	&__header {
+		background-color: #1971a1;
+	}
+	&__item {
+		padding: 0.3em;
+		color: #01f7f6;
+		&:first-child {
+			padding-left: 0.5em;
+			// line-height: 26px;
+		}
+		&:last-child {
+			text-align: right;
+		}
+		& span {
+			text-decoration: underline;
+			// display: block;
+			color: #4fbaff;
+			margin-left: 4px;
+			& em {
+				font-style: normal;
+				color: #01f7f6;
+			}
+		}
+	}
+	&__img {
+		vertical-align: bottom;
+		// margin-right: 0.5em;
+		margin-left: 0.5em;
+	}
+	&__button {
+		width: 111px;
+		height: 27px;
+		margin-right: 0.5em;
+		background-color: #d6ecf9;
+		background-image: linear-gradient(to top, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.5) 100%);
+		border-radius: 3px;
+		border: none;
+		color: #1971a1;
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 18px;
+		cursor: pointer;
+	}
+
+	&__table {
+		width: 100%;
+		background-color: #0e5278;
+		& th {
+			color: white;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 22px;
+			padding: 0.5em;
+		}
+	}
+}
+.accountHistory {
+	display: none;
+	&.open {
+		display: block;
+	}
+	min-height: 600px;
+	&__title {
+		@extend %pageHeader;
+	}
+	&__text {
+		color: #abe0ff;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+		margin-bottom: 1.5em;
+		& em {
+			font-style: normal;
+			font-size: 1.2em;
+		}
+	}
+	&__openRow--closed {
+		display: none;
+	}
+	&__openItem {
+		position: relative;
+	}
+	&__close {
+		position: absolute;
+		top: 0.5em;
+		right: 0.5em;
+		cursor: pointer;
+	}
+	&__openHeader {
+		padding: 0.2em;
+		color: #01f7f6;
+		line-height: 26px;
+	}
+	&__openImg {
+		@extend .accountDeposit__img;
+	}
+	&__openText {
+		margin: 0.5em 4em;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+		color: #4fbaff;
+		& em {
+			font-style: normal;
+			color: #01f7f6;
+			&.accountHistory__openRed {
+				color: #90363c;
+			}
+		}
+	}
+	&__openForm {
+		margin: 1.5em 0.5em;
+		margin-bottom: 0;
+	}
+	&__openWarning {
+		color: #bda4c3;
+		font-size: 13px;
+		margin-top: -10px;
+		margin-bottom: 10px;
+		margin-left: 10px;
+	}
+	&__openLabel {
+		position: relative;
+		margin-left: 2.5em;
+		color: #4fbaff !important;
+		padding-right: 1em !important;
+		&:before {
+			content: "";
+			position: absolute;
+			top: -7px;
+			left: 0px;
+			display: block;
+			width: 16px;
+			height: 13px;
+			background-image: url("img/profile/folder.png");
+			background-repeat: no-repeat;
+		}
+	}
+	&__openRed {
+		color: #ca3b3d;
+	}
+	&__openInput {
+		box-sizing: border-box;
+		margin-left: 3px;
+		padding: 0 0.5em;
+		width: 165px;
+		height: 26px;
+		background-color: white;
+		border: 1px solid #b7d9ec;
+		border-radius: 3px;
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+	}
+	&__openSubmit {
+		@extend .accountDeposit__button;
+	}
+	&__row--closed {
+		display: none;
+	}
+	&__row:nth-of-type(4n+1) {
+		background-color: #0d2b3b;
+	}
+	&__openRow:nth-of-type(4n+2) {
+		background-color: #0d2b3b;
+	}
+	&__search {
+		background-color: #1971a1;
+		& td {
+			padding: 0.5em;
+		}
+		&Select {
+			margin-left: 1em;
+			color: #fff;
+			font-size: 0.7em;
+			font-weight: 300;
+			& select {
+				margin-left: 4px;
+			}
+		}
+		&Submit {
+			position: relative;
+			color: #fff;
+			font-size: 0.7em;
+			font-weight: 300;
+			& input {
+				padding-left: 1.5em;
+				cursor: pointer;
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				display: block;
+				top: 2px;
+				left: 4px;
+				width: 12px;
+				height: 12px;
+				background-image: url("img/profile/search.png");
+				background-repeat: no-repeat;
+			}
+		}
+		&Date {
+			color: #fff;
+			font-size: 0.7em;
+			font-weight: 300;
+			position: relative;
+			& input {
+				width: 100px;
+				margin-left: 5px;
+				padding: 0 0.5em;
+				&::-webkit-input-placeholder {
+					color: #00fffb;
+				}
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				display: block;
+				top: 0;
+				right: 8px;
+				width: 15px;
+				height: 16px;
+				background-image: url("img/profile/calendar.png");
+				background-repeat: no-repeat;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				display: block;
+				top: 0;
+				left: 164px;
+				width: 15px;
+				height: 16px;
+				background-image: url("img/profile/calendar.png");
+				background-repeat: no-repeat;
+			}
+		}
+		& input,
+		& select {
+			box-sizing: border-box;
+			height: 25px;
+			background-color: #0a3b56;
+			border-radius: 3px;
+			border: none;
+			box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+			color: #00fffb;
+		}
+	}
+	&__header {
+		background-color: transparent;
+	}
+	&__item {
+		padding: 0.3em;
+		color: #01f7f6;
+		&:first-child {
+			padding-left: 0.5em;
+			// line-height: 26px;
+		}
+		&:last-child {
+			text-align: right;
+		}
+		& span {
+			text-decoration: underline;
+			// display: block;
+			color: #4fbaff;
+			margin-left: 4px;
+			& em {
+				font-style: normal;
+				color: #01f7f6;
+			}
+		}
+	}
+	&__img {
+		vertical-align: bottom;
+		// margin-right: 0.5em;
+		margin-left: 0.5em;
+	}
+	&__button {
+		width: 111px;
+		height: 27px;
+		margin-right: 0.5em;
+		background-color: #d6ecf9;
+		background-image: linear-gradient(to top, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.5) 100%);
+		border-radius: 3px;
+		border: none;
+		color: #1971a1;
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 18px;
+		cursor: pointer;
+	}
+
+	&__table {
+		width: 100%;
+		& tbody {
+			background-color: #0e5278;
+		}
+		& th {
+			color: #6ac3f8;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 22px;
+			padding: 0.5em;
+		}
+	}
+}
+.accountResponsible {
+	display: none;
+	&.open {
+		display: block;
+	}
+	min-height: 600px;
+	&__title {
+		@extend %pageHeader;
+	}
+	&__text {
+		color: #abe0ff;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+		margin-bottom: 1.5em;
+		& em {
+			font-style: normal;
+			font-size: 1.2em;
+		}
+	}
+	&__tabs {
+		background-color: #1971a1;
+	}
+	&__limitButton,
+	&__exclusionButton {
+		width: 111px;
+		height: 27px;
+		margin-left: 5px;
+		margin-top: 5px;
+		border: none;
+		background-color: white;
+		background-image: linear-gradient(to top, rgba(215, 215, 215, 0.24) 0%, rgba(255, 255, 255, 0.24) 100%);
+		border-radius: 3px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+		color: #008d75;
+		cursor: pointer;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+		&.clicked {
+			background-color: #bbb;
+		}
+	}
+	&__openRow--closed {
+		display: none;
+	}
+	&__openItem {
+		position: relative;
+	}
+	&__close {
+		position: absolute;
+		top: 3px;
+		right: 0.5em;
+		cursor: pointer;
+	}
+	&__openHeader {
+		padding: 0.2em;
+		color: #01f7f6;
+		line-height: 26px;
+	}
+	&__openImg {
+		@extend .accountDeposit__img;
+	}
+	&__formItem {
+		display: inline-block;
+		margin-right: 0.5em;
+		& label {
+			position: relative;
+			display: block;
+			margin-bottom: 0.5em;
+			color: #1971a1;
+			font-size: 14px;
+			&.withCash:after {
+				content: "";
+				position: absolute;
+				top: 23px;
+				right: 2px;
+				display: block;
+				width: 23px;
+				height: 23px;
+				background-image: url("img/header/evro.png");
+				background-repeat: no-repeat;
+			}
+			& + input {
+				box-sizing: border-box;
+				margin-left: 3px;
+				padding: 0 0.5em;
+				width: 165px;
+				height: 26px;
+				background-color: white;
+				border: 1px solid #b7d9ec;
+				border-radius: 3px;
+				box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+				color: #1971a1;
+				&::-webkit-input-placeholder {
+					color: #1971a1;
+				}
+			}
+		}
+		& input[type="submit"]{
+			width: 111px;
+			height: 27px;
+			margin-left: 2px;
+			border: none;
+			background-color: white;
+			background-image: linear-gradient(to top, rgba(215, 215, 215, 0.24) 0%, rgba(255, 255, 255, 0.24) 100%);
+			border-radius: 3px;
+			text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+			color: #008d75;
+			cursor: pointer;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+		}
+	}
+	&__formRadioGroup {
+		margin: 1.5em 0em;
+	}
+	&__radioItem {
+		position: relative;
+		color: #4fbaff !important;
+		font-size: 14px !important;
+		& input {
+			position: relative;
+			top: 2px;
+			margin-right: 7px;
+		}
+	}
+	&__exclusion {
+		&.closed {
+			display: none;
+		}
+	}
+	&__exclusionText {
+		@extend .accountResponsible__openText;
+		& em {
+			display: block;
+			margin-top: 5px;
+		}
+	}
+	&__exclusionItem {
+		margin-left: 10px;
+		margin-top: 5px;
+		display: block;
+		color: #4fbaff !important;
+		font-size: 14px !important;
+		& input {
+			position: relative;
+			top: 2px;
+		}
+	}
+	&__exclusionForm {
+		& input[type='submit']{
+			display: block;
+			margin: 0 auto;
+			width: 111px;
+			height: 27px;
+			margin-bottom: 10px;
+			border: none;
+			background-color: white;
+			background-image: linear-gradient(to top, rgba(215, 215, 215, 0.24) 0%, rgba(255, 255, 255, 0.24) 100%);
+			border-radius: 3px;
+			text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+			color: #008d75;
+			cursor: pointer;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+		}
+	}
+	&__openText {
+		margin: 0.5em;
+		margin-right: 5em;
+		margin-left: 1em;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+		color: #4fbaff;
+		& em {
+			font-style: normal;
+			color: #01f7f6;
+			&.accountHistory__openRed {
+				color: #90363c;
+			}
+		}
+	}
+	&__openForm {
+		margin: 1.5em 0.5em;
+		margin-bottom: 0;
+	}
+	&__openWarning {
+		color: #bda4c3;
+		font-size: 13px;
+		margin-top: -10px;
+		margin-bottom: 10px;
+		margin-left: 10px;
+	}
+	&__openLabel {
+		position: relative;
+		margin-left: 2.5em;
+		color: #4fbaff !important;
+		padding-right: 1em !important;
+		&:before {
+			content: "";
+			position: absolute;
+			top: -7px;
+			left: 0px;
+			display: block;
+			width: 16px;
+			height: 13px;
+			background-image: url("img/profile/folder.png");
+			background-repeat: no-repeat;
+		}
+	}
+	&__openRed {
+		color: #ca3b3d;
+	}
+	&__openInput {
+		box-sizing: border-box;
+		margin-left: 3px;
+		padding: 0 0.5em;
+		width: 165px;
+		height: 26px;
+		background-color: white;
+		border: 1px solid #b7d9ec;
+		border-radius: 3px;
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+	}
+	&__openSubmit {
+		@extend .accountDeposit__button;
+	}
+	&__row--closed {
+		display: none;
+	}
+	&__row:nth-of-type(4n+1) {
+		background-color: #0d2b3b;
+	}
+	&__openRow:nth-of-type(4n+2) {
+		background-color: #0d2b3b;
+	}
+	&__search {
+		background-color: #1971a1;
+		& td {
+			padding: 0.5em;
+		}
+		&Select {
+			& select {
+				margin-left: 4px;
+			}
+		}
+		&Submit {
+			position: relative;
+			& input {
+				padding-left: 1.5em;
+				cursor: pointer;
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				display: block;
+				top: 2px;
+				left: 4px;
+				width: 12px;
+				height: 12px;
+				background-image: url("img/profile/search.png");
+				background-repeat: no-repeat;
+			}
+		}
+		&Date {
+			position: relative;
+			& input {
+				width: 100px;
+				margin-left: 5px;
+				padding: 0 0.5em;
+				&::-webkit-input-placeholder {
+					color: #00fffb;
+				}
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				display: block;
+				top: 0;
+				right: 28px;
+				width: 15px;
+				height: 16px;
+				background-image: url("img/profile/calendar.png");
+				background-repeat: no-repeat;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				display: block;
+				top: 0;
+				left: 169px;
+				width: 15px;
+				height: 16px;
+				background-image: url("img/profile/calendar.png");
+				background-repeat: no-repeat;
+			}
+		}
+		& input,
+		& select {
+			box-sizing: border-box;
+			height: 25px;
+			background-color: #0a3b56;
+			border-radius: 3px;
+			border: none;
+			box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+			color: #00fffb;
+		}
+	}
+	&__header {
+		background-color: transparent;
+		&.closed {
+			display: none;
+		}
+	}
+	&__item {
+		padding: 0.3em;
+		color: #01f7f6;
+		&:first-child {
+			padding-left: 0.5em;
+			// line-height: 26px;
+		}
+		&:last-child {
+			text-align: right;
+		}
+		& span {
+			text-decoration: underline;
+			// display: block;
+			color: #4fbaff;
+			margin-left: 4px;
+			& em {
+				font-style: normal;
+				color: #01f7f6;
+			}
+		}
+	}
+	&__img {
+		vertical-align: bottom;
+		// margin-right: 0.5em;
+		margin-left: 0.5em;
+	}
+	&__button {
+		width: 111px;
+		height: 27px;
+		margin-right: 0.5em;
+		background-color: #d6ecf9;
+		background-image: linear-gradient(to top, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.5) 100%);
+		border-radius: 3px;
+		border: none;
+		color: #1971a1;
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 18px;
+		cursor: pointer;
+	}
+
+	&__table {
+		width: 100%;
+		& tbody {
+			background-color: #0e5278;
+			&.closed {
+				display: none;
+			}
+		}
+		& th {
+			color: #6ac3f8;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 22px;
+			padding: 0.5em;
+		}
+	}
+}
+
+.input_file {
+	position: relative;
+	margin-top: -25px;
+	margin-left: 42px;
+	// margin: 0 0 10px 0;
+	input[type=file] {
+		opacity: 0;
+		position: relative;
+		z-index: 2;
+		cursor: pointer;
+		height: 34px;
+		width: 300px;
+	}
+}
+.fake_file {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	input[type=button] {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		color: #68ad9e;
+		font-size: 14px;
+		cursor: pointer;
+		border: none;
+		text-decoration: underline;
+		background-color: transparent;
+	}
+}

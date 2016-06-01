@@ -4,6 +4,11 @@
 	{name: "Home", href: "/"},
 	{name: "Games", href: "games.html"},
 	{name: "Account", href: "account.html"},
+	{name: "Live Casino", href: "live-casino.html"},
+	{name: "Sports", href: "sports.html"},
+	{name: "Live Sports", href: "live-sports.html"},
+	{name: "Virtual Sports", href: "virtual-sports.html"},
+	{name: "Lottery", href: "lottery.html"},
 	{name: "Promotions", href: "promotions.html"},
 	{name: "VIP", href: "vip.html"},
 	{name: "Banking", href: "banking.html"}]
@@ -29,7 +34,7 @@ mixin nav(loggedIn, activeNumber)
 				else
 					a.nav__link(href= item.href)
 						li.nav__item= item.name
-		a.nav__link(href="#")
-			li 
-				block lang
-					include ../lang/lang.jade
+		//- a.nav__link(href="#")
+		//- 	li 
+		//- 		block lang
+		//- 			include ../lang/lang.jade

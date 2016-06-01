@@ -1,0 +1,12 @@
+extends base-layout
+append styles
+	style.
+		.entry {
+		visibility: hidden ;
+		}
+block title
+	title Ocean Casino - Affilate
+block nav
+	+nav(false, 0)
+block page
+	include ../blocks/affilate/content/content.jade
