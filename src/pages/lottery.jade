@@ -1,0 +1,10 @@
+extends long-layout
+block title
+	title Ocean Casino - Lottery
+block nav
+	+nav(false, 8)
+block breadcrumbs
+	+bread([{name: "Home Page", href: "/"},
+	{name: "Lottery", current: true}])
+block content
+	include ../blocks/lottery/content/content.jade

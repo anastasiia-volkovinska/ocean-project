@@ -1,0 +1,104 @@
+.lottery {
+	&__title {
+		@extend %pageHeader;
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 2em;
+	}
+	&__item {
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 0.5em;
+		}
+		&[data-type="new"]:after {
+			content: "";
+			position: absolute;
+			z-index: 10;
+			top: -7px;
+			right: -8px;
+			display: block;
+			width: 40px;
+			height: 40px;
+			background-image: url("img/games/new.png");
+			background-repeat: no-repeat;
+		}
+		&[data-type="hot"]:after {
+			content: "";
+			position: absolute;
+			z-index: 10;
+			top: -7px;
+			right: -8px;
+			display: block;
+			width: 40px;
+			height: 40px;
+			background-image: url("img/games/hot.png");
+			background-repeat: no-repeat;
+		}
+	}
+	&__figure {
+		position: relative;
+		border-radius: 3px;
+		cursor: pointer;
+		&:hover {
+			& .lottery__hover {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+	&__img {
+		vertical-align: bottom;
+	}
+	&__hover {
+		display: none;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background-color: rgba($bg-light-blue, 0.5);
+		border-radius: 3px;
+	}
+	&__win {
+		background-color: $deposit-button-fuksia;
+		border-radius: 3px;
+		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.45);
+		text-transform: uppercase;
+		color: white;
+		border: none;
+		border-top: 2px solid rgba(255, 255, 255, 0.7);
+		width: 75%;
+		margin-bottom: 0.5em;
+		font-family: "Open Sans";
+		font-size: 1.1em;
+		font-weight: 300;
+		line-height: 1.4;
+		cursor: pointer;
+	}
+	&__descr {
+		padding-top: 0.5em;
+		padding-left: 2em;
+		font-weight: 400;
+		color: #4fbaff;
+		font-size: 17px;
+		cursor: pointer;
+		background-position: 4% center;
+		background-repeat: no-repeat;
+		background-image: url("img/lottery/lottery-star-off.png");
+		& em {
+			display: block;
+			padding-top: 0.4em;
+			font-style: normal;
+			color: #01f7f6;
+			font-size: 12px;
+		}
+		&[data-type="star"] {
+			background-image: url("img/lottery/lottery-star.png");
+		}
+	}
+}
