@@ -1,13 +1,12 @@
-extends page-layout
+extends long-layout
 block title
 	title Ocean Casino - Promotions
 block nav
 	+nav(false, 9)
-block panel
-	include ../blocks/promotions/panel/panel.jade
+//- block panel
+//- 	include ../blocks/promotions/panel/panel.jade
 block breadcrumbs
 	+bread([{name: "Home Page", href: "/"},
-	{name: "Promotions", href: "promotions.html"},
-	{name: "All Promotions", current: true}])
+	{name: "Promotions", current: true}])
 block content
 	include ../blocks/promotions/content/content.jade

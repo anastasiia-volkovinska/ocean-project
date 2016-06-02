@@ -38,47 +38,31 @@ $(document).ready(function () {
 		var type = $(this).data("type");
 		$(".virtual-sports__content[data-type=" + type + "]").removeClass("closed");
 	});
-	$(".promoLimited__more").click(function () {
-		$(".promoLimited__advanced").removeClass("open");
-		$(this).siblings(".promoLimited__advanced").addClass("open");
+	$(".promoAll__more").click(function () {
+		$(".promoAll__advanced").removeClass("open");
+		$(this).siblings(".promoAll__advanced").addClass("open");
 		if ($(this).text() === "Hide") {
 			$(this).removeClass("open");
 			$(this).text("Read more");
-			$(".promoLimited__advanced").removeClass("open");
+			$(".promoAll__advanced").removeClass("open");
 		} else {
-			$(".promoLimited__more").removeClass("open");
-			$(".promoLimited__more").text("Read more");
+			$(".promoAll__more").removeClass("open");
+			$(".promoAll__more").text("Read more");
 			$(this).addClass("open");
 			$(this).text("Hide");
 		}
 	});
-	$(".promoWelcome__more").click(function () {
-		$(".promoWelcome__advanced").removeClass("open");
-		$(this).siblings(".promoWelcome__advanced").addClass("open");
-		if ($(this).text() === "Hide") {
-			$(this).removeClass("open");
-			$(this).text("Read more");
-			$(".promoWelcome__advanced").removeClass("open");
-		} else {
-			$(".promoWelcome__more").removeClass("open");
-			$(".promoWelcome__more").text("Read more");
-			$(this).addClass("open");
-			$(this).text("Hide");
-		}
+	$(".promoBig__more").click(function (event) {
+		$(".promo__title:not(.bonus)").addClass("closed");
+		$(".promoBonus").addClass("open");
+		$(".promoAll").removeClass("open");
+		$(".promoBig").removeClass("open");
 	});
-	$(".promoClassic__more").click(function () {
-		$(".promoClassic__advanced").removeClass("open");
-		$(this).siblings(".promoClassic__advanced").addClass("open");
-		if ($(this).text() === "Hide") {
-			$(this).removeClass("open");
-			$(this).text("Read more");
-			$(".promoClassic__advanced").removeClass("open");
-		} else {
-			$(".promoClassic__more").removeClass("open");
-			$(".promoClassic__more").text("Read more");
-			$(this).addClass("open");
-			$(this).text("Hide");
-		}
+	$(".promoBonus__button").click(function (event) {
+		$(".promo__title").removeClass("closed");
+		$(".promoBonus").removeClass("open");
+		$(".promoAll").addClass("open");
+		$(".promoBig").addClass("open");
 	});
 	$(".live-sports__item").click(function (event) {
 		$(".live-sports__item").removeClass("open");
