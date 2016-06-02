@@ -1,0 +1,88 @@
+.overview {
+	&__header {
+		background-color: #3e84c0;
+		border-top: 1px solid rgba(255, 255, 255, 0.3);
+		padding: 0.75em 1em;
+	}
+	&__table {
+		table-layout: fixed;
+		width: 100%;
+		& th {
+			color: #fff;
+		}
+	}
+	&__title {
+		padding: 0.75rem 1rem;
+		background-color: #14283d;
+		color: #fff;
+		font-weight: lighter;
+		font-size: 0.9em;
+		box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.4);
+		& span {
+			float: right;
+		}
+	}
+	&__match {
+		background-color: #1d496e;
+		padding: 0.75rem 1rem;
+	}
+}
+
+.match {
+	margin-bottom: 0.5em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__name {
+		color: #eee;
+		max-width: 140px;
+		font-size: 0.9em;
+		line-height: 1.2;
+		& em {
+			display: block;
+			margin-top: 0.4em;
+			font-style: normal;
+			font-size: 0.8em;
+			color: #649dc5;
+		}
+	}
+	&__text {
+		font-weight: lighter;
+		line-height: 1.3;
+		font-size: 0.7em;
+		color: #999;
+	}
+	&__buttons {
+		display: flex;
+	}
+	&__button {
+		width: 45px;
+		height: 20px;
+		background-image: linear-gradient(to top, #8ac000 0%, #91cb00 100%);
+		border-radius: 3px;
+		border: none;
+		box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+		margin-right: 0.3em;
+		color: #fff;
+		line-height: 19px;
+		&.blue {
+			background-image: linear-gradient(to top, #4096ee 0%, #7abcff 100%);
+		}
+		&.gray {
+			background-color: #646464;
+			background-image: repeating-linear-gradient(
+				135deg,
+				transparent,
+				transparent 3px,
+				rgba(#000, 0.25) 3px,
+				rgba(#000, 0.25) 4px
+			);
+		}
+	}
+	&__gold {
+		color: #fff000;
+		font-weight: bold;
+		min-width: 35px;
+		font-size: 0.9em;
+	}
+}

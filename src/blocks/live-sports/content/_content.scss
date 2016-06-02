@@ -1,0 +1,43 @@
+.live-sports {
+	&__title {
+		@extend %pageHeader;
+	}
+	&__flexbox {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	&__content {
+		width: 100%;
+		min-height: 200px;
+		margin-right: 0.5em;
+	}
+	&__aside {
+		width: 20%;
+	}
+	&__item {
+		padding: 0.5em 1em;
+		border-radius: 3px;
+		color: #fff;
+		font-size: 1em;
+		background-color: #209ce4;
+		border-top: 1px solid rgba(255, 255, 255, 0.25);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+		margin-bottom: 1px;
+		background-image: url("img/live-sports/arrow-left.png");
+		background-repeat: no-repeat;
+		background-position: 98% center;
+		cursor: pointer;
+		&.open {
+			background-image: url("img/live-sports/arrow-down.png");
+			border-bottom-left-radius: 0px;
+			border-bottom-right-radius: 0px;
+		}
+	}
+	&__overview {
+		display: none;
+		&.open {
+			display: block;
+		}
+	}
+}

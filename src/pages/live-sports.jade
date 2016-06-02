@@ -1,0 +1,10 @@
+extends long-layout
+block title
+	title Ocean Casino - Live Sports
+block nav
+	+nav(false, 6)
+block breadcrumbs
+	+bread([{name: "Home Page", href: "/"},
+	{name: "Live Sports", current: true}])
+block content
+	include ../blocks/live-sports/content/content.jade

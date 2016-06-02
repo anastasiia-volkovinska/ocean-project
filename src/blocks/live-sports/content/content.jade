@@ -1,0 +1,23 @@
+-
+	var liveSportsItems = [
+	{text: "Football (3)", open: true},
+	{text: "Tennis (50)"},
+	{text: "Baseball (7)"},
+	{text: "Valleyball (3)"}
+	]
+.live-sports
+	.live-sports__title Live Sports
+	.live-sports__flexbox
+		section.live-sports__content
+			ul.live-sports__list
+				each item in liveSportsItems
+					if item.open
+						li.live-sports__item.open #{item.text}
+						.live-sports__overview.open
+							include ../overview/overview.jade
+					else
+						li.live-sports__item #{item.text}
+						.live-sports__overview
+							include ../overview/overview.jade
+		aside.live-sports__aside
+			include ../../virtual-sports/aside/aside.jade

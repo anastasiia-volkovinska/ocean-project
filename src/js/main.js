@@ -5,6 +5,7 @@ $(document).ready(function () {
 	//= ../blocks/promotions/panel/panel.js
 	//= ../blocks/virtual-sports/panel/panel.js
 	//= ../blocks/promotions/content/content.js
+	//= ../blocks/live-sports/content/content.js
 	//= ../blocks/banking/panel/panel.js
 	//= ../blocks/banking/table/table.js
 	//= ../blocks/games/panel/panel.js
