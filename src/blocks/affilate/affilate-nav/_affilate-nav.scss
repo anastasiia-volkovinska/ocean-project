@@ -1,0 +1,36 @@
+.affilate-nav {
+	&.footer-affilate-nav {
+		& .affilate-nav__list {
+			height: 40px;
+			margin-left: 0;
+			padding-left: 0;
+		}
+		& .affilate-nav__item {
+			height: 40px;
+			line-height: 25px;
+		}
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+		margin-left: $logo-width;
+		padding-left: 1em;
+	}
+	&__item {
+		padding: 0.5em 1em;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		color: white;
+		font-family: $font;
+		font-size: 16px;
+		font-weight: 300;
+		text-transform: uppercase;
+		cursor: pointer;
+		transition: all 0.3s;
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.25);
+		}
+	}
+	&__link {
+		color: #fff;
+	}
+}

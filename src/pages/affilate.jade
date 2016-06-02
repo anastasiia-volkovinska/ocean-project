@@ -1,4 +1,5 @@
 extends base-layout
+include ../blocks/affilate/affilate-nav/affilate-nav.jade
 append styles
 	style.
 		.entry {
@@ -7,6 +8,8 @@ append styles
 block title
 	title Ocean Casino - Affilate
 block nav
-	+nav(false, 0)
+	+affilate-nav()
+block footer-nav
+	+affilate-nav("footer-affilate-nav")
 block page
 	include ../blocks/affilate/content/content.jade
