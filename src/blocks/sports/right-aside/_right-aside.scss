@@ -1,0 +1,141 @@
+.right-aside {
+	&__coupon {
+
+	}
+	&__banner {
+
+	}
+}
+.coupon {
+	box-sizing: border-box;
+	background-image: url("img/sports/bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 4px;
+	margin-bottom: 0.5em;
+	&__title {
+		color: #fff;
+		padding: 0.3em 0.5rem;
+		border-bottom: 1px solid rgba(#000, 0.2);
+		font-weight: lighter;
+	}
+	&__buttons {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__button {
+		display: block;
+		width: 50%;
+		border: none;
+		padding: 0.2em 0;
+		background-color: rgba(#005b70, 0.75);
+		border-top: 1px solid rgba(#fff, 0.25);
+		border-bottom: 1px solid rgba(#000, 0.25);
+		color: #fff;
+		cursor: pointer;
+		&:not(:last-child) {
+			border-right: 1px solid #fff;
+		}
+		&.active {
+			background-color: rgba(#005997, 0.75);
+		}
+	}
+	&__form {
+
+	}
+	&__label {
+		display: block;
+		padding: 0.5rem;
+		color: #fff;
+	}
+	&__input {
+		margin-left: 0.5em;
+		width: 80px;
+		height: 27px;
+		border-radius: 3px;
+		background-color: #1971a1;
+		border: none;
+		padding: 0 0.5em;
+		color: #fff;
+		&::placeholder {
+			color: #fff;
+		}
+	}
+	&__text {
+		color: #fff;
+		height: 20px;
+		line-height: 19px;
+		font-size: 0.7em;
+		padding: 0 0.5em;
+		&.blue {
+			background-color: #005297;
+		}
+		&.dark {
+			background-color: #003452;
+		}
+		& em {
+			font-style: normal;
+			float: right;
+		}
+	}
+	&__checkItem {
+		margin: 0.5em;
+		position: relative;
+		& label {
+			color: #fff;
+			font-size: 0.7em;
+			line-height: 1.4;
+			padding-left: 1.5em;
+		}
+		& input {
+			display: none;
+		}
+		& span {
+			position: absolute;
+			top: 5px;
+			left: 0;
+			display: block;
+			width: 10px;
+			height: 10px;
+			background-image: url("img/profile/check-off.png");
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		& input:checked + span {
+			background-image: url("img/profile/check-on.png");
+			background-repeat: no-repeat;
+		}
+	}
+	&__inputs {
+		display: flex;
+		justify-content: space-around;
+		padding: 0.5em;
+		padding-top: 0;
+	}
+	&__submit {
+		width: 45%;
+		display: block;
+		padding: 0.3em 0;
+		color: #fff;
+		font-size: 0.8em;
+		background-color: #52fffc;
+		background-image: linear-gradient(to top, #ef007c 0%, #ff5db1 100%);
+		border-radius: 3px;
+		box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+		border: none;
+		cursor: pointer;
+	}
+	&__clear {
+		width: 45%;
+		display: block;
+		padding: 0.3em 0;
+		color: #fff;
+		font-size: 0.8em;
+		background-color: #52fffc;
+		background-image: linear-gradient(to top, #2688b9 0%, #258eca 100%);
+		border-radius: 3px;
+		box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+		border: none;
+		cursor: pointer;
+	}
+}

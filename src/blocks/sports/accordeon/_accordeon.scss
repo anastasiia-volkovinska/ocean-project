@@ -1,0 +1,25 @@
+.sports-accordeon {
+	display: none;
+	&.open {
+		display: block;
+	}
+	&__item {
+		padding: 0.4rem 0.5rem;
+		background-color: #1d496e;
+		background-image: url("img/live-sports/arrow-left.png");
+		background-repeat: no-repeat;
+		background-position: 97% center;
+		cursor: pointer;
+		border-top: 1px solid rgba(#fff, 0.3);
+		border-bottom: 1px solid rgba(#000, 0.3);
+		color: #fff;
+		font-size: 0.8em;
+		font-weight: 300;
+		&.open {
+			background-image: url("img/live-sports/arrow-down.png");
+			margin-bottom: 0;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+-
+	var leftAsideItems = [
+	{name: "Perfect League", box: "9/0"},
+	{name: "Soccer", box: "62/31"},
+	{name: "Basketball", box: "78/26"},
+	{name: "Tennis", box: "62/10"},
+	{name: "Volleyball", box: "48/13"},
+	{name: "Handball", box: "66/14"},
+	{name: "Baseball", box: "0/3"},
+	{name: "Cricket", box: "5/1"},
+	{name: "Ice Hockey", box: "102/17"},
+	{name: "Rugby", box: "12/22"},
+	{name: "American Football", box: "0/4"},
+	{name: "Aussie Rules", box: "0/1"},
+	{name: "Futsal", box: "2/0"},
+	{name: "Cycling", box: "0/1"},
+	{name: "Darts", box: "21/3"},
+	{name: "Snooker", box: "31/4"},
+	{name: "Floorball", box: "15/0"},
+	{name: "Bandy", box: "9/0"},
+	{name: "Golf", box: "9/0"}
+	]
+.left-aside
+	form.left-aside__form
+		input.left-aside__search(placeholder="Search:")
+		img.left-aside__img(src="img/sports/search.png" alt="")
+	.left-aside__main
+		h3.left-aside__header Sports Betting
+		p.left-aside__text Great odds on football, tennis, ice hockey and many more
+		img.left-aside__scale(src="img/sports/scale.png" alt="")
+		ul.left-aside__list
+			each item in leftAsideItems
+				li.left-aside__item
+					p.left-aside__name= item.name
+					p.left-aside__box= item.box
+	ul.left-aside__another
+		li.left-aside__statistics Statistics
+		li.left-aside__livescore Livescore

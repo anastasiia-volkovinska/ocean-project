@@ -1,0 +1,47 @@
+.bets {
+	display: none;
+	&.open {
+		display: block;
+	}
+	&__row {
+		background-color: #495057;
+		display: flex;
+		justify-content: space-between;
+
+	}
+	&__title {
+		padding: 0.3rem 0.5rem;
+		color: #fff;
+		font-weight: 300;
+		background-color: #14283d;
+		font-size: 0.9em;
+	}
+	&__item {
+		padding: 0.1em 0.2em;;
+		display: flex;
+		width: 50%;
+		justify-content: space-between;
+		align-items: center;
+		&:not(:last-child) {
+			border-right: 1px solid rgba(#000, 0.3);
+		}
+	}
+	&__text {
+		color: #fff;
+		font-size: 0.8em;
+		padding-left: 0.3em;
+	}
+	&__button {
+		width: 45px;
+		height: 20px;
+		background-image: linear-gradient(to top, #8ac000 0%, #91cb00 100%);
+		border-radius: 3px;
+		border: none;
+		box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+		margin-right: 0.3em;
+		color: #fff;
+		line-height: 19px;
+		margin-bottom: 0.2em;
+		cursor: pointer;
+	}
+}

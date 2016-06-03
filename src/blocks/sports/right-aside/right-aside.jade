@@ -1,0 +1,22 @@
+.right-aside
+	section.right-aside__coupon
+		.coupon
+			h3.coupon__title Coupon
+			.coupon__buttons
+				button.coupon__button.active Combo
+				button.coupon__button System
+			form.coupon__form
+				label.coupon__label Stake 
+					input.coupon__input(placeholder="0.00")
+				.coupon__text.blue ODDS  0,00  Coupon Count 0
+				.coupon__text.dark MAX. PAYOUT 
+					em 0.00
+				.coupon__checkItem
+					label
+						input(type='checkbox', checked='')
+						span
+						| I accept odds changes.
+				.coupon__inputs
+					input.coupon__submit(type="submit" value="Accept")
+					input.coupon__clear(type="button" value="Clear")
+	img.right-aside__banner(src='img/virtual-sports/banner.png' alt='')

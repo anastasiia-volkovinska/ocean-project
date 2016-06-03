@@ -1,0 +1,16 @@
+$(".center__item").click(function(){
+	$(".center__item").removeClass("open");
+	$(this).addClass("open");
+	$(".matches__list").removeClass("open");
+	$(this).next(".center__matches").find(".matches__list").addClass("open");
+});
+$(".matches__item").click(function(){
+	$(".sports-accordeon").removeClass("open");
+	$(this).next(".sports-accordeon").addClass("open");
+});
+$(".sports-accordeon__item").click(function(){
+	$(".sports-accordeon__item").removeClass("open");
+	$(this).addClass("open");
+	$(".bets").removeClass("open");
+	$(this).next(".bets").addClass("open");
+});

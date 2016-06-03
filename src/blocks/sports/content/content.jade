@@ -1,0 +1,106 @@
+-
+	var centerItems = [
+	{name: "Perfect League", box: "9/0"},
+	{name: "Soccer", box: "62/31"},
+	{name: "Basketball", box: "78/26"},
+	{name: "Tennis", box: "62/10"},
+	{name: "Volleyball", box: "48/13"},
+	{name: "Handball", box: "66/14"},
+	{name: "Baseball", box: "0/3"},
+	{name: "Cricket", box: "5/1"},
+	{name: "Ice Hockey", box: "102/17"},
+	{name: "Rugby", box: "12/22"},
+	{name: "American Football", box: "0/4"},
+	{name: "Aussie Rules", box: "0/1"},
+	{name: "Futsal", box: "2/0"},
+	{name: "Cycling", box: "0/1"},
+	{name: "Darts", box: "21/3"},
+	{name: "Snooker", box: "31/4"},
+	{name: "Floorball", box: "15/0"},
+	{name: "Bandy", box: "9/0"},
+	{name: "Golf", box: "9/0"}
+	]
+.sports
+	.sports__title Sports
+	.sports__flexbox
+		.sports__left
+			include ../left-aside/left-aside.jade
+		.sports__center
+			.center
+				ul.center__list
+					each item in centerItems
+						li.center__item
+							.center__text= item.name
+							.center__span
+								span 1
+								span 0
+								span 2
+						.center__matches
+							ul.matches__list
+								li.matches__item
+									p.matches__date 11.02 14:30
+									p.matches__name AL Asalah - Shabab Al Ordun
+									.matches__buttons
+										button.matches__button 5.45
+										button.matches__button.blue 0.45
+										button.matches__button.blue 3.45
+									p.matches__number +85
+									.matches__icons
+										img.matches__icon(src="img/sports/info.png" alt="")
+										img.matches__icon(src="img/sports/stat.png" alt="")
+										img.matches__icon(src="img/sports/desktop.png" alt="")
+								include ../accordeon/accordeon.jade
+								li.matches__item
+									p.matches__date 11.02 14:30
+									p.matches__name AL Asalah - Shabab Al Ordun
+									.matches__buttons
+										button.matches__button 5.45
+										button.matches__button.blue 0.45
+										button.matches__button.blue 3.45
+									p.matches__number +85
+									.matches__icons
+										img.matches__icon(src="img/sports/info.png" alt="")
+										img.matches__icon(src="img/sports/stat.png" alt="")
+										img.matches__icon(src="img/sports/desktop.png" alt="")
+								include ../accordeon/accordeon.jade
+								li.matches__item
+									p.matches__date 11.02 14:30
+									p.matches__name AL Asalah - Shabab Al Ordun
+									.matches__buttons
+										button.matches__button 5.45
+										button.matches__button.blue 0.45
+										button.matches__button.blue 3.45
+									p.matches__number +85
+									.matches__icons
+										img.matches__icon(src="img/sports/info.png" alt="")
+										img.matches__icon(src="img/sports/stat.png" alt="")
+										img.matches__icon(src="img/sports/desktop.png" alt="")
+								include ../accordeon/accordeon.jade
+								li.matches__item
+									p.matches__date 11.02 14:30
+									p.matches__name AL Asalah - Shabab Al Ordun
+									.matches__buttons
+										button.matches__button 5.45
+										button.matches__button.blue 0.45
+										button.matches__button.blue 3.45
+									p.matches__number +85
+									.matches__icons
+										img.matches__icon(src="img/sports/info.png" alt="")
+										img.matches__icon(src="img/sports/stat.png" alt="")
+										img.matches__icon(src="img/sports/desktop.png" alt="")
+								include ../accordeon/accordeon.jade
+								li.matches__item
+									p.matches__date 11.02 14:30
+									p.matches__name AL Asalah - Shabab Al Ordun
+									.matches__buttons
+										button.matches__button 5.45
+										button.matches__button.blue 0.45
+										button.matches__button.blue 3.45
+									p.matches__number +85
+									.matches__icons
+										img.matches__icon(src="img/sports/info.png" alt="")
+										img.matches__icon(src="img/sports/stat.png" alt="")
+										img.matches__icon(src="img/sports/desktop.png" alt="")
+								include ../accordeon/accordeon.jade
+		.sports__right
+			include ../right-aside/right-aside.jade
