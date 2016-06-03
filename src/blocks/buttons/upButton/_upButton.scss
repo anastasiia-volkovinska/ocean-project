@@ -13,6 +13,9 @@
 	font-weight: bold;
 	font-size: 1.1em;
 	transition: all 0.5s;
+	&.visible {
+		opacity: 0.3;
+	}
 	&:hover {
 		opacity: 1;
 	}

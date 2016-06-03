@@ -6,6 +6,9 @@
 		margin: 30px auto 0 auto;
 		width: 116px;
 		color: #008d75;
+		&.closed {
+			display: none;
+		}
 	}
 	&__aside {
 		display: block;
@@ -27,7 +30,8 @@
 	&.open {
 		display: block;
 	}
-	&.withoutLine {
+	&.withoutLine,
+	&.closed {
 		border-bottom: none;
 	}
 	&__title {

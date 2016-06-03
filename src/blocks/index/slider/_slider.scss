@@ -1,10 +1,10 @@
 .slider {
 	margin-bottom: 0;
 	&__item {
-		height: 25em;
+		height: 30em;
 		background-position: center, center;
 		background-repeat: repeat-x, no-repeat;
-		background-size: auto 100%;
+		background-size: auto 100%, cover;
 		border-image-width: 0;
 		&:nth-child(1) {
 			background-image: url("img/slider/Volna.png"), url("img/slider/slider-1.png");

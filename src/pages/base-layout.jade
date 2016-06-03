@@ -28,17 +28,17 @@ html(lang="en")
 				include ../blocks/header/nav/nav.jade
 				header.header
 					section.header__top
-						.container
-							block logo
-								include ../blocks/header/logo/logo.jade
-							block logged
-								+logged(false)
-							block entry
-								+entry(false)
+						//- .container
+						block logo
+							include ../blocks/header/logo/logo.jade
+						block logged
+							+logged(false)
+						block entry
+							+entry(false)
 					section.header__nav
-						.container
-							block nav
-								+nav(false, 1)
+						//- .container
+						block nav
+							+nav(false, 1)
 			
 			block buttons
 				//- Side buttons
@@ -50,9 +50,15 @@ html(lang="en")
 		block footer
 			footer.footer
 				section.footer__nav
-					.container
+					.container.flex.wide
 						block footer-nav
 							include ../blocks/footer/footer-nav/footer-nav.jade
+						block socials
+							ul.social
+								li: img.social__item(src="img/footer/f.png" alt="")
+								li: img.social__item(src="img/footer/g.png" alt="")
+								li: img.social__item(src="img/footer/y.png" alt="")
+								li: img.social__item(src="img/footer/t.png" alt="")
 				section.footer__info
 					.container
 						block footer-info

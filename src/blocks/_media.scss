@@ -25,6 +25,12 @@
 }
 
 @media only screen and (min-width: 1600px) {
+	.container.wide {
+		max-width: 1300px;
+	}
+	.jackpot__item.closed {
+		display: flex !important;
+	}
 	.banners__item:last-child {
 		display: inline;
 	}
@@ -36,7 +42,7 @@
 			margin: 1.5em 1em;
 		}
 	}
-	.banners__item:last-child {
-		display: inline;
-	}
+	// .banners__item:last-child {
+	// 	display: none;
+	// }
 }

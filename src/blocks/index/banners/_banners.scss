@@ -8,7 +8,7 @@
 	&__item {
 		position: relative;
 		top: 0px;
-		margin: 2.5em 1em 3em 1em;
+		margin: 1em;
 		box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.4);
 		cursor: pointer;
 		transition: all 0.3s;
@@ -16,9 +16,9 @@
 			top: -1px;
 			box-shadow: 2px 6px 7px rgba(0, 0, 0, 0.5);
 		}
-		&:last-child {
-			display: none;
-		}
+		// &:last-child {
+		// 	display: none;
+		// }
 	}
 	&__img {
 		vertical-align: top;

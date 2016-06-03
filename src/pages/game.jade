@@ -1,7 +1,18 @@
 extend base-layout
 block title
 	title Ocean Casino - Game
+	append styles
+		style.
+			main {
+			min-height: 100%;
+			height: 1px;
+			}
+			.game {
+			min-height: 100%;
+			}
 block nav
 	+nav(false, 0)
 block page
 	include ../blocks/game/content/content.jade
+block footer
+	footer

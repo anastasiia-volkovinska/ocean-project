@@ -33,28 +33,36 @@ mixin liveCasinoRow(options)
 	{hot: "new", src: "img/lottery/lottery-1.png", star: "star", name: "Lotto 7 - 42", type: "UTC 06:00 - 00:00"}
 	]
 	}
--
-	var asideItems = [
-	{src: 'img/live-casino/icon-1.png', text: 'Rouletee', number: 58},
-	{src: 'img/live-casino/icon-2.png', text: 'BlackJack', number: 10},
-	{src: 'img/live-casino/icon-3.png', text: 'Baocarat', number: 5},
-	{src: 'img/live-casino/icon-4.png', text: 'Poker', number: 7},
-	{src: 'img/live-casino/icon-5.png', text: 'Dice', number: 9},
-	{src: 'img/live-casino/icon-6.png', text: 'ALL', number: 100}
-	]
+//- -
+//- 	var asideItems = [
+//- 	{src: 'img/live-casino/icon-1.png', text: 'Rouletee', number: 58},
+//- 	{src: 'img/live-casino/icon-2.png', text: 'BlackJack', number: 10},
+//- 	{src: 'img/live-casino/icon-3.png', text: 'Baocarat', number: 5},
+//- 	{src: 'img/live-casino/icon-4.png', text: 'Poker', number: 7},
+//- 	{src: 'img/live-casino/icon-5.png', text: 'Dice', number: 9},
+//- 	{src: 'img/live-casino/icon-6.png', text: 'ALL', number: 100}
+//- 	]
 
 .live-casino
-	aside.live-casino__aside
-		.aside
-			h3.aside__title Live Casino
-			ul.aside__list
-				each item in asideItems
-					li.aside__item
-						img.aside__img(src=item.src alt='')
-						p.aside__text #{item.text}
-						.aside__box
-							span.aside__number #{item.number}
+	//- aside.live-casino__aside
+	//- 	.aside
+	//- 		h3.aside__title Live Casino
+	//- 		ul.aside__list
+	//- 			each item in asideItems
+	//- 				li.aside__item
+	//- 					img.aside__img(src=item.src alt='')
+	//- 					p.aside__text #{item.text}
+	//- 					.aside__box
+	//- 						span.aside__number #{item.number}
 	h2.live-casino__title Live Casino
+	ul.live-casino__buttons
+		li.live-casino__button.active Roulette
+		li.live-casino__button BlackJack
+		li.live-casino__button Baccart
+		li.live-casino__button Poker
+		li.live-casino__button Dice
+		li.live-casino__button ALL
+			
 	+liveCasinoRow(liveCasinoItems1)
 	+liveCasinoRow(liveCasinoItems2)
 	button.games__more View more

@@ -21,6 +21,14 @@ $(document).ready(function () {
 	$(".upButton").click(function () {
 		$('html, body').animate({ scrollTop: 0 }, 'slow');
 	});
+	$(window).on("scroll", function (event) {
+		console.log("I am scrolled!");
+		if (window.pageYOffset > 100) {
+			$(".upButton").addClass("visible");
+		} else {
+			$(".upButton").removeClass("visible");
+		}
+	});
 	$(".promoPanel__button").click(function () {
 		$(".promoPanel__button").removeClass("promoPanel__button--active");
 		$(this).addClass("promoPanel__button--active");
@@ -129,6 +137,10 @@ $(document).ready(function () {
 		if (type === "gamesAll") {
 			$(".games section").addClass("open");
 		}
+	});
+	$(".games__more").click(function () {
+		$(".gamesNew.closed").addClass("open");
+		$(this).addClass("closed");
 	});
 	$(".faq__question").click(function () {
 		$(".faq__question").removeClass("closed");

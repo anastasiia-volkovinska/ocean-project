@@ -16,7 +16,7 @@
 		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.5);
 	}
 	&__nav {
-		height: 2.5em;
+		height: 3em;
 		background-color: transparentize($text-dark-blue, 0.5);
 	}
 	&__info {
@@ -33,5 +33,19 @@
 	&__socials {
 		width: 30%;
 		max-width: 220px;
+	}
+}
+.container.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.social {
+	display: flex;
+	align-items: center;
+	&__item {
+		vertical-align: bottom;
+		margin-right: 0.5em;
+		cursor: pointer;
 	}
 }

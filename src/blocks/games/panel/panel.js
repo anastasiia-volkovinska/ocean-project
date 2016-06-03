@@ -7,3 +7,7 @@ $(".gamesPanel__select").change(function(event){
 		$(".games section").addClass("open");
 	}
 });
+$(".games__more").click(function(){
+	$(".gamesNew.closed").addClass("open");
+	$(this).addClass("closed");
+});

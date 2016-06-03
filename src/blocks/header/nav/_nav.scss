@@ -1,7 +1,7 @@
 .nav {
 	display: flex;
-	justify-content: space-between;
-	margin-left: $logo-width;
+	justify-content: flex-start;
+	margin-left: calc(175px + 2.5em + 50px);
 	padding-left: 1em;
 	&__link {
 		&--closed {
@@ -12,7 +12,7 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		display: block;
-		padding: 0.5em 0.6em;
+		padding: 0.5em 1em;
 		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 		color: white;
 		font-family: $font;
@@ -30,5 +30,11 @@
 	&__link--active {
 		background-color: $text-dark-blue;
 		box-shadow: 1.5px 2.6px 5px rgba(0, 0, 0, 0.15);
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.nav {
+		margin-left: calc(175px + 2.5em);
 	}
 }

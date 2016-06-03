@@ -113,6 +113,95 @@
 			background-image: url("img/lottery/lottery-star.png");
 		}
 	}
+	&__buttons {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2em;
+	}
+	&__button {
+		position: relative;
+		width: 140px;
+		height: 40px;
+		line-height: 37px;
+		text-align: center;
+		font-size: 0.9em;
+		color: #fff;
+		font-weight: 300;
+		background-color: #0d3750;
+		border: 1px solid rgba(0, 8, 13, 0.13);
+		border-radius: 3px;
+		cursor: pointer;
+		padding-right: 1em;
+		transition: all 0.3s;
+		&.active {
+			background-color: #3faae8;
+			box-shadow: 2.5px 4.3px 3px rgba(0, 0, 0, 0.19);
+			&:hover {
+				background-color: #3faae8;
+				color: #fff;
+			}
+			&::after {
+				background-color: $text_dark_blue;
+			}
+		}
+		&:hover {
+			box-shadow: 2.5px 4.3px 3px rgba(0, 0, 0, 0.19);
+			background-color: rgba(#0d3750, 0.8);
+			color: #ddd;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 65px;
+			height: 65px;
+			background-repeat: no-repeat;
+		}
+		&:nth-child(1)::before {
+			top: -7px;
+			left: -25px;
+			background-image: url("img/live-casino/live-casino-1.png");
+		}
+		&:nth-child(2)::before {
+			top: -7px;
+			left: -20px;
+			background-image: url("img/live-casino/live-casino-2.png");
+		}
+		&:nth-child(3)::before {
+			top: -15px;
+			left: -12px;
+			background-image: url("img/live-casino/live-casino-3.png");
+		}
+		&:nth-child(4)::before {
+			top: -7px;
+			left: -20px;
+			background-image: url("img/live-casino/live-casino-4.png");
+		}
+		&:nth-child(5)::before {
+			top: -10px;
+			left: -10px;
+			background-image: url("img/live-casino/live-casino-5.png");
+		}
+		&:nth-child(6)::before {
+			top: -10px;
+			left: -20px;
+			background-image: url("img/live-casino/live-casino-6.png");
+		}
+		&::after {
+			content: "58";
+			position: absolute;
+			top: 7px;
+			right: 5px;
+			width: 35px;
+			height: 25px;
+			line-height: 23px;
+			font-size: 0.9em;
+			color: $text-light-blue;
+			border-radius: 3px;
+			background-color: #10222c;
+
+		}
+	}
 }
 @media screen and (max-width: 1400px) {
 	.live-casino__aside {
